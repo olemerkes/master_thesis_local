@@ -1,0 +1,19 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'cph_seminar.blg'
+[30] biber-darwin:340> INFO - === Mon Aug 31, 2026, 09:18:19
+[39] Biber.pm:419> INFO - Reading 'cph_seminar.bcf'
+[86] Biber.pm:979> INFO - Found 7 citekeys in bib section 0
+[96] Biber.pm:4419> INFO - Processing section 0
+[102] Biber.pm:4610> INFO - Looking for bibtex file 'literature.bib' for section 0
+[110] bibtex.pm:1713> INFO - LaTeX decoding ...
+[173] bibtex.pm:1519> INFO - Found BibTeX data source 'literature.bib'
+[239] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[239] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[239] Biber.pm:4239> INFO - Sorting list 'nyt/apasortcite//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[239] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[253] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[253] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[253] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[253] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[262] bbl.pm:660> INFO - Writing 'cph_seminar.bbl' with encoding 'UTF-8'
+[302] bbl.pm:763> INFO - Output to cph_seminar.bbl

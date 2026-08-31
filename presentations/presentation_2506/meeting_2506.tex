@@ -1,0 +1,559 @@
+\documentclass{beamer}
+
+\usetheme{Boadilla}
+\setbeamertemplate{frametitle}[default][center]
+\setbeamertemplate{bibliography item}[text]
+
+% --- Packages ---
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[thinc]{esdiff}
+
+
+
+
+\usepackage{amsmath}
+\usepackage{ gensymb }
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref} 
+
+% --- Bibliography ---
+\bibliographystyle{apalike}
+
+\newcommand{\backupbegin}{
+   \newcounter{finalframe}
+   \setcounter{finalframe}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+   \setcounter{framenumber}{\value{finalframe}}
+}
+
+
+\setbeamertemplate{frametitle}[default][center]
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+
+\subtitle{Climate dynamics department meeting}
+\title{The impact of tropospheric versus stratospheric CO$_2$ forcing on the Hadley cell }
+%\titlegraphic{\includegraphics[width=0.9\linewidth,height=0.4\linewidth]{image.png}}
+%\author{Ole Merkes}
+\author[Ole Merkes]{Ole Merkes \\[1\baselineskip]
+Supervised by Sarah Kang and Moritz Günther \\
+}
+%\institute{University of Hamburg, Max-Planck-Institute for Meteorology}
+\date{\today}
+\titlegraphic{%
+  \makebox[0.95\paperwidth]{%
+    \includegraphics[height=1cm,keepaspectratio]{figures/mpi_logo.png}%
+    \hspace{6cm}%
+    \includegraphics[height=1.5cm,keepaspectratio]{figures/uhh-logo.pdf}%
+  }%
+}
+% \titlegraphic{\includegraphics[height=1cm,keepaspectratio]{figures/mpi_logo.png}\hfill
+%    \includegraphics[height=1cm,keepaspectratio]{figures/uhh-logo.pdf}
+% }
+
+
+\AtBeginSection[]
+{
+    \begin{frame}
+        %\frametitle{Table of Contents}
+        \tableofcontents[currentsection,currentsubsection]
+    \end{frame}
+}
+
+\begin{document}
+
+% \setbeamertemplate{background canvas}{
+% \transparent{0.4}\includegraphics[width=\paperwidth,height=\paperheight]{image.png}
+% }%
+\begin{frame}
+    \titlepage
+\end{frame}
+%\setbeamertemplate{background canvas}[default]
+\section{Introduction}
+
+
+
+\begin{frame}
+  \frametitle{Changes in Hadley circulation}
+\begin{table}[]
+    \centering
+    \begin{tabular}{c|ccc}
+         &Uniform & Tropo & Strato \\ \toprule
+        $\Delta\psi_\mathrm{max, NH}$& $-1.6\%$ & \textbf{$3.4\%$}& $-8.7\%$\\
+        $\Delta\psi_\mathrm{max, SH}$ & $-1.4\%$ & $5.6\%$ & $-5.7\%$\\ 
+        $\Delta\Phi_\mathrm{H, NH}$  & $1.6\unit{\degree}$& $0.8\unit{\degree}$ &$0.8\unit{\degree}$\\
+        $\Delta\Phi_\mathrm{H, SH}$  & $-1.6\unit{\degree}$& $-1.0\unit{\degree}$ &$-0.6\unit{\degree}$\\
+    \end{tabular}
+    \label{tab:placeholder}
+\end{table}
+\begin{block}{Surprise}
+    \begin{itemize}
+        \item HC is \textbf{weakening} with stratospheric CO$_2$
+        \item HC is \textbf{strengthening} with tropospheric CO$_2$
+    \end{itemize}
+\end{block}
+\end{frame}
+
+
+% \begin{frame}
+%     \frametitle{Hadley cell climatology}
+%     \begin{figure}
+%         \centering
+%         \includegraphics[width=\textwidth]{figures/HC_era5.png}
+%         \caption{ERA5 data from 1979-2019 \cite{LionelloEtAl2024}.}
+%     \end{figure}
+% \end{frame}
+
+% \begin{frame}
+%     \frametitle{The HC is the dominant driver of tropical circulation}
+%     \begin{block}{Significance}
+%     \begin{itemize}
+%         \item Ascending branch associated with \textbf{intense precipitation} 
+%         \item Descending branch associated with the subtropical \textbf{dry} zones
+%         \item Transports \textbf{energy} towards the poles and \textbf{moisture} to the equator
+%         \item Closely tied to the \textbf{global monsoon} \cite{Bordoni2008} with more than 2 billion people affected
+%     \end{itemize}
+%     \end{block}
+% \end{frame}
+
+\section{Held\&Hou theory}
+
+% \begin{frame}
+%     \frametitle{The axisymmetric theory of the HC}
+% \begin{figure}[t]
+%      \centering
+%      \begin{subfigure}[t]{0.47\textwidth}
+%          \centering
+%          \includegraphics[width=\textwidth]{figures/temperature_vallis.png}
+%          \label{fig:spread}
+%      \end{subfigure}
+%     \hspace{0.03\textwidth}
+%      \begin{subfigure}[t]{0.47\textwidth}
+%          \centering
+%          \includegraphics[width=\textwidth]{figures/zon_vel.png}
+%      \end{subfigure}
+%         \caption{Temperature und zonal velocities in the H\&H theory from \cite{Vallis2017}.}
+%         \label{}
+% \end{figure}
+% \end{frame}
+
+
+
+\begin{frame}
+    \frametitle{Linearisation of direct thermodynamical drivers}
+    \begin{align*}
+        \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}&=\frac{5}{2}\frac{\delta H}{H}+\frac{5}{2}\frac{\delta\Delta_h}{\Delta_h}-\frac{\delta\Delta_v}{\Delta_v}\\
+        \frac{\delta\Phi_\mathrm{H}}{\Phi_\mathrm{H}}&=\frac{1}{2}\frac{\delta H}{H}+\frac{1}{2}\frac{\delta\Delta_h}{\Delta_h}
+    \end{align*}
+    \begin{itemize}
+        \item meridional near-surface potential
+        temperature contrast $\Delta_h=\Bar{\theta}(800-700\;\si{hPa},0-10\;\unit{\degree})-\Bar{\theta}(800-700\;\si{hPa},80-90\;\si{\degree})$
+        \item subtropical static stability $\Delta_v=\Bar{\theta}(200\;\si{hPa},20-40\;\unit{\degree})-\Bar{\theta}(800\;\si{hPa},20-40\;\si{\degree})$
+        \item tropical tropopause height $H=\Bar{H}(0-15\unit{\degree})$ 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Does linearised H\&H explain the HC's response?}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{figures/scatter_SH.png}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Why does H\&H fail to explain HC dynamics?}
+
+    \begin{block}{Limitations}
+        \begin{itemize}
+            \item Idealized model without oceans, land mass, clouds, etc.
+            \item Eddies and axially asymmetric flow
+            \item Temperature scaling parameters are in radiative equilibrium 
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\section{Incorporating eddies}
+
+\begin{frame}
+    \frametitle{Local Ro number}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{../../figures/eddy_flux/local_Ro.png}
+    \end{figure}
+\end{frame} 
+
+\begin{frame}
+    \frametitle{Eddy dominant regime}
+\begin{columns}
+\begin{column}{1.0\textwidth}
+    % \begin{block}{Baroclinic instability}
+    %     \begin{align}
+    %         \Phi_H \sim& \left(\frac{NH}{2\Omega a}\right)^{1/2}
+    %     \end{align}
+    % \end{block}
+    \begin{block}{Eddy momentum flux}
+        \begin{equation}
+            f\bar{v}=\frac{1}{a\cos^2\varphi}\frac{\partial (\cos^2\varphi\ \overline{u'v'})}{\partial\varphi} + \frac{\partial\overline{u'\omega'}}{\partial p}
+        \end{equation}
+        \begin{align*}
+            \psi_\mathrm{max}&=\frac{2\pi a\cos\varphi}{g}\int^0_{p_\mathrm{max}}\bar{v}\mathrm{d}p'\\
+            &=\frac{2\pi a\cos\varphi}{fg}\int^0_{p_\mathrm{max}}\left(\frac{1}{a\cos^2\varphi}\frac{\partial (\cos^2\varphi\ \overline{u'v'})}{\partial\varphi} + \frac{\partial\overline{u'\omega'}}{\partial p}\right)\mathrm{d}p'
+        \end{align*}
+    \end{block}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+
+\begin{frame}
+    \frametitle{HC strength and eddy momentum fluxes}
+    \begin{figure}
+        \centering
+        \includegraphics[height=0.7\textheight]{figures/eddy_strength.png}
+        \caption{Linear relation between eddy momentum flux and HC strength from \cite{WalkerSchneider2006}.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{../../figures/eddy_flux/anomalous_uv.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{HC strength and eddy momentum fluxes}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{../../figures/eddy_flux/eddy_flux_vs_strength.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Eddy momentum fluxes and MMC in mid latitudes}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{../../figures/eddy_flux/ferrell_cell_eddy_flux_vs_strength.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Energetic framework}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{../../figures/literature/Feldl_HC_decomposition.jpg}
+        \caption{From \cite{Feldl_2016}}
+    \end{figure}
+\end{frame}
+\begin{frame}
+    \frametitle{Energy transport by the Hadley cell}
+    \begin{block}{}
+        \begin{align*}
+            F_\mathrm{HC}&=\psi_\mathrm{max}H \\
+                &=\frac{2\pi a\cos\phi}{g}\int_{p_0}^{0}[\bar{h}][\bar{v}]\mathrm{d}p \\
+            \longrightarrow\frac{\delta \psi_\mathrm{max}}{\psi_\mathrm{max}}&=\frac{\delta F_\mathrm{HC}}{F_\mathrm{HC}} - \frac{\delta H}{H}
+        \end{align*}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Energy transport by the Hadley cell}
+    \begin{figure}
+        \centering
+        \includegraphics[height=0.9\textheight]{../../figures/energetic_framework/GMS_F_HC.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Contributions}
+    \begin{figure}
+        \centering
+        \includegraphics[height=0.9\textheight]{../../figures/energetic_framework/contributions_simple.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Total atmospheric energy transport}
+    \begin{block}{}
+        \begin{align*}
+            F_a &= \int_{-\pi/2}^{\phi}\int_{0}^{2\pi}R_\mathrm{TOA}a^2\cos\phi\mathrm{d}\phi\mathrm{d}\lambda=F_\mathrm{HC}+F_e \\
+            R_\mathrm{TOA}&=\mathrm{SW}_\mathrm{net}+\mathrm{OLR} \\
+            \longrightarrow\frac{\delta \psi_\mathrm{max}}{\psi_\mathrm{max}}&=\frac{\delta F_a - \delta F_e}{F_\mathrm{HC}} - \frac{\delta H}{H}
+        \end{align*}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Total atmospheric energy transport}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.85\textwidth]{../../figures/energetic_framework/F_x_comparison.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Contributions}
+    \begin{figure}
+        \centering
+        \includegraphics[height=0.9\textheight]{../../figures/energetic_framework/contributions_eddies.png}
+    \end{figure}
+\end{frame}
+
+% \begin{frame}
+%     \frametitle{TOA energetic imbalance}
+%     energetic imbalance = net top solar radiation + top thermal radiation (OLR)
+%     \begin{equation}
+%         R_\mathrm{TOA}=\mathrm{SW}_\mathrm{net}+\mathrm{OLR}
+%     \end{equation}
+% \end{frame}
+
+\begin{frame}
+    \frametitle{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{../../figures/energetic_framework/R_TOA.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{../../figures/energetic_framework/TOA_fluxes.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Temperature anomalies normalised}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{../../figures/energetic_framework/T_norm_for_MSE.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MSE anomalies}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{../../figures/energetic_framework/mse_anomalies.png}
+    \end{figure}
+\end{frame}
+
+
+
+\begin{frame}[allowframebreaks]
+    \frametitle{References}
+    \bibliography{literature}
+
+\end{frame}
+
+\backupbegin
+
+
+\begin{frame}
+    \frametitle{Model: ECHAM 6}
+    \begin{itemize}
+        \item CMIP6 type general circulation model
+        \item Mixed-layer ocean ($d=50\;\unit{\m}$) configuration
+        \item 47 vertical pressure levels with (lat,lon)$=(96,192)$ gridpoints ($\sim 200\;\unit{\km}$)
+        \item 4 runs: pre-industrial, uniform 4xCO$_2$, 4xCO$_2$ troposphere, 4xCO$_2$ stratosphere
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Linear decomposition of forcing works}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{figures/t_uniform.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Temperature anomalies}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{figures/temperature.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Temperature anomalies}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.6\textwidth]{figures/temperature.png}
+    \end{figure}
+    \begin{block}{Yet to be clarified}
+    \begin{itemize}
+        \item Stratospheric cooling in 4xCO$_2$ Tropo
+        \item Stratospheric warming in 4xCO$_2$ Strato
+        \item one-dimensional RCE model \textit{konrad}
+    \end{itemize}
+    \end{block}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{The axisymmetric theory of the HC}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{figures/temperature_vallis.png}
+        \caption{The edge of the HC \cite{Vallis2017}.}
+    \end{figure}
+\end{column}
+\begin{column}{0.45\textwidth}  %%<--- here
+  \begin{block}{Width and extent of the HC \cite{HeldHou1980}}  
+    \begin{align}
+        \Phi_H\propto&\left(H\Delta_h\right)^{1/2}\\
+        \psi_\mathrm{max} \propto & \frac{(H\Delta_h)^{5/2}}{\Delta_v}
+    \end{align}
+    \end{block}
+    $H$: Troposphere depth\\
+    $\Delta_h$: Fractional pole to equator temperature difference\\
+    $\Delta_v$: Fractional surface to tropopause temperature difference
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+
+\begin{frame}
+    \frametitle{Indirect thermodynamical drivers}
+\begin{columns}
+\begin{column}{0.7\textwidth}
+    % \begin{block}{Baroclinic instability}
+    %     \begin{align}
+    %         \Phi_H \sim& \left(\frac{NH}{2\Omega a}\right)^{1/2}
+    %     \end{align}
+    % \end{block}
+    \begin{block}{Eddy momentum flux}
+        \begin{equation}
+            \psi(1-\mathrm{Ro})\approx \frac{S}{f}
+        \end{equation}
+        \begin{itemize}
+            \item $\mathrm{Ro}\rightarrow 1$: Axisymmetric limit
+            \item $\mathrm{Ro}\rightarrow 0$: Eddy momentum flux dominates
+        \end{itemize}
+    \end{block}
+\end{column}
+\begin{column}{0.25\textwidth}  %%<--- here
+    % $H$: Troposphere depth\\
+    % $N$: Brunt–Väisälä frequency\\
+    $\mathrm{Ro}=\xi/f$: Local Rossby number \\
+    $S$: Eddy momentum flux divergence
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Intermediate regimes}
+    \begin{block}{Eddy momentum flux}
+        \begin{equation*}
+            \psi(1-\mathrm{Ro})\approx \frac{S}{f}
+        \end{equation*}
+        \begin{itemize}
+            \item $\mathrm{Ro}\rightarrow 1$: Axisymmetric limit
+            \item $\mathrm{Ro}\rightarrow 0$: Eddy momentum flux dominates
+        \end{itemize}
+    \end{block}
+
+    \begin{alertblock}{$0<\mathrm{Ro}<1$}
+        \textit{There is no theory that captures how the Hadley circulation responds to climate
+changes in this intermediate range of Rossby numbers.} - \cite{LevineSchneider2011}
+        
+    \end{alertblock}
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Annual mean and equinox HC are similar}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{figures/ann_mean_equinox.png}
+        \caption{Local Rossby numbers in equinox and annual mean case using reanalysis data from \cite{LevineSchneider2011}.}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Zonally averaged circulation}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{figures/streamfunc.png} %TODO
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Is the decomposition valid?}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textheight]{figures/non_lin.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{figures/scatter_NH.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{../../figures/H&H/changes_parameters.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{figures/changes_parameters_NH.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Winter HC is close to angular momentum conserving limit}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{figures/tropo_seasonal.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{figures/strato_seasonal.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{figures/uniform_seasonal.png}
+    \end{figure}
+\end{frame}
+
+
+
+\backupend
+\end{document}

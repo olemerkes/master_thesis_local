@@ -1,0 +1,1365 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/apasortcite//global/global}
+    \entry{chemkeElucidatingMechanismsResponsible2021}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=747304b04a294be71e217733da0b8caf}{%
+           family={Chemke},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=891428cb5f0461217780cfec61fae98d}{%
+           family={Polvani},
+           familyi={P\bibinitperiod},
+           given={L.\bibnamedelimi M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dbcc485c3a0491d23bdb10be88a7ea92}
+      \strng{fullhash}{dbcc485c3a0491d23bdb10be88a7ea92}
+      \strng{bibnamehash}{dbcc485c3a0491d23bdb10be88a7ea92}
+      \strng{authorbibnamehash}{dbcc485c3a0491d23bdb10be88a7ea92}
+      \strng{authornamehash}{dbcc485c3a0491d23bdb10be88a7ea92}
+      \strng{authorfullhash}{dbcc485c3a0491d23bdb10be88a7ea92}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The projected weakening of the Northern Hemisphere Hadley cell will have large climatic impacts at low latitudes. Several mechanisms have been proposed to explain this weakening. In order to isolate and assess their relative importance, we here use the abrupt 4 × CO2 experiment of the Coupled Model Intercomparison Project phase 5, as this forcing separates the different mechanisms which respond on different time scales. We find that the Hadley circulation responds relatively quickly to quadrupling CO2 concentrations, reaching its steady-state value after less than a decade. This fast response demonstrates that the weakening could not be solely due to the much slower increase in surface temperature. In addition, we show that the Hadley cell's weakening results from a combination of an increase in tropical static stability, partially offset by an increase in the latitudinal gradient of latent heating.}
+      \field{day}{16}
+      \field{issn}{0094-8276, 1944-8007}
+      \field{journaltitle}{Geophysical Research Letters}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{3}
+      \field{shortjournal}{Geophysical Research Letters}
+      \field{title}{Elucidating the {{Mechanisms Responsible}} for {{Hadley Cell Weakening Under}} 4 × {{CO}}{\textsubscript{2}} {{Forcing}}}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{48}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{e2020GL090348}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1029/2020GL090348
+      \endverb
+      \verb{file}
+      \verb /Users/olemerkes/Zotero/storage/9DRE9F6N/Chemke and Polvani - 2021 - Elucidating the Mechanisms Responsible for Hadley Cell Weakening Under 4 × CO2 Forcing.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020GL090348
+      \endverb
+      \verb{url}
+      \verb https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020GL090348
+      \endverb
+    \endentry
+    \entry{feldlCharacterizingHadleyCirculation2016}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=94fbb345bdde443132ff2f6323a79224}{%
+           family={Feldl},
+           familyi={F\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7ac568c879197527afd1330c235a45a4}{%
+           family={Bordoni},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{55f279c01479000c484de160d3573806}
+      \strng{fullhash}{55f279c01479000c484de160d3573806}
+      \strng{bibnamehash}{55f279c01479000c484de160d3573806}
+      \strng{authorbibnamehash}{55f279c01479000c484de160d3573806}
+      \strng{authornamehash}{55f279c01479000c484de160d3573806}
+      \strng{authorfullhash}{55f279c01479000c484de160d3573806}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The robust weakening of the tropical atmospheric circulation in projections of anthropogenic warming is associated with substantial changes in regional and global climate. The present study focuses on understanding the response of the annual-mean Hadley circulation from a perspective of interactions between climate feedbacks and tropical circulation. Simulations from an ensemble of coupled ocean–atmosphere models are used to quantify changes in Hadley cell strength in terms of feedbacks, radiative forcing, ocean heat uptake, atmospheric eddies, and gross moist stability. Climate feedbacks are calculated for the model integrations from phase 5 of CMIP (CMIP5) using radiative kernels. Tropical mean circulation is found to be reduced by up to 2.6\% K21 for an abrupt quadrupling of carbon dioxide concentration. The weakening is characterized by an increase in gross moist stability, by an increase in eddy heat flux, and by positive extratropical feedbacks, such as those associated with lapse rate and sea ice response. Understanding the impact of radiative feedbacks on the large-scale circulation provides a framework for constraining uncertainty in the dynamic climate response, including the hydrological cycle.}
+      \field{day}{15}
+      \field{issn}{0894-8755, 1520-0442}
+      \field{journaltitle}{Journal of Climate}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{2}
+      \field{title}{Characterizing the {{Hadley Circulation Response}} through {{Regional Climate Feedbacks}}}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{29}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{613\bibrangedash 622}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1175/JCLI-D-15-0424.1
+      \endverb
+      \verb{file}
+      \verb /Users/olemerkes/Zotero/storage/C6VLRL8J/Feldl and Bordoni - 2016 - Characterizing the Hadley Circulation Response through Regional Climate Feedbacks.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://journals.ametsoc.org/doi/10.1175/JCLI-D-15-0424.1
+      \endverb
+      \verb{url}
+      \verb http://journals.ametsoc.org/doi/10.1175/JCLI-D-15-0424.1
+      \endverb
+    \endentry
+    \entry{kimWeakHadleyCell2022}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=9d1f86a2270e033169b419a4bf20ae76}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Doyeon},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3cb63fcee6ba084d4c0e3c618ef591c1}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hanjun},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=907a76bbd0667e908bcbfa698cd5d36e}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Sarah\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c801989a5b1402c4024741ca019bdecb}{%
+           family={Stuecker},
+           familyi={S\bibinitperiod},
+           given={Malte\bibnamedelima F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5282d29d5743563662b14a9cf942b86}{%
+           family={Merlis},
+           familyi={M\bibinitperiod},
+           given={Timothy\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8da7549393f130aa70ab064961998431}
+      \strng{fullhash}{1029903e3956313e3265a1f135a22eee}
+      \strng{bibnamehash}{1029903e3956313e3265a1f135a22eee}
+      \strng{authorbibnamehash}{1029903e3956313e3265a1f135a22eee}
+      \strng{authornamehash}{8da7549393f130aa70ab064961998431}
+      \strng{authorfullhash}{1029903e3956313e3265a1f135a22eee}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract The Hadley cell response to globally increasing CO 2 concentrations is spatially complex, with an intensified rising branch and weakened descending branch. To better understand these changes, we examine the sensitivity of the Hadley cell to idealized radiative forcing in different latitude bands. The Hadley cell response is, to first order, governed by the latitudinal structure of the forcing. The strengthening of the upward branch is attributed to tropical forcing, whereas the weakening of the descending branch is attributed to extratropical forcing. These direct radiatively-forced Hadley cell responses are amplified by changes in atmospheric eddy heat transport while being partially offset by changes in gross moist stability and ocean heat uptake. The radiative feedbacks further modulate the Hadley cell response by altering the meridional atmospheric energy gradient. The Hadley cell projections under global warming are thus a result of opposing – and thus compensating – effects from tropical and extratropical radiative forcings.}
+      \field{day}{1}
+      \field{issn}{2397-3722}
+      \field{journaltitle}{npj Climate and Atmospheric Science}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{1}
+      \field{shortjournal}{npj Clim Atmos Sci}
+      \field{title}{Weak {{Hadley}} Cell Intensity Changes Due to Compensating Effects of Tropical and Extratropical Radiative Forcing}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{5}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{61}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41612-022-00287-x
+      \endverb
+      \verb{file}
+      \verb /Users/olemerkes/Zotero/storage/6RE6QJQR/Kim et al. - 2022 - Weak Hadley cell intensity changes due to compensating effects of tropical and extratropical radiati.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41612-022-00287-x
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41612-022-00287-x
+      \endverb
+    \endentry
+    \entry{luExpansionHadleyCell2007}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5051f54f60c8b4c3a9e375e3769fbfae}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=23caf6a330bb6f0d4ca6d531b66952fd}{%
+           family={Vecchi},
+           familyi={V\bibinitperiod},
+           given={Gabriel\bibnamedelima A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8bc6e6a9d61229155ab14d0f536c45c2}{%
+           family={Reichler},
+           familyi={R\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8fed64f588610f4ca953194d0d81881a}
+      \strng{fullhash}{f05f3ea3fa3b2a91c968b5416cdc0d6b}
+      \strng{bibnamehash}{f05f3ea3fa3b2a91c968b5416cdc0d6b}
+      \strng{authorbibnamehash}{f05f3ea3fa3b2a91c968b5416cdc0d6b}
+      \strng{authornamehash}{8fed64f588610f4ca953194d0d81881a}
+      \strng{authorfullhash}{f05f3ea3fa3b2a91c968b5416cdc0d6b}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A consistent weakening and poleward expansion of the Hadley circulation is diagnosed in the climate change simulations of the IPCC AR4 project. Associated with this widening is a poleward expansion of the subtropical dry zone. Simple scaling analysis supports the notion that the poleward extent of the Hadley cell is set by the location where the thermally driven jet first becomes baroclinically unstable. The expansion of the Hadley cell is caused by an increase in the subtropical static stability, which pushes poleward the baroclinic instability zone and hence the outer boundary of the Hadley cell.}
+      \field{issn}{0094-8276, 1944-8007}
+      \field{journaltitle}{Geophysical Research Letters}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{6}
+      \field{shortjournal}{Geophysical Research Letters}
+      \field{title}{Expansion of the {{Hadley}} Cell under Global Warming}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{34}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2006GL028443}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1029/2006GL028443
+      \endverb
+      \verb{file}
+      \verb /Users/olemerkes/Zotero/storage/UBIRQNZC/Lu et al. - 2007 - Expansion of the Hadley cell under global warming.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2006GL028443
+      \endverb
+      \verb{url}
+      \verb https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2006GL028443
+      \endverb
+    \endentry
+    \entry{shawTestingLatitudinallyDependent2018}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c285a01c5d3ef8bb87016262a373fa82}{%
+           family={Shaw},
+           familyi={S\bibinitperiod},
+           given={Tiffany\bibnamedelima A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b33269aaccdb88d84d55e238c7ea00b}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Zhihong},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{70e7a72ce32a0a71012cfc82456df5b6}
+      \strng{fullhash}{70e7a72ce32a0a71012cfc82456df5b6}
+      \strng{bibnamehash}{70e7a72ce32a0a71012cfc82456df5b6}
+      \strng{authorbibnamehash}{70e7a72ce32a0a71012cfc82456df5b6}
+      \strng{authornamehash}{70e7a72ce32a0a71012cfc82456df5b6}
+      \strng{authorfullhash}{70e7a72ce32a0a71012cfc82456df5b6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The atmospheric circulation exhibits robust responses to increased CO2 that emerge across the climate model hierarchy. Existing theoretical explanations of the circulation response can be grouped according to latitude. Here we test latitudinally dependent explanations of the circulation response to increased CO2 using slab ocean aquaplanet models with latitudinally dependent CO2 concentration. Quadrupling CO2 in the tropics (0–20°) accounts for the strengthening and upward shift of the subtropical jet but does not account for the poleward shift of the Hadley cell edge or extratropical circulation. The tropical response is dominated by regions of descent. When CO2 is quadrupled in high latitudes (60–90°), there is a negligible circulation response. The response to latitudinally dependent increased CO2 is mostly linear and increased CO2 in the midlatitudes (20–60°) dominates. Within the midlatitudes, the subtropics (20–40°) dominate. Thus, story lines explaining the circulation shift in response to increased CO2 should focus on the thermodynamic response in the subtropics.}
+      \field{issn}{1944-8007}
+      \field{journaltitle}{Geophysical Research Letters}
+      \field{langid}{english}
+      \field{number}{18}
+      \field{title}{Testing {{Latitudinally Dependent Explanations}} of the {{Circulation Response}} to {{Increased CO2 Using Aquaplanet Models}}}
+      \field{urlday}{5}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{45}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{9861\bibrangedash 9869}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1029/2018GL078974
+      \endverb
+      \verb{file}
+      \verb /Users/olemerkes/Zotero/storage/6W3QZDEW/Shaw and Tan - 2018 - Testing Latitudinally Dependent Explanations of the Circulation Response to Increased CO2 Using Aqua.pdf;/Users/olemerkes/Zotero/storage/Z8CEAZXQ/2018GL078974.html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1029/2018GL078974
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1029/2018GL078974
+      \endverb
+    \endentry
+    \entry{sonImpactStratosphericOzone2010}{article}{}
+      \name{author}{41}{}{%
+        {{un=0,uniquepart=base,hash=6de12893a27bd30de564a38d8a203fd8}{%
+           family={Son},
+           familyi={S\bibinitperiod},
+           given={S.-W.},
+           giveni={S\bibinithyphendelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=011c9248dc87e53df7b7faabe74bc41b}{%
+           family={Gerber},
+           familyi={G\bibinitperiod},
+           given={E.\bibnamedelimi P.},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=444e2090786948c2604c1eda0fe5680a}{%
+           family={Perlwitz},
+           familyi={P\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=891428cb5f0461217780cfec61fae98d}{%
+           family={Polvani},
+           familyi={P\bibinitperiod},
+           given={L.\bibnamedelimi M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=805312bf29babe575faef6df589ff313}{%
+           family={Gillett},
+           familyi={G\bibinitperiod},
+           given={N.\bibnamedelimi P.},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46274a8784ffcd8dac38aa515d8bdeeb}{%
+           family={Seo},
+           familyi={S\bibinitperiod},
+           given={K.-H.},
+           giveni={K\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a0aa104b6c2b1589edfe9583c2f31dc}{%
+           family={Eyring},
+           familyi={E\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3243d3664e85e4166d4d44f9a127d986}{%
+           family={Shepherd},
+           familyi={S\bibinitperiod},
+           given={T.\bibnamedelimi G.},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b7a135ef19f398e75091777afed1e0a}{%
+           family={Waugh},
+           familyi={W\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d12353b0a95fb65fa6839ef5230fde6b}{%
+           family={Akiyoshi},
+           familyi={A\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51937d20be702a6c047338e6908008a5}{%
+           family={Austin},
+           familyi={A\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ee0ca1bbc51d7fe952f21a0dcab4654}{%
+           family={Baumgaertner},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5f492d33409c5232008c16b0c1b2896}{%
+           family={Bekki},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0df84b38276d42a914ce2491bdb80a85}{%
+           family={Braesicke},
+           familyi={B\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86325e54edd8a0b1323b6beb8e95c105}{%
+           family={Brühl},
+           familyi={B\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=60c7a2a9e9f79eb0de2779fdfcdeeb6e}{%
+           family={Butchart},
+           familyi={B\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c8bda7cbdfc29a7ff6030e63303d531}{%
+           family={Chipperfield},
+           familyi={C\bibinitperiod},
+           given={M.\bibnamedelimi P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0cd063ba111534d1186dc4f264f7d2ae}{%
+           family={Cugnet},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c71b60661e89454d5188dbe15d9c7f43}{%
+           family={Dameris},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b991cd6e014717735c603f4695b8250}{%
+           family={Dhomse},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed3a654de33f9fcb1e97c0b898db7b44}{%
+           family={Frith},
+           familyi={F\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a921b0bf25f7fb1f3f166cc569f60da2}{%
+           family={Garny},
+           familyi={G\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1084e45e7e35614f6e46d89bb6dc40a8}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a75d90631b28b1b1c5f4213706768ce}{%
+           family={Hardiman},
+           familyi={H\bibinitperiod},
+           given={S.\bibnamedelimi C.},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=897f7ce9309927d396aad5ed7939382a}{%
+           family={Jöckel},
+           familyi={J\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=88e881582c161fc0a35f882308af2c0a}{%
+           family={Lamarque},
+           familyi={L\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=645749e0a45983685258400145ce1eb1}{%
+           family={Mancini},
+           familyi={M\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9fd34398b020daecead9ff53f307379a}{%
+           family={Marchand},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9fc6cf869c5d25647b863f511884c2ff}{%
+           family={Michou},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=09dd2ddfd359a35038f97b77a5d17a33}{%
+           family={Nakamura},
+           familyi={N\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c74da45408772ca65520214b0592336}{%
+           family={Morgenstern},
+           familyi={M\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3658489e12910a7d8a34cf325352ddb8}{%
+           family={Pitari},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ddb50569427aa90943a8eed9c0e38270}{%
+           family={Plummer},
+           familyi={P\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bec7ebe01ea109242b6ce90ff95ccf7a}{%
+           family={Pyle},
+           familyi={P\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2bb016894f3174c85f8d048c417998e6}{%
+           family={Rozanov},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5af9b266ef8eae79a925800a26085cb}{%
+           family={Scinocca},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33ca251d19ad4b2d04ec4c6044ea604c}{%
+           family={Shibata},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97ff793f7f84f7b53362682430b60e7d}{%
+           family={Smale},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14f791fce3ec132f65a3d50ebe736692}{%
+           family={Teyssèdre},
+           familyi={T\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e7f0ad3db7d3b1fad5b4c6a00fa13c7}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4688fe8b1af03450457579368178ee8d}{%
+           family={Yamashita},
+           familyi={Y\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d565e9aa01a4bb3bc30fb64bcb7fe724}
+      \strng{fullhash}{9a1a3b05b728dc46ea8a4a29f1148604}
+      \strng{bibnamehash}{1b96000d0b7ba682460ccc5ead301270}
+      \strng{authorbibnamehash}{1b96000d0b7ba682460ccc5ead301270}
+      \strng{authornamehash}{d565e9aa01a4bb3bc30fb64bcb7fe724}
+      \strng{authorfullhash}{9a1a3b05b728dc46ea8a4a29f1148604}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The impact of stratospheric ozone on the tropospheric general circulation of the Southern Hemisphere (SH) is examined with a set of chemistry-climate models participating in the Stratospheric Processes and their Role in Climate (SPARC)/Chemistry-Climate Model Validation project phase 2 (CCMVal-2). Model integrations of both the past and future climates reveal the crucial role of stratospheric ozone in driving SH circulation change: stronger ozone depletion in late spring generally leads to greater poleward displacement and intensification of the tropospheric midlatitude jet, and greater expansion of the SH Hadley cell in the summer. These circulation changes are systematic as poleward displacement of the jet is typically accompanied by intensification of the jet and expansion of the Hadley cell. Overall results are compared with coupled models participating in the Intergovernmental Panel on Climate Change Fourth Assessment Report (IPCC AR4), and possible mechanisms are discussed. While the tropospheric circulation response appears quasi-linearly related to stratospheric ozone changes, the quantitative response to a given forcing varies considerably from one model to another. This scatter partly results from differences in model climatology. It is shown that poleward intensification of the westerly jet is generally stronger in models whose climatological jet is biased toward lower latitudes. This result is discussed in the context of quasi-geostrophic zonal mean dynamics.}
+      \field{issn}{2156-2202}
+      \field{journaltitle}{Journal of Geophysical Research: Atmospheres}
+      \field{langid}{english}
+      \field{number}{D3}
+      \field{shorttitle}{Impact of Stratospheric Ozone on {{Southern Hemisphere}} Circulation Change}
+      \field{title}{Impact of Stratospheric Ozone on {{Southern Hemisphere}} Circulation Change: {{A}} Multimodel Assessment}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{115}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1029/2010JD014271
+      \endverb
+      \verb{file}
+      \verb /Users/olemerkes/Zotero/storage/D53VTVD4/2010JD014271.html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1029/2010JD014271
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1029/2010JD014271
+      \endverb
+      \keyw{CCMVal-2,ozone hole,Southern Hemisphere climate change}
+    \endentry
+    \entry{xiaComparisonTrendsHadley2020}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ef657b90b23c6ef1780cc33f5a703a6d}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0ec05e0a552c0517088bac7aa8c902a}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yongyun},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=96ccc19ef1c1e18275c6487feee646e3}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jiping},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{483e8dbebfdecf3ad8c3be14109e3bcd}
+      \strng{fullhash}{ec70f0ca2f30d9f8b07bece4d41e26b4}
+      \strng{bibnamehash}{ec70f0ca2f30d9f8b07bece4d41e26b4}
+      \strng{authorbibnamehash}{ec70f0ca2f30d9f8b07bece4d41e26b4}
+      \strng{authornamehash}{483e8dbebfdecf3ad8c3be14109e3bcd}
+      \strng{authorfullhash}{ec70f0ca2f30d9f8b07bece4d41e26b4}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{There have been extensive studies on poleward expansion of the Hadley cells and the associated poleward shift of subtropical dry zones in the past decade. In the present study, we study the trends in the width and strength of the Hadley cells, using currently available simulation results of the Coupled Model Intercomparison Project Phase-6 (CMIP6), and compare the trends with that in CMIP5 simulations. Our results show that the total annual-mean trend in the width of the Hadley cells is 0.13° ± 0.02° per decade over 1970–2014 in CMIP6 historical All-forcing simulations. It is almost the same as that in CMIP5. The trend in the strength of the Northern-Hemisphere (NH) cell shows much greater weakening in CMIP6 than in CMIP5, while the strength trend in the Southern-Hemisphere (SH) cell shows slight strengthening. Single-forcing simulations demonstrate that increasing greenhouse gases cause widening and weakening of both the NH and SH Hadley cells, while anthropogenic aerosols and stratospheric ozone changes cause weak strengthening trends in the SH cell. CMIP6 projection simulation results show that both the widening and weakening trends increase with radiative forcing.}
+      \field{day}{15}
+      \field{issn}{2095-9273}
+      \field{journaltitle}{Science Bulletin}
+      \field{month}{10}
+      \field{number}{19}
+      \field{shortjournal}{Science Bulletin}
+      \field{title}{Comparison of Trends in the {{Hadley}} Circulation between {{CMIP6}} and {{CMIP5}}}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{65}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1667\bibrangedash 1674}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.scib.2020.06.011
+      \endverb
+      \verb{file}
+      \verb /Users/olemerkes/Zotero/storage/PXWIKZSS/Xia et al. - 2020 - Comparison of trends in the Hadley circulation between CMIP6 and CMIP5.pdf;/Users/olemerkes/Zotero/storage/EIQZT5F5/S209592732030390X.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S209592732030390X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S209592732030390X
+      \endverb
+      \keyw{Anthropogenic aerosols,Coupled Model Intercomparison Project Phase-6 (CMIP6),Global warming,Hadley circulation,Increasing greenhouse gases,Stratospheric ozone}
+    \endentry
+  \enddatalist
+  \datalist[entry]{nyt/global//global/global}
+    \entry{chemkeElucidatingMechanismsResponsible2021}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=747304b04a294be71e217733da0b8caf}{%
+           family={Chemke},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=891428cb5f0461217780cfec61fae98d}{%
+           family={Polvani},
+           familyi={P\bibinitperiod},
+           given={L.\bibnamedelimi M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dbcc485c3a0491d23bdb10be88a7ea92}
+      \strng{fullhash}{dbcc485c3a0491d23bdb10be88a7ea92}
+      \strng{bibnamehash}{dbcc485c3a0491d23bdb10be88a7ea92}
+      \strng{authorbibnamehash}{dbcc485c3a0491d23bdb10be88a7ea92}
+      \strng{authornamehash}{dbcc485c3a0491d23bdb10be88a7ea92}
+      \strng{authorfullhash}{dbcc485c3a0491d23bdb10be88a7ea92}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The projected weakening of the Northern Hemisphere Hadley cell will have large climatic impacts at low latitudes. Several mechanisms have been proposed to explain this weakening. In order to isolate and assess their relative importance, we here use the abrupt 4 × CO2 experiment of the Coupled Model Intercomparison Project phase 5, as this forcing separates the different mechanisms which respond on different time scales. We find that the Hadley circulation responds relatively quickly to quadrupling CO2 concentrations, reaching its steady-state value after less than a decade. This fast response demonstrates that the weakening could not be solely due to the much slower increase in surface temperature. In addition, we show that the Hadley cell's weakening results from a combination of an increase in tropical static stability, partially offset by an increase in the latitudinal gradient of latent heating.}
+      \field{day}{16}
+      \field{issn}{0094-8276, 1944-8007}
+      \field{journaltitle}{Geophysical Research Letters}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{3}
+      \field{shortjournal}{Geophysical Research Letters}
+      \field{title}{Elucidating the {{Mechanisms Responsible}} for {{Hadley Cell Weakening Under}} 4 × {{CO}}{\textsubscript{2}} {{Forcing}}}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{48}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{e2020GL090348}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1029/2020GL090348
+      \endverb
+      \verb{file}
+      \verb /Users/olemerkes/Zotero/storage/9DRE9F6N/Chemke and Polvani - 2021 - Elucidating the Mechanisms Responsible for Hadley Cell Weakening Under 4 × CO2 Forcing.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020GL090348
+      \endverb
+      \verb{url}
+      \verb https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020GL090348
+      \endverb
+    \endentry
+    \entry{feldlCharacterizingHadleyCirculation2016}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=94fbb345bdde443132ff2f6323a79224}{%
+           family={Feldl},
+           familyi={F\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7ac568c879197527afd1330c235a45a4}{%
+           family={Bordoni},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{55f279c01479000c484de160d3573806}
+      \strng{fullhash}{55f279c01479000c484de160d3573806}
+      \strng{bibnamehash}{55f279c01479000c484de160d3573806}
+      \strng{authorbibnamehash}{55f279c01479000c484de160d3573806}
+      \strng{authornamehash}{55f279c01479000c484de160d3573806}
+      \strng{authorfullhash}{55f279c01479000c484de160d3573806}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The robust weakening of the tropical atmospheric circulation in projections of anthropogenic warming is associated with substantial changes in regional and global climate. The present study focuses on understanding the response of the annual-mean Hadley circulation from a perspective of interactions between climate feedbacks and tropical circulation. Simulations from an ensemble of coupled ocean–atmosphere models are used to quantify changes in Hadley cell strength in terms of feedbacks, radiative forcing, ocean heat uptake, atmospheric eddies, and gross moist stability. Climate feedbacks are calculated for the model integrations from phase 5 of CMIP (CMIP5) using radiative kernels. Tropical mean circulation is found to be reduced by up to 2.6\% K21 for an abrupt quadrupling of carbon dioxide concentration. The weakening is characterized by an increase in gross moist stability, by an increase in eddy heat flux, and by positive extratropical feedbacks, such as those associated with lapse rate and sea ice response. Understanding the impact of radiative feedbacks on the large-scale circulation provides a framework for constraining uncertainty in the dynamic climate response, including the hydrological cycle.}
+      \field{day}{15}
+      \field{issn}{0894-8755, 1520-0442}
+      \field{journaltitle}{Journal of Climate}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{2}
+      \field{title}{Characterizing the {{Hadley Circulation Response}} through {{Regional Climate Feedbacks}}}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{29}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{613\bibrangedash 622}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1175/JCLI-D-15-0424.1
+      \endverb
+      \verb{file}
+      \verb /Users/olemerkes/Zotero/storage/C6VLRL8J/Feldl and Bordoni - 2016 - Characterizing the Hadley Circulation Response through Regional Climate Feedbacks.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://journals.ametsoc.org/doi/10.1175/JCLI-D-15-0424.1
+      \endverb
+      \verb{url}
+      \verb http://journals.ametsoc.org/doi/10.1175/JCLI-D-15-0424.1
+      \endverb
+    \endentry
+    \entry{kimWeakHadleyCell2022}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=9d1f86a2270e033169b419a4bf20ae76}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Doyeon},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3cb63fcee6ba084d4c0e3c618ef591c1}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hanjun},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=907a76bbd0667e908bcbfa698cd5d36e}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Sarah\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c801989a5b1402c4024741ca019bdecb}{%
+           family={Stuecker},
+           familyi={S\bibinitperiod},
+           given={Malte\bibnamedelima F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5282d29d5743563662b14a9cf942b86}{%
+           family={Merlis},
+           familyi={M\bibinitperiod},
+           given={Timothy\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8da7549393f130aa70ab064961998431}
+      \strng{fullhash}{1029903e3956313e3265a1f135a22eee}
+      \strng{bibnamehash}{1029903e3956313e3265a1f135a22eee}
+      \strng{authorbibnamehash}{1029903e3956313e3265a1f135a22eee}
+      \strng{authornamehash}{8da7549393f130aa70ab064961998431}
+      \strng{authorfullhash}{1029903e3956313e3265a1f135a22eee}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract The Hadley cell response to globally increasing CO 2 concentrations is spatially complex, with an intensified rising branch and weakened descending branch. To better understand these changes, we examine the sensitivity of the Hadley cell to idealized radiative forcing in different latitude bands. The Hadley cell response is, to first order, governed by the latitudinal structure of the forcing. The strengthening of the upward branch is attributed to tropical forcing, whereas the weakening of the descending branch is attributed to extratropical forcing. These direct radiatively-forced Hadley cell responses are amplified by changes in atmospheric eddy heat transport while being partially offset by changes in gross moist stability and ocean heat uptake. The radiative feedbacks further modulate the Hadley cell response by altering the meridional atmospheric energy gradient. The Hadley cell projections under global warming are thus a result of opposing – and thus compensating – effects from tropical and extratropical radiative forcings.}
+      \field{day}{1}
+      \field{issn}{2397-3722}
+      \field{journaltitle}{npj Climate and Atmospheric Science}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{1}
+      \field{shortjournal}{npj Clim Atmos Sci}
+      \field{title}{Weak {{Hadley}} Cell Intensity Changes Due to Compensating Effects of Tropical and Extratropical Radiative Forcing}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{5}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{61}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41612-022-00287-x
+      \endverb
+      \verb{file}
+      \verb /Users/olemerkes/Zotero/storage/6RE6QJQR/Kim et al. - 2022 - Weak Hadley cell intensity changes due to compensating effects of tropical and extratropical radiati.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41612-022-00287-x
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41612-022-00287-x
+      \endverb
+    \endentry
+    \entry{luExpansionHadleyCell2007}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5051f54f60c8b4c3a9e375e3769fbfae}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=23caf6a330bb6f0d4ca6d531b66952fd}{%
+           family={Vecchi},
+           familyi={V\bibinitperiod},
+           given={Gabriel\bibnamedelima A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8bc6e6a9d61229155ab14d0f536c45c2}{%
+           family={Reichler},
+           familyi={R\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8fed64f588610f4ca953194d0d81881a}
+      \strng{fullhash}{f05f3ea3fa3b2a91c968b5416cdc0d6b}
+      \strng{bibnamehash}{f05f3ea3fa3b2a91c968b5416cdc0d6b}
+      \strng{authorbibnamehash}{f05f3ea3fa3b2a91c968b5416cdc0d6b}
+      \strng{authornamehash}{8fed64f588610f4ca953194d0d81881a}
+      \strng{authorfullhash}{f05f3ea3fa3b2a91c968b5416cdc0d6b}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A consistent weakening and poleward expansion of the Hadley circulation is diagnosed in the climate change simulations of the IPCC AR4 project. Associated with this widening is a poleward expansion of the subtropical dry zone. Simple scaling analysis supports the notion that the poleward extent of the Hadley cell is set by the location where the thermally driven jet first becomes baroclinically unstable. The expansion of the Hadley cell is caused by an increase in the subtropical static stability, which pushes poleward the baroclinic instability zone and hence the outer boundary of the Hadley cell.}
+      \field{issn}{0094-8276, 1944-8007}
+      \field{journaltitle}{Geophysical Research Letters}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{6}
+      \field{shortjournal}{Geophysical Research Letters}
+      \field{title}{Expansion of the {{Hadley}} Cell under Global Warming}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{34}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2006GL028443}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1029/2006GL028443
+      \endverb
+      \verb{file}
+      \verb /Users/olemerkes/Zotero/storage/UBIRQNZC/Lu et al. - 2007 - Expansion of the Hadley cell under global warming.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2006GL028443
+      \endverb
+      \verb{url}
+      \verb https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2006GL028443
+      \endverb
+    \endentry
+    \entry{shawTestingLatitudinallyDependent2018}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=c285a01c5d3ef8bb87016262a373fa82}{%
+           family={Shaw},
+           familyi={S\bibinitperiod},
+           given={Tiffany\bibnamedelima A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b33269aaccdb88d84d55e238c7ea00b}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Zhihong},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{70e7a72ce32a0a71012cfc82456df5b6}
+      \strng{fullhash}{70e7a72ce32a0a71012cfc82456df5b6}
+      \strng{bibnamehash}{70e7a72ce32a0a71012cfc82456df5b6}
+      \strng{authorbibnamehash}{70e7a72ce32a0a71012cfc82456df5b6}
+      \strng{authornamehash}{70e7a72ce32a0a71012cfc82456df5b6}
+      \strng{authorfullhash}{70e7a72ce32a0a71012cfc82456df5b6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The atmospheric circulation exhibits robust responses to increased CO2 that emerge across the climate model hierarchy. Existing theoretical explanations of the circulation response can be grouped according to latitude. Here we test latitudinally dependent explanations of the circulation response to increased CO2 using slab ocean aquaplanet models with latitudinally dependent CO2 concentration. Quadrupling CO2 in the tropics (0–20°) accounts for the strengthening and upward shift of the subtropical jet but does not account for the poleward shift of the Hadley cell edge or extratropical circulation. The tropical response is dominated by regions of descent. When CO2 is quadrupled in high latitudes (60–90°), there is a negligible circulation response. The response to latitudinally dependent increased CO2 is mostly linear and increased CO2 in the midlatitudes (20–60°) dominates. Within the midlatitudes, the subtropics (20–40°) dominate. Thus, story lines explaining the circulation shift in response to increased CO2 should focus on the thermodynamic response in the subtropics.}
+      \field{issn}{1944-8007}
+      \field{journaltitle}{Geophysical Research Letters}
+      \field{langid}{english}
+      \field{number}{18}
+      \field{title}{Testing {{Latitudinally Dependent Explanations}} of the {{Circulation Response}} to {{Increased CO2 Using Aquaplanet Models}}}
+      \field{urlday}{5}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{45}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{9861\bibrangedash 9869}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1029/2018GL078974
+      \endverb
+      \verb{file}
+      \verb /Users/olemerkes/Zotero/storage/6W3QZDEW/Shaw and Tan - 2018 - Testing Latitudinally Dependent Explanations of the Circulation Response to Increased CO2 Using Aqua.pdf;/Users/olemerkes/Zotero/storage/Z8CEAZXQ/2018GL078974.html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1029/2018GL078974
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1029/2018GL078974
+      \endverb
+    \endentry
+    \entry{sonImpactStratosphericOzone2010}{article}{}
+      \name{author}{41}{}{%
+        {{un=0,uniquepart=base,hash=6de12893a27bd30de564a38d8a203fd8}{%
+           family={Son},
+           familyi={S\bibinitperiod},
+           given={S.-W.},
+           giveni={S\bibinithyphendelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=011c9248dc87e53df7b7faabe74bc41b}{%
+           family={Gerber},
+           familyi={G\bibinitperiod},
+           given={E.\bibnamedelimi P.},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=444e2090786948c2604c1eda0fe5680a}{%
+           family={Perlwitz},
+           familyi={P\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=891428cb5f0461217780cfec61fae98d}{%
+           family={Polvani},
+           familyi={P\bibinitperiod},
+           given={L.\bibnamedelimi M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=805312bf29babe575faef6df589ff313}{%
+           family={Gillett},
+           familyi={G\bibinitperiod},
+           given={N.\bibnamedelimi P.},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46274a8784ffcd8dac38aa515d8bdeeb}{%
+           family={Seo},
+           familyi={S\bibinitperiod},
+           given={K.-H.},
+           giveni={K\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a0aa104b6c2b1589edfe9583c2f31dc}{%
+           family={Eyring},
+           familyi={E\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3243d3664e85e4166d4d44f9a127d986}{%
+           family={Shepherd},
+           familyi={S\bibinitperiod},
+           given={T.\bibnamedelimi G.},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b7a135ef19f398e75091777afed1e0a}{%
+           family={Waugh},
+           familyi={W\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d12353b0a95fb65fa6839ef5230fde6b}{%
+           family={Akiyoshi},
+           familyi={A\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51937d20be702a6c047338e6908008a5}{%
+           family={Austin},
+           familyi={A\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ee0ca1bbc51d7fe952f21a0dcab4654}{%
+           family={Baumgaertner},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5f492d33409c5232008c16b0c1b2896}{%
+           family={Bekki},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0df84b38276d42a914ce2491bdb80a85}{%
+           family={Braesicke},
+           familyi={B\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86325e54edd8a0b1323b6beb8e95c105}{%
+           family={Brühl},
+           familyi={B\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=60c7a2a9e9f79eb0de2779fdfcdeeb6e}{%
+           family={Butchart},
+           familyi={B\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c8bda7cbdfc29a7ff6030e63303d531}{%
+           family={Chipperfield},
+           familyi={C\bibinitperiod},
+           given={M.\bibnamedelimi P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0cd063ba111534d1186dc4f264f7d2ae}{%
+           family={Cugnet},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c71b60661e89454d5188dbe15d9c7f43}{%
+           family={Dameris},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b991cd6e014717735c603f4695b8250}{%
+           family={Dhomse},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed3a654de33f9fcb1e97c0b898db7b44}{%
+           family={Frith},
+           familyi={F\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a921b0bf25f7fb1f3f166cc569f60da2}{%
+           family={Garny},
+           familyi={G\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1084e45e7e35614f6e46d89bb6dc40a8}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a75d90631b28b1b1c5f4213706768ce}{%
+           family={Hardiman},
+           familyi={H\bibinitperiod},
+           given={S.\bibnamedelimi C.},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=897f7ce9309927d396aad5ed7939382a}{%
+           family={Jöckel},
+           familyi={J\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=88e881582c161fc0a35f882308af2c0a}{%
+           family={Lamarque},
+           familyi={L\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=645749e0a45983685258400145ce1eb1}{%
+           family={Mancini},
+           familyi={M\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9fd34398b020daecead9ff53f307379a}{%
+           family={Marchand},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9fc6cf869c5d25647b863f511884c2ff}{%
+           family={Michou},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=09dd2ddfd359a35038f97b77a5d17a33}{%
+           family={Nakamura},
+           familyi={N\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c74da45408772ca65520214b0592336}{%
+           family={Morgenstern},
+           familyi={M\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3658489e12910a7d8a34cf325352ddb8}{%
+           family={Pitari},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ddb50569427aa90943a8eed9c0e38270}{%
+           family={Plummer},
+           familyi={P\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bec7ebe01ea109242b6ce90ff95ccf7a}{%
+           family={Pyle},
+           familyi={P\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2bb016894f3174c85f8d048c417998e6}{%
+           family={Rozanov},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5af9b266ef8eae79a925800a26085cb}{%
+           family={Scinocca},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33ca251d19ad4b2d04ec4c6044ea604c}{%
+           family={Shibata},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97ff793f7f84f7b53362682430b60e7d}{%
+           family={Smale},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14f791fce3ec132f65a3d50ebe736692}{%
+           family={Teyssèdre},
+           familyi={T\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e7f0ad3db7d3b1fad5b4c6a00fa13c7}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4688fe8b1af03450457579368178ee8d}{%
+           family={Yamashita},
+           familyi={Y\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d565e9aa01a4bb3bc30fb64bcb7fe724}
+      \strng{fullhash}{9a1a3b05b728dc46ea8a4a29f1148604}
+      \strng{bibnamehash}{1b96000d0b7ba682460ccc5ead301270}
+      \strng{authorbibnamehash}{1b96000d0b7ba682460ccc5ead301270}
+      \strng{authornamehash}{d565e9aa01a4bb3bc30fb64bcb7fe724}
+      \strng{authorfullhash}{9a1a3b05b728dc46ea8a4a29f1148604}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The impact of stratospheric ozone on the tropospheric general circulation of the Southern Hemisphere (SH) is examined with a set of chemistry-climate models participating in the Stratospheric Processes and their Role in Climate (SPARC)/Chemistry-Climate Model Validation project phase 2 (CCMVal-2). Model integrations of both the past and future climates reveal the crucial role of stratospheric ozone in driving SH circulation change: stronger ozone depletion in late spring generally leads to greater poleward displacement and intensification of the tropospheric midlatitude jet, and greater expansion of the SH Hadley cell in the summer. These circulation changes are systematic as poleward displacement of the jet is typically accompanied by intensification of the jet and expansion of the Hadley cell. Overall results are compared with coupled models participating in the Intergovernmental Panel on Climate Change Fourth Assessment Report (IPCC AR4), and possible mechanisms are discussed. While the tropospheric circulation response appears quasi-linearly related to stratospheric ozone changes, the quantitative response to a given forcing varies considerably from one model to another. This scatter partly results from differences in model climatology. It is shown that poleward intensification of the westerly jet is generally stronger in models whose climatological jet is biased toward lower latitudes. This result is discussed in the context of quasi-geostrophic zonal mean dynamics.}
+      \field{issn}{2156-2202}
+      \field{journaltitle}{Journal of Geophysical Research: Atmospheres}
+      \field{langid}{english}
+      \field{number}{D3}
+      \field{shorttitle}{Impact of Stratospheric Ozone on {{Southern Hemisphere}} Circulation Change}
+      \field{title}{Impact of Stratospheric Ozone on {{Southern Hemisphere}} Circulation Change: {{A}} Multimodel Assessment}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{115}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1029/2010JD014271
+      \endverb
+      \verb{file}
+      \verb /Users/olemerkes/Zotero/storage/D53VTVD4/2010JD014271.html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1029/2010JD014271
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1029/2010JD014271
+      \endverb
+      \keyw{CCMVal-2,ozone hole,Southern Hemisphere climate change}
+    \endentry
+    \entry{xiaComparisonTrendsHadley2020}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ef657b90b23c6ef1780cc33f5a703a6d}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c0ec05e0a552c0517088bac7aa8c902a}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yongyun},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=96ccc19ef1c1e18275c6487feee646e3}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jiping},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{483e8dbebfdecf3ad8c3be14109e3bcd}
+      \strng{fullhash}{ec70f0ca2f30d9f8b07bece4d41e26b4}
+      \strng{bibnamehash}{ec70f0ca2f30d9f8b07bece4d41e26b4}
+      \strng{authorbibnamehash}{ec70f0ca2f30d9f8b07bece4d41e26b4}
+      \strng{authornamehash}{483e8dbebfdecf3ad8c3be14109e3bcd}
+      \strng{authorfullhash}{ec70f0ca2f30d9f8b07bece4d41e26b4}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{There have been extensive studies on poleward expansion of the Hadley cells and the associated poleward shift of subtropical dry zones in the past decade. In the present study, we study the trends in the width and strength of the Hadley cells, using currently available simulation results of the Coupled Model Intercomparison Project Phase-6 (CMIP6), and compare the trends with that in CMIP5 simulations. Our results show that the total annual-mean trend in the width of the Hadley cells is 0.13° ± 0.02° per decade over 1970–2014 in CMIP6 historical All-forcing simulations. It is almost the same as that in CMIP5. The trend in the strength of the Northern-Hemisphere (NH) cell shows much greater weakening in CMIP6 than in CMIP5, while the strength trend in the Southern-Hemisphere (SH) cell shows slight strengthening. Single-forcing simulations demonstrate that increasing greenhouse gases cause widening and weakening of both the NH and SH Hadley cells, while anthropogenic aerosols and stratospheric ozone changes cause weak strengthening trends in the SH cell. CMIP6 projection simulation results show that both the widening and weakening trends increase with radiative forcing.}
+      \field{day}{15}
+      \field{issn}{2095-9273}
+      \field{journaltitle}{Science Bulletin}
+      \field{month}{10}
+      \field{number}{19}
+      \field{shortjournal}{Science Bulletin}
+      \field{title}{Comparison of Trends in the {{Hadley}} Circulation between {{CMIP6}} and {{CMIP5}}}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{65}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1667\bibrangedash 1674}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.scib.2020.06.011
+      \endverb
+      \verb{file}
+      \verb /Users/olemerkes/Zotero/storage/PXWIKZSS/Xia et al. - 2020 - Comparison of trends in the Hadley circulation between CMIP6 and CMIP5.pdf;/Users/olemerkes/Zotero/storage/EIQZT5F5/S209592732030390X.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S209592732030390X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S209592732030390X
+      \endverb
+      \keyw{Anthropogenic aerosols,Coupled Model Intercomparison Project Phase-6 (CMIP6),Global warming,Hadley circulation,Increasing greenhouse gases,Stratospheric ozone}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
