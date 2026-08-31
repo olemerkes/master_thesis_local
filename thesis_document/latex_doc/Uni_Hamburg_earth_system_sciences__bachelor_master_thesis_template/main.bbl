@@ -1,0 +1,289 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/apasortcite//global/global}
+    \entry{kim_weak_2022}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=9d1f86a2270e033169b419a4bf20ae76}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Doyeon},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3cb63fcee6ba084d4c0e3c618ef591c1}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hanjun},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=907a76bbd0667e908bcbfa698cd5d36e}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Sarah\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c801989a5b1402c4024741ca019bdecb}{%
+           family={Stuecker},
+           familyi={S\bibinitperiod},
+           given={Malte\bibnamedelima F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5282d29d5743563662b14a9cf942b86}{%
+           family={Merlis},
+           familyi={M\bibinitperiod},
+           given={Timothy\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8da7549393f130aa70ab064961998431}
+      \strng{fullhash}{1029903e3956313e3265a1f135a22eee}
+      \strng{bibnamehash}{1029903e3956313e3265a1f135a22eee}
+      \strng{authorbibnamehash}{1029903e3956313e3265a1f135a22eee}
+      \strng{authornamehash}{8da7549393f130aa70ab064961998431}
+      \strng{authorfullhash}{1029903e3956313e3265a1f135a22eee}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract The Hadley cell response to globally increasing {CO} 2 concentrations is spatially complex, with an intensified rising branch and weakened descending branch. To better understand these changes, we examine the sensitivity of the Hadley cell to idealized radiative forcing in different latitude bands. The Hadley cell response is, to first order, governed by the latitudinal structure of the forcing. The strengthening of the upward branch is attributed to tropical forcing, whereas the weakening of the descending branch is attributed to extratropical forcing. These direct radiatively-forced Hadley cell responses are amplified by changes in atmospheric eddy heat transport while being partially offset by changes in gross moist stability and ocean heat uptake. The radiative feedbacks further modulate the Hadley cell response by altering the meridional atmospheric energy gradient. The Hadley cell projections under global warming are thus a result of opposing – and thus compensating – effects from tropical and extratropical radiative forcings.}
+      \field{day}{1}
+      \field{issn}{2397-3722}
+      \field{journaltitle}{npj Climate and Atmospheric Science}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{1}
+      \field{shortjournal}{npj Clim Atmos Sci}
+      \field{title}{Weak Hadley cell intensity changes due to compensating effects of tropical and extratropical radiative forcing}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{5}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{61}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41612-022-00287-x
+      \endverb
+      \verb{file}
+      \verb PDF:/Users/olemerkes/Zotero/storage/6RE6QJQR/Kim et al. - 2022 - Weak Hadley cell intensity changes due to compensating effects of tropical and extratropical radiati.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41612-022-00287-x
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41612-022-00287-x
+      \endverb
+    \endentry
+    \entry{merlis_direct_2015}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e5282d29d5743563662b14a9cf942b86}{%
+           family={Merlis},
+           familyi={M\bibinitperiod},
+           given={Timothy\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Proceedings of the National Academy of Sciences}%
+      }
+      \strng{namehash}{e5282d29d5743563662b14a9cf942b86}
+      \strng{fullhash}{e5282d29d5743563662b14a9cf942b86}
+      \strng{bibnamehash}{e5282d29d5743563662b14a9cf942b86}
+      \strng{authorbibnamehash}{e5282d29d5743563662b14a9cf942b86}
+      \strng{authornamehash}{e5282d29d5743563662b14a9cf942b86}
+      \strng{authorfullhash}{e5282d29d5743563662b14a9cf942b86}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Climate models robustly simulate weakened mean circulations of the tropical atmosphere in direct response to increased carbon dioxide ({CO}2). The direct response to {CO}2, defined by the response to radiative forcing in the absence of changes in sea surface temperature, affects tropical precipitation and tropical cyclone genesis, and these changes have been tied to the weakening of the mean tropical circulation. The mechanism underlying this direct {CO}2-forced circulation change has not been elucidated. Here, I demonstrate that this circulation weakening results from spatial structure in {CO}2’s radiative forcing. In regions of ascending circulation, such as the intertropical convergence zone, the {CO}2 radiative forcing is reduced, or “masked,” by deep-convective clouds and high humidity; in subsiding regions, such as the subtropics, the {CO}2 radiative forcing is larger because the atmosphere is drier and deep-convective clouds are infrequent. The spatial structure of the radiative forcing reduces the need for the atmosphere to transport energy. This, in turn, weakens the mass overturning of the tropical circulation. The previously unidentified mechanism is demonstrated in a hierarchy of atmospheric general circulation model simulations with altered radiative transfer to suppress the cloud masking of the radiative forcing. The mechanism depends on the climatological distribution of clouds and humidity, rather than uncertain changes in these quantities. Masked radiative forcing thereby offers an explanation for the robustness of the direct circulation weakening under increased {CO}2.}
+      \field{day}{27}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{month}{10}
+      \field{number}{43}
+      \field{title}{Direct weakening of tropical circulations from masked {CO}2 radiative forcing}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{112}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{13167\bibrangedash 13171}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1073/pnas.1508268112
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/olemerkes/Zotero/storage/PDY232ZR/Merlis - 2015 - Direct weakening of tropical circulations from masked CO2 radiative forcing.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.pnas.org/doi/full/10.1073/pnas.1508268112
+      \endverb
+      \verb{url}
+      \verb https://www.pnas.org/doi/full/10.1073/pnas.1508268112
+      \endverb
+      \keyw{{CO}2 forcing,radiation}
+    \endentry
+  \enddatalist
+  \datalist[entry]{nyt/global//global/global}
+    \entry{kim_weak_2022}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=9d1f86a2270e033169b419a4bf20ae76}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Doyeon},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3cb63fcee6ba084d4c0e3c618ef591c1}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hanjun},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=907a76bbd0667e908bcbfa698cd5d36e}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Sarah\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c801989a5b1402c4024741ca019bdecb}{%
+           family={Stuecker},
+           familyi={S\bibinitperiod},
+           given={Malte\bibnamedelima F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e5282d29d5743563662b14a9cf942b86}{%
+           family={Merlis},
+           familyi={M\bibinitperiod},
+           given={Timothy\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8da7549393f130aa70ab064961998431}
+      \strng{fullhash}{1029903e3956313e3265a1f135a22eee}
+      \strng{bibnamehash}{1029903e3956313e3265a1f135a22eee}
+      \strng{authorbibnamehash}{1029903e3956313e3265a1f135a22eee}
+      \strng{authornamehash}{8da7549393f130aa70ab064961998431}
+      \strng{authorfullhash}{1029903e3956313e3265a1f135a22eee}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract The Hadley cell response to globally increasing {CO} 2 concentrations is spatially complex, with an intensified rising branch and weakened descending branch. To better understand these changes, we examine the sensitivity of the Hadley cell to idealized radiative forcing in different latitude bands. The Hadley cell response is, to first order, governed by the latitudinal structure of the forcing. The strengthening of the upward branch is attributed to tropical forcing, whereas the weakening of the descending branch is attributed to extratropical forcing. These direct radiatively-forced Hadley cell responses are amplified by changes in atmospheric eddy heat transport while being partially offset by changes in gross moist stability and ocean heat uptake. The radiative feedbacks further modulate the Hadley cell response by altering the meridional atmospheric energy gradient. The Hadley cell projections under global warming are thus a result of opposing – and thus compensating – effects from tropical and extratropical radiative forcings.}
+      \field{day}{1}
+      \field{issn}{2397-3722}
+      \field{journaltitle}{npj Climate and Atmospheric Science}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{1}
+      \field{shortjournal}{npj Clim Atmos Sci}
+      \field{title}{Weak Hadley cell intensity changes due to compensating effects of tropical and extratropical radiative forcing}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{5}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{61}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41612-022-00287-x
+      \endverb
+      \verb{file}
+      \verb PDF:/Users/olemerkes/Zotero/storage/6RE6QJQR/Kim et al. - 2022 - Weak Hadley cell intensity changes due to compensating effects of tropical and extratropical radiati.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41612-022-00287-x
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41612-022-00287-x
+      \endverb
+    \endentry
+    \entry{merlis_direct_2015}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e5282d29d5743563662b14a9cf942b86}{%
+           family={Merlis},
+           familyi={M\bibinitperiod},
+           given={Timothy\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Proceedings of the National Academy of Sciences}%
+      }
+      \strng{namehash}{e5282d29d5743563662b14a9cf942b86}
+      \strng{fullhash}{e5282d29d5743563662b14a9cf942b86}
+      \strng{bibnamehash}{e5282d29d5743563662b14a9cf942b86}
+      \strng{authorbibnamehash}{e5282d29d5743563662b14a9cf942b86}
+      \strng{authornamehash}{e5282d29d5743563662b14a9cf942b86}
+      \strng{authorfullhash}{e5282d29d5743563662b14a9cf942b86}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Climate models robustly simulate weakened mean circulations of the tropical atmosphere in direct response to increased carbon dioxide ({CO}2). The direct response to {CO}2, defined by the response to radiative forcing in the absence of changes in sea surface temperature, affects tropical precipitation and tropical cyclone genesis, and these changes have been tied to the weakening of the mean tropical circulation. The mechanism underlying this direct {CO}2-forced circulation change has not been elucidated. Here, I demonstrate that this circulation weakening results from spatial structure in {CO}2’s radiative forcing. In regions of ascending circulation, such as the intertropical convergence zone, the {CO}2 radiative forcing is reduced, or “masked,” by deep-convective clouds and high humidity; in subsiding regions, such as the subtropics, the {CO}2 radiative forcing is larger because the atmosphere is drier and deep-convective clouds are infrequent. The spatial structure of the radiative forcing reduces the need for the atmosphere to transport energy. This, in turn, weakens the mass overturning of the tropical circulation. The previously unidentified mechanism is demonstrated in a hierarchy of atmospheric general circulation model simulations with altered radiative transfer to suppress the cloud masking of the radiative forcing. The mechanism depends on the climatological distribution of clouds and humidity, rather than uncertain changes in these quantities. Masked radiative forcing thereby offers an explanation for the robustness of the direct circulation weakening under increased {CO}2.}
+      \field{day}{27}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{month}{10}
+      \field{number}{43}
+      \field{title}{Direct weakening of tropical circulations from masked {CO}2 radiative forcing}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{112}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{13167\bibrangedash 13171}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1073/pnas.1508268112
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/olemerkes/Zotero/storage/PDY232ZR/Merlis - 2015 - Direct weakening of tropical circulations from masked CO2 radiative forcing.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.pnas.org/doi/full/10.1073/pnas.1508268112
+      \endverb
+      \verb{url}
+      \verb https://www.pnas.org/doi/full/10.1073/pnas.1508268112
+      \endverb
+      \keyw{{CO}2 forcing,radiation}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

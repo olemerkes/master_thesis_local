@@ -1,0 +1,109 @@
+\begin{titlepage}
+
+	% Fehler "destination with the same identifier" unterdrücken...
+  \setcounter{page}{-1}
+
+	% Titelseite
+	\begin{figure}[h]
+		\begin{minipage}[b]{62mm}
+			\includegraphics[width=80mm]{layout/UHH/up-uhh-logo-u-2010-u-farbe-u-cmyk-modus.pdf}
+		\end{minipage}
+		\hspace{4cm}
+	\end{figure}
+
+	\vfill
+	
+	\begin{center}
+		% bachelor thesis
+        % master thesis
+		\noindent { \huge
+			Master Thesis \\
+		}
+		\vspace{14mm}
+		% you can manually change the title here in case your changed the title of your topic 
+        {\makeatletter
+		\noindent \textbf{\huge\@title}
+        \makeatother}
+		\vspace{60mm}	
+	\end{center}
+	
+	\vfill
+	
+	\noindent \textbf{Ole Merkes} \\
+	\noindent \rule{\textwidth}{0.4mm} 
+ 
+	\noindent{\textrm{Atmospheric Science (M.Sc.)}} \\
+    % \noindent{\textrm{Science Track: xxxxxx}} \\
+    \noindent{\textrm{Matr.-Nr.: 7830665}} \\
+    
+
+\noindent\begin{tabular}{@{}ll}
+First Supervisor: & Prof. Dr. Sarah Kang\\
+Second Supervisor: & Dr. Moritz Günther \\
+\end{tabular}
+
+
+
+\newpage
+%% second page of the thesis
+
+\setlength{\headheight}{14pt}
+ \begin{center}
+
+%% Print the title
+{\makeatletter
+\largetitlestyle\fontsize{45}{45}\selectfont\@title
+\makeatother}
+
+%% Print the subtitle
+{\makeatletter
+\ifdefvoid{\@subtitle}{}{\bigskip\fontsize{20}{20}\selectfont\@subtitle}
+\makeatother}
+
+\bigskip
+\bigskip
+
+by
+
+\bigskip
+\bigskip
+
+%% Print the name of the author
+{\makeatletter
+\largetitlestyle\fontsize{25}{25}\selectfont\@author
+\makeatother}
+
+\bigskip
+\bigskip
+
+%% Print table with names and student numbers
+\setlength\extrarowheight{2pt}
+\begin{tabular}{lc}
+    Student Name & Student Number \\\midrule
+    Ole Merkes &  7830665\\ 
+\end{tabular}
+
+\vfill
+
+%% Print some more information at the bottom
+\begin{tabular}{ll}
+    Supervisors: & Prof. Dr. Sarah Kang \\
+                 & Dr. Moritz Günther\\
+    %Science Track: & xxxxxxx
+\end{tabular}
+
+\bigskip
+\bigskip
+
+
+
+\end{center}
+
+%% Insert the University of Hamburg logo the bottom of the page
+\begin{tikzpicture}[remember picture, overlay]
+    \node[above=5mm] at (current page.south) {%
+        \includegraphics[width=0.4\linewidth]{layout/UHH/up-uhh-logo-u-2010-u-farbe-u-cmyk-modus.pdf}
+    };
+\end{tikzpicture}
+	
+\end{titlepage}
