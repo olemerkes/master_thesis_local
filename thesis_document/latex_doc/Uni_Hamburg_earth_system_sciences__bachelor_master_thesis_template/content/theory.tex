@@ -19,18 +19,74 @@ Which drivers have been identified for the weakening of the HC
 Why is there a circulation in the first place
 
 \subsection{Axisymmetric theory}
-angular momentum from the equator is dissipated/transported to higher latitudes 
+The questions why there is a meridional circulation in the first place is answered by the axisymmetric theory \parencite{heldNonlinearAxiallySymmetric1980}. This question is raised because one could imagine a world where Earth is just in radiative equilibrium everywhere. This means that every point on Earth emits just as much radiation as it receives. Thus, there would not be any meridional temperature/energy transport necessary.
+Given a temperature profile of the earth
+\begin{equation}
+    \frac{\Theta_E}{\Theta_0}=1-\frac{1}{3}\Delta_h(3\sin^2\theta-1)+\Delta_v\left(\frac{z}{H}-\frac{1}{2}\right)
+\end{equation}
+obtained from radiative equilibrium conditions (see Figure \ref{fig:held_hou_T}), one can obtain a zonal wind via the thermal wind relationship. This not only produces zonal winds which are not observed in the atmosphere but also violates Hide's theorem. Instead we now assume an angular momentum conserving circulation
+\begin{equation}
+    u_M=\Omega a\frac{\sin^2\theta}{\cos\theta}
+\end{equation}
+and infer via the thermal wind relationship a temperature profile. Given that the energy is conserved in the upper branch one obtain a finite width of the HC and a measure for its strength.
+\begin{figure}[H]
+    %% trim=left bottom right top,
+    \centering
+   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{literature/temperature_vallis.png}
+    \caption{ \parencite{vallisAtmosphericOceanicFluid2017} }
+    \label{fig:held_hou_T}
+\end{figure}
+
+\begin{align}
+    \psi_\mathrm{max} &\sim \frac{1}{\tau}\frac{g^{3/2}(H\Delta_h)^{5/2}}{\Delta_v a^2\Omega^3}\\
+    \phi_H&\sim\left(\frac{gH\Delta_h}{\Omega^2a^2}\right)^{1/2}
+\end{align}
+
+\begin{align}
+    \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}&=\frac{5}{2}\frac{\delta H}{H}+\frac{5}{2}\frac{\delta\Delta_h}{\Delta_h}-\frac{\delta\Delta_v}{\Delta_v}\\
+    \frac{\delta\phi_\mathrm{H}}{\phi_\mathrm{H}}&=\frac{1}{2}\frac{\delta H}{H}+\frac{1}{2}\frac{\delta\Delta_h}{\Delta_h}
+\end{align}
 
 \subsection{Eddy driven mean circulation}
 Eddies can drive a circulation (Ferrel cell) or as in the case of the HC significantly enhance it
+\begin{equation}
+    f\bar{v}(1-Ro)=\frac{1}{a\cos^2\varphi}\frac{\partial (\cos^2\varphi\ \overline{u'v'})}{\partial\varphi} + \frac{\partial\overline{u'\omega'}}{\partial p}
+\end{equation}
+\begin{align}
+    \psi_\mathrm{max}&=\frac{2\pi a\cos\varphi}{g}\int^0_{p_\mathrm{max}}\bar{v}\mathrm{d}p'\\
+    &=\frac{2\pi a\cos\varphi}{fg}\int^0_{p_\mathrm{max}}\left(\frac{1}{a\cos^2\varphi}\frac{\partial (\cos^2\varphi\ \overline{u'v'})}{\partial\varphi} + \frac{\partial\overline{u'\omega'}}{\partial p}\right)\mathrm{d}p'
+\end{align}
 
+
+\begin{figure}[H]
+    %% trim=left bottom right top,
+    \centering
+   \includegraphics[width=0.5\textwidth,keepaspectratio,trim=0 0 0 0, clip]{literature/eddy_strength.png}
+    \caption{\parencite{walkerEddyInfluencesHadley2006}  }
+    \label{fig:eddy_driven_HC}
+\end{figure}
+\subsection{konrad}
 
 \section{The energy budget of the atmosphere}
-diagnostic perspective: energy imbalance requires transport
-ocean, mmc. and eddies can transport energy
+The energy budget analysis provides diagnostic perspective on the HC. It cannot explain why the Earth is not in radiative (convective) equilibrium. Using TOA radiative fluxes, one can infer that the short-wave radiative flux at the equator is much larger than the emitted outgoing long wave radiation. The opposite is true for the poles. This implies an energy transport by atmosphere and ocean. The atmospheric component can be further split up into a mean and an eddy component.
+\begin{figure}[H]
+    %% trim=left bottom right top,
+    \centering
+   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{energetic_framework/transport_decomposition_HC_eddies.png}%TO CHANGE
+    \caption{  }
+    \label{fig:transport}
+\end{figure}
 \section{Model setup}
 
 \subsection{ECHAM5}
+
+\begin{figure}[H]
+    %% trim=left bottom right top,
+    \centering
+   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{initial_plots/co2_distribution.png}
+    \caption{  }
+    \label{fig:co2_conc_setup}
+\end{figure}
 \subsection{konrad}
 
 
