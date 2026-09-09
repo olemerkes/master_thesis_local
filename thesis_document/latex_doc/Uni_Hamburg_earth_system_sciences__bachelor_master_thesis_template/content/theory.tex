@@ -9,26 +9,35 @@
 
 tropospheric warming
 
-lapse rate feedback
+feedback in general, influence on the HC
 
 stratospheric cooling
 
 \section{Hadley circulation strength under greenhouse gas forcing}
 Which drivers have been identified for the weakening of the HC
 \section{The angular momentum budget}
-Why is there a circulation in the first place
+Considering the angular momentum budget of the Earth we are trying to answer the question why there is a meridional circulation in the first place. An answer is provided by the axisymmetric theory of \citeauthor{heldNonlinearAxiallySymmetric1980}. They also provide a scaling for the HC strength and extent linking it directly to thermodynamical drivers. Since this theory ignores eddies, we are further investigating their effect on the HC in the next subsection. Since there is no unifying theory incorporating angular momentum conservation and angular momentum transport by baroclinic eddies, we introduce the energetic budget framework of the HC to describe its changes. This is a more diagnostic theory which does not really explain the existence of the HC from first-hand principles but rather takes its energy transport as granted using observational data of the TOA radiative imbalance. 
 
 \subsection{Axisymmetric theory}
+The axisymmetric theory considers a flow in the $\theta-z$-plane with no meridional circulation ($v=w=0$). This prevents the existence of zonal eddies. Using steady state assumption and the zonally-averaged zonal momentum equation. 
 The questions why there is a meridional circulation in the first place is answered by the axisymmetric theory \parencite{heldNonlinearAxiallySymmetric1980}. This question is raised because one could imagine a world where Earth is just in radiative equilibrium everywhere. This means that every point on Earth emits just as much radiation as it receives. Thus, there would not be any meridional temperature/energy transport necessary.
 Given a temperature profile of the earth
 \begin{equation}
     \frac{\Theta_E}{\Theta_0}=1-\frac{1}{3}\Delta_h(3\sin^2\theta-1)+\Delta_v\left(\frac{z}{H}-\frac{1}{2}\right)
 \end{equation}
-obtained from radiative equilibrium conditions (see Figure \ref{fig:held_hou_T}), one can obtain a zonal wind via the thermal wind relationship. This not only produces zonal winds which are not observed in the atmosphere but also violates Hide's theorem. Instead we now assume an angular momentum conserving circulation
+obtained from radiative equilibrium conditions (see Figure \ref{fig:held_hou_T}), one can obtain a zonal wind $u_E$ via the thermal wind relationship. Here, $\Delta_h$ gives the fractional pole to equator temperature difference, $\Delta_v$ the fractional temperature difference between the surface and the top of the fluid, $H$ the depth of the fluid, and $\theta_0$ the global mean value of $\theta_E$. This not only produces westerly winds at the equator, which are not observed in the atmosphere, but also violate Hide's theorem \parencite{hideDynamicsAtmospheresMajor1969}. Hide's theorem states that a maximum of angular momentum within the flow domain cannot be sustained due to dissipation within the flow. A maximum can only exist at the boundaries. This tells us that this RE temperature profile is not able to persist on Earth and that we require some poleward transport of energy. \\
+Instead, we now assume an angular momentum conserving circulation
 \begin{equation}
     u_M=\Omega a\frac{\sin^2\theta}{\cos\theta}
 \end{equation}
-and infer via the thermal wind relationship a temperature profile. Given that the energy is conserved in the upper branch one obtain a finite width of the HC and a measure for its strength.
+and infer via the thermal wind relationship a temperature profile $\theta_M$ (see Figure \ref{fig:held_hou_T}). Given that the energy is conserved in the upper branch and that the solution is continuous at the edge of the HC, one obtains a finite width of the HC
+\begin{align}
+    \phi_H&\sim\left(\frac{gH\Delta_h}{\Omega^2a^2}\right)^{1/2}
+\end{align}
+and a scale for its strength
+\begin{align}
+    \psi_\mathrm{max} &\sim \frac{1}{\tau}\frac{g^{3/2}(H\Delta_h)^{5/2}}{\Delta_v a^2\Omega^3}.
+\end{align}
 \begin{figure}[H]
     %% trim=left bottom right top,
     \centering
@@ -37,18 +46,13 @@ and infer via the thermal wind relationship a temperature profile. Given that th
     \label{fig:held_hou_T}
 \end{figure}
 
-\begin{align}
-    \psi_\mathrm{max} &\sim \frac{1}{\tau}\frac{g^{3/2}(H\Delta_h)^{5/2}}{\Delta_v a^2\Omega^3}\\
-    \phi_H&\sim\left(\frac{gH\Delta_h}{\Omega^2a^2}\right)^{1/2}
-\end{align}
 
-\begin{align}
-    \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}&=\frac{5}{2}\frac{\delta H}{H}+\frac{5}{2}\frac{\delta\Delta_h}{\Delta_h}-\frac{\delta\Delta_v}{\Delta_v}\\
-    \frac{\delta\phi_\mathrm{H}}{\phi_\mathrm{H}}&=\frac{1}{2}\frac{\delta H}{H}+\frac{1}{2}\frac{\delta\Delta_h}{\Delta_h}
-\end{align}
 
 \subsection{Eddy driven mean circulation}
+\textbf{Early studies about eddies and the mean circulation}
 Eddies can drive a circulation (Ferrel cell) or as in the case of the HC significantly enhance it
+\textbf{Held, baroclinicity, and the HC edge.}
+\textbf{Walker.Schneider,Singh, HC strength and eddies}
 \begin{equation}
     f\bar{v}(1-Ro)=\frac{1}{a\cos^2\varphi}\frac{\partial (\cos^2\varphi\ \overline{u'v'})}{\partial\varphi} + \frac{\partial\overline{u'\omega'}}{\partial p}
 \end{equation}
@@ -65,10 +69,29 @@ Eddies can drive a circulation (Ferrel cell) or as in the case of the HC signifi
     \caption{\parencite{walkerEddyInfluencesHadley2006}  }
     \label{fig:eddy_driven_HC}
 \end{figure}
-\subsection{konrad}
+
 
 \section{The energy budget of the atmosphere}
 The energy budget analysis provides diagnostic perspective on the HC. It cannot explain why the Earth is not in radiative (convective) equilibrium. Using TOA radiative fluxes, one can infer that the short-wave radiative flux at the equator is much larger than the emitted outgoing long wave radiation. The opposite is true for the poles. This implies an energy transport by atmosphere and ocean. The atmospheric component can be further split up into a mean and an eddy component.
+\begin{align*}
+    R_\mathrm{TOA}&=\frac{\partial F}{\partial y}\\
+    F_{ao}&=\int^\phi_{-\pi/2}\int^{2\pi}_0R_\mathrm{TOA}a^2\cos\phi\mathrm{d}\lambda\mathrm{d}\phi
+\end{align*}
+\begin{align*}
+    F_\mathrm{HC}&=\psi_\mathrm{max}H \\
+    H&\sim\frac{1}{\psi_\mathrm{max}}\int^{p_s}_0[\Bar{v}][\Bar{h}]\mathrm{d}p\\
+    \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}&=\frac{\delta F_\mathrm{HC}}{F_\mathrm{HC}}-\frac{\delta H}{H}
+\end{align*}
+
+\begin{align*}
+    F_\mathrm{HC}&=F_\mathrm{a}-F_\mathrm{e}\\
+    \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}&=\frac{\delta F_\mathrm{a}}{F_\mathrm{HC}}-\frac{\delta F_\mathrm{e}}{F_\mathrm{HC}}-\frac{\delta H}{H}
+\end{align*}
+
+\begin{align*}
+    \Delta R_\mathrm{TOA}&=\sum_i\lambda_i\Delta T_s+R_f\\
+    \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}&=\frac{\delta F_\mathrm{forc}}{F_\mathrm{HC}}+\frac{\delta F_\mathrm{fdb}}{F_\mathrm{HC}}-\frac{\delta F_\mathrm{e}}{F_\mathrm{HC}}-\frac{\delta H}{H}
+\end{align*}
 \begin{figure}[H]
     %% trim=left bottom right top,
     \centering
@@ -89,6 +112,13 @@ The energy budget analysis provides diagnostic perspective on the HC. It cannot 
 \end{figure}
 \subsection{konrad}
 
+\begin{figure}[H]
+    %% trim=left bottom right top,
+    \centering
+   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{rce_simulations/konrad_slab_Tcold_CO2.png}%TO CHANGE
+    \caption{  }
+    \label{fig:konrad}
+\end{figure}
 
 
 
