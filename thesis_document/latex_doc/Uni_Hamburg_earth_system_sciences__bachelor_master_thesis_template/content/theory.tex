@@ -8,44 +8,86 @@
 \section{The atmosphere under greenhouse gas forcing}
 
 tropospheric warming
-
-feedback in general, influence on the HC
+Why is the troposphere warming under greenhouse gas forcing?
+What is the warming structure? How can we explain it?
+Enhanced upper tropospheric warming in the tropics
+Arctic amplification
 
 stratospheric cooling
+Why is the stratosphere cooling under greenhouse gas forcing?
 
 \section{Hadley circulation strength under greenhouse gas forcing}
+The HC can be characterized by its strength and extent. The HC can be described by the mass stream function (MSF)
+\begin{equation}\label{eq:msf}
+    \psi_\mathrm{max}=\frac{2\pi a\cos\varphi}{g}\int^0_{p_\mathrm{s}}\bar{v}\mathrm{d}p'.
+\end{equation}
+The strength is given by the maximum of the $\psi_\mathrm{max}$ and the extent by the latitude at which $\psi_\mathrm{max}$ becomes zero.
+Direct effect of CO2 forcing on the HC
+\parencite{bonyRobustDirectEffect2013}
+Quantifying the change of the HC extent and strength under climate change
+\parencite{luExpansionHadleyCell2007}
+\parencite{vallisResponseLargescaleStructure2015}
+What is the role of different feedback mechanisms in shaping the HC response to climate change 
+\parencite{feldlCharacterizingHadleyCirculation2016}
+Evaluation of different drivers of HC changes
+\parencite{chemkeElucidatingMechanismsResponsible2021}
+
+
 Which drivers have been identified for the weakening of the HC
 \section{The angular momentum budget}
-Considering the angular momentum budget of the Earth we are trying to answer the question why there is a meridional circulation in the first place. An answer is provided by the axisymmetric theory of \citeauthor{heldNonlinearAxiallySymmetric1980}. They also provide a scaling for the HC strength and extent linking it directly to thermodynamical drivers. Since this theory ignores eddies, we are further investigating their effect on the HC in the next subsection. Since there is no unifying theory incorporating angular momentum conservation and angular momentum transport by baroclinic eddies, we introduce the energetic budget framework of the HC to describe its changes. This is a more diagnostic theory which does not really explain the existence of the HC from first-hand principles but rather takes its energy transport as granted using observational data of the TOA radiative imbalance. 
+Considering the angular momentum budget of the Earth we are trying to answer the question why there is a meridional circulation in the atmosphere in the first place. An answer is provided by the axisymmetric theory of \textcite{heldNonlinearAxiallySymmetric1980}. It also provides a scaling for the HC strength and extent linking it directly to thermodynamical parameters. Since this theory ignores eddies, we are further investigating their effect on the HC in the next subsection. Since there is no unifying theory incorporating angular momentum conservation and angular momentum transport by baroclinic eddies, we introduce the energetic budget framework of the HC to explain why it changes. This is a more diagnostic theory which does not explain the existence of the HC from first-hand principles but rather takes the necessity transport energy poleward as granted. It can be inferred from observational data of the TOA radiative imbalance showing an excess of incoming radiative fluxes relative to the outgoing radiation at the equator and vice versa at higher latitudes. This transport by the the atmosphere can be split up into a mean component, i.e., the HC, and and eddy component.
 
-\subsection{Axisymmetric theory}
-The axisymmetric theory considers a flow in the $\theta-z$-plane with no meridional circulation ($v=w=0$). This prevents the existence of zonal eddies. Using steady state assumption and the zonally-averaged zonal momentum equation. 
-The questions why there is a meridional circulation in the first place is answered by the axisymmetric theory \parencite{heldNonlinearAxiallySymmetric1980}. This question is raised because one could imagine a world where Earth is just in radiative equilibrium everywhere. This means that every point on Earth emits just as much radiation as it receives. Thus, there would not be any meridional temperature/energy transport necessary.
-Given a temperature profile of the earth
+\subsection{Axisymmetric theory}\label{sec:axisymmetric}
+The axisymmetric theory considers a flow in the $\varphi-z$-plane with no meridional circulation ($v=w=0$). This prevents the existence of large scale barotropic or baroclinic eddies. The questions why there is a meridional circulation in the first place is answered by the axisymmetric theory \parencite{heldNonlinearAxiallySymmetric1980}. This question is raised because one could imagine a world where Earth is just in radiative equilibrium everywhere. This means that every point on Earth emits just as much radiation as it receives from the sun. Thus, there would not be any meridional temperature or energy transport necessary.
+Given a temperature profile of the Earth
 \begin{equation}
-    \frac{\Theta_E}{\Theta_0}=1-\frac{1}{3}\Delta_h(3\sin^2\theta-1)+\Delta_v\left(\frac{z}{H}-\frac{1}{2}\right)
+    \frac{\theta_E}{\theta_0}=1-\frac{1}{3}\Delta_h(3\sin^2\varphi-1)+\Delta_v\left(\frac{z}{H}-\frac{1}{2}\right)
 \end{equation}
-obtained from radiative equilibrium conditions (see Figure \ref{fig:held_hou_T}), one can obtain a zonal wind $u_E$ via the thermal wind relationship. Here, $\Delta_h$ gives the fractional pole to equator temperature difference, $\Delta_v$ the fractional temperature difference between the surface and the top of the fluid, $H$ the depth of the fluid, and $\theta_0$ the global mean value of $\theta_E$. This not only produces westerly winds at the equator, which are not observed in the atmosphere, but also violate Hide's theorem \parencite{hideDynamicsAtmospheresMajor1969}. Hide's theorem states that a maximum of angular momentum within the flow domain cannot be sustained due to dissipation within the flow. A maximum can only exist at the boundaries. This tells us that this RE temperature profile is not able to persist on Earth and that we require some poleward transport of energy. \\
-Instead, we now assume an angular momentum conserving circulation
+obtained from radiative equilibrium conditions (see Figure \ref{fig:held_hou_T}), one can obtain a zonal wind $u_E$ via the thermal wind relationship. Here, $\Delta_h$ gives the fractional pole to equator temperature difference, $\Delta_v$ the fractional temperature difference between the surface and the top of the fluid, $H$ the depth of the fluid, and $\theta_0$ the global mean value of $\theta_E$. This solution not only produces westerly winds at the equator, which are not observed in the atmosphere, but also violate Hide's theorem \parencite{hideDynamicsAtmospheresMajor1969}. Hide's theorem states that a maximum of angular momentum within the flow domain cannot be sustained due to dissipation within the flow. A maximum of angular momentum can only exist at the boundaries. This tells us that this RE temperature profile is not able to persist on Earth and that we require some poleward transport of energy.
+
+The conservation of angular momentum
 \begin{equation}
-    u_M=\Omega a\frac{\sin^2\theta}{\cos\theta}
+    M=(u+\Omega a\cos\varphi)a\cos\varphi
 \end{equation}
-and infer via the thermal wind relationship a temperature profile $\theta_M$ (see Figure \ref{fig:held_hou_T}). Given that the energy is conserved in the upper branch and that the solution is continuous at the edge of the HC, one obtains a finite width of the HC
+poses another condition for a HC solution with the zonal wind $u$, $a$ being the radius and $\Omega$ the rotational frequency of the Earth. The angular momentum conserving wind can be derived to
+\begin{equation}
+    u_M=\Omega a\frac{\sin^2\varphi}{\cos\varphi}.
+\end{equation}
+This allows us to infer, via the thermal wind relationship, a temperature profile $\theta_M$ (see Figure \ref{fig:held_hou_T}), which is now slaved to angular momentum conservation. Assuming that the energy is conserved in the upper branch and that the solution is continuous at the edge of the HC, one obtains a finite width of the HC
 \begin{align}
     \phi_H&\sim\left(\frac{gH\Delta_h}{\Omega^2a^2}\right)^{1/2}
 \end{align}
 and a scale for its strength
 \begin{align}
-    \psi_\mathrm{max} &\sim \frac{1}{\tau}\frac{g^{3/2}(H\Delta_h)^{5/2}}{\Delta_v a^2\Omega^3}.
+    \psi_\mathrm{max} &\sim \frac{1}{\tau}\frac{g^{3/2}(H\Delta_h)^{5/2}}{\Delta_v a^2\Omega^3}
 \end{align}
+with $g$ being the gravitational acceleration of Earth and $\tau$ the time scale at which $\theta$ relaxes to $\theta_E$.
 \begin{figure}[H]
-    %% trim=left bottom right top,
-    \centering
+     \centering
+     \begin{subfigure}[b]{0.45\textwidth}
+         \centering
    \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{literature/temperature_vallis.png}
-    \caption{ \parencite{vallisAtmosphericOceanicFluid2017} }
+    \caption{ The temperature profiles}
     \label{fig:held_hou_T}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.45\textwidth}
+         \centering
+   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{literature/zon_vel.png}
+    \caption{  }
+    \label{fig:held_hou_u}
+     \end{subfigure}
+        \caption{\parencite{vallisAtmosphericOceanicFluid2017}}
+        \label{fig:three graphs}
 \end{figure}
-
+% \begin{figure}[H]
+%     %% trim=left bottom right top,
+%     \centering
+%    \includegraphics[width=0.5\textwidth,keepaspectratio,trim=0 0 0 0, clip]{literature/temperature_vallis.png}
+%     \caption{ \parencite{vallisAtmosphericOceanicFluid2017} }
+%     \label{fig:held_hou_T}
+% \end{figure}
+The contribution of this theory is to explain why there is a HC with finite width in the first place. Subsequent studies have advanced this theory also to temperature profiles which have their maximum off the equator to account for seasonal variations \parencite{lindzenHadleyCirculationsZonally1988}. HC weaker in equinox conditions than observed. Suggestion that the HC in the annual mean is not close to equinox conditions but rather that the HC flips between solstitial states. More recent studies have explained the discrepancy using eddy permitting models \parencite{walkerResponseIdealizedHadley2005}. The strength of an annually averaged Hadley circulation is comparable to the Hadley circulation driven by an annually averaged heating. This highlights the importance of eddies to drive the HC strength, which will be covered in the next section.  
 
 
 \subsection{Eddy driven mean circulation}
@@ -53,13 +95,29 @@ and a scale for its strength
 Eddies can drive a circulation (Ferrel cell) or as in the case of the HC significantly enhance it
 \textbf{Held, baroclinicity, and the HC edge.}
 \textbf{Walker.Schneider,Singh, HC strength and eddies}
+equinox+summer HC in eddy driven regime
+winter HC in angular momentum conserving regime
+
+Applying a Reynolds decomposition on the zonal and meridional wind of the zonal momentum equation and ignoring viscous forces as well as vertical advection we obtain 
 \begin{equation}
-    f\bar{v}(1-Ro)=\frac{1}{a\cos^2\varphi}\frac{\partial (\cos^2\varphi\ \overline{u'v'})}{\partial\varphi} + \frac{\partial\overline{u'\omega'}}{\partial p}
+    \label{eq:eddy_divergence}
+    f\bar{v}(1-Ro)=\frac{1}{a\cos^2\varphi}\frac{\partial (\cos^2\varphi\ \overline{u'v'})}{\partial\varphi} + \frac{\partial\overline{u'\omega'}}{\partial p}. 
 \end{equation}
+The Rossby number is 
 \begin{align}
-    \psi_\mathrm{max}&=\frac{2\pi a\cos\varphi}{g}\int^0_{p_\mathrm{max}}\bar{v}\mathrm{d}p'\\
-    &=\frac{2\pi a\cos\varphi}{fg}\int^0_{p_\mathrm{max}}\left(\frac{1}{a\cos^2\varphi}\frac{\partial (\cos^2\varphi\ \overline{u'v'})}{\partial\varphi} + \frac{\partial\overline{u'\omega'}}{\partial p}\right)\mathrm{d}p'
+    Ro=\frac{\bar{\xi}}{f}
 \end{align}
+where $\xi=\hat{k}\cdot\nabla\times\vec{u}$ is the relative vorticity.
+This equation has two limit: For $Ro\to 1$, the eddy term on the RHS becomes negligible and our Hadley circulation is close to angular momentum conservation
+\begin{align}
+    \frac{\partial \bar{M}}{\partial \varphi} = 0
+\end{align}
+which is described by the axisymmetric solution in Section \ref{sec:axisymmetric}. For $Ro\to 0$, the meridional wind is balanced by the eddy momentum flux convergence. This regime can be understood as eddy-driven. During the seasonal cycle the Rossby number varies, which determines how close to the angular momentum conserving limit the HC is. During the equinoxes the Rossby numbers are small which indicates a strong eddy influence. During the solstices the Rossby number is closer to $1$ in the winter HC but still small in the summer HC.
+Assuming that the HC is entirely eddy driven ($Ro=0$), the HC strength can be predicted from the eddy momentum flux by inserting Equation \eqref{eq:eddy_divergence} into the Equation \eqref{eq:msf}. Similar to \textcite{walkerEddyInfluencesHadley2006}, this gives  
+\begin{equation}
+    \psi_\mathrm{max}=\frac{2\pi a\cos\varphi}{fg}\int^0_{p_\mathrm{max}}\left(\frac{1}{a\cos^2\varphi}\frac{\partial (\cos^2\varphi\ \overline{u'v'})}{\partial\varphi} + \frac{\partial\overline{u'\omega'}}{\partial p}\right)\mathrm{d}p'\equiv \mathcal{T} 
+\end{equation}
+with $p_\mathrm{max}$ being the pressure level at which the MSF becomes maximum and the Coriolis parameter $f$.
 
 
 \begin{figure}[H]
@@ -73,6 +131,14 @@ Eddies can drive a circulation (Ferrel cell) or as in the case of the HC signifi
 
 \section{The energy budget of the atmosphere}
 The energy budget analysis provides diagnostic perspective on the HC. It cannot explain why the Earth is not in radiative (convective) equilibrium. Using TOA radiative fluxes, one can infer that the short-wave radiative flux at the equator is much larger than the emitted outgoing long wave radiation. The opposite is true for the poles. This implies an energy transport by atmosphere and ocean. The atmospheric component can be further split up into a mean and an eddy component.
+
+\begin{figure}[H]
+    %% trim=left bottom right top,
+    \centering
+   \includegraphics[width=0.8\textwidth,keepaspectratio,trim=0 0 0 0, clip]{initial_plots/irradiance.png}
+    \caption{ }
+    \label{fig:irradiance}
+\end{figure}
 \begin{align*}
     R_\mathrm{TOA}&=\frac{\partial F}{\partial y}\\
     F_{ao}&=\int^\phi_{-\pi/2}\int^{2\pi}_0R_\mathrm{TOA}a^2\cos\phi\mathrm{d}\lambda\mathrm{d}\phi
