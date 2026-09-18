@@ -20,28 +20,47 @@ stratospheric cooling
 Why is the stratosphere cooling under greenhouse gas forcing?
 
 \section{Hadley circulation strength under greenhouse gas forcing}
-The HC can be characterized by its strength and extent. The HC can be described by the mass stream function (MSF)
+\subsection{Definition of the Hadley cell}
+The HC can be evaluated by its strength and extent, which can be determined by calculating the mass stream function (MSF)
 \begin{equation}\label{eq:msf}
     \psi_\mathrm{max}=\frac{2\pi a\cos\varphi}{g}\int^0_{p_\mathrm{s}}\bar{v}\mathrm{d}p'.
 \end{equation}
-The MSF is always parallel to the flow in the vertical $p$--$\varphi$ plane. A positive value of $\psi_\mathrm{max}$ indicates a clockwise circulation and a negative value a counter-clockwise circulation. In the annual mean, the Northern hemisphere shows a clockwise circulation and a counter-clockwise circulation in the Southern hemisphere. Since the Hadley cell vertically integrates the mass flux, its values symbolize the net magnitude of mass transport above and below. And the HC maximum the integral covers exactly the upper or lower branch of the circulation. In the literature one can find several metrics for the HC strength. Some use the MSF at a fixed pressure level or spatially average, while others use the minimum of the vertical pressure tendencies $\omega$. HC trends have show a large sensitivity to the metric used \parencite{pikovnikMetricsHadleyCirculation2022}. We find it most plausible to calculate the strength of the HC from the maximum of the $\psi_\mathrm{max}$ and the extent from the latitude at which $\psi_\mathrm{max}$ becomes zero, averaged between $300$ and $\SI{700}{hPa}$.
+The MSF is always parallel to the flow in the vertical $p$--$\varphi$ plane. A positive value of $\psi_\mathrm{max}$ indicates a clockwise circulation and a negative value a counter-clockwise circulation. In the annual mean, the Northern hemisphere shows a clockwise and the Southern hemisphere counter-clockwise circulation. Since the Hadley cell vertically integrates the mass flux, its values symbolize the net magnitude of mass transport above and below and to the right and the left of a certain grid point. At the HC maximum the integral covers exactly the upper or lower branch of the circulation. In the literature, one can find several different metrics for the HC strength. Some use the MSF at a fixed pressure level or spatially average, while others use the minimum of the vertical pressure tendencies $\omega$. HC trends have show a large sensitivity to the metric used \parencite{pikovnikMetricsHadleyCirculation2022}. We find it most plausible to calculate the strength of the HC from the maximum of the $\psi_\mathrm{max}$ and the extent from the latitude at which $\psi_\mathrm{max}$ becomes zero, averaged between $300$ and $\SI{700}{hPa}$. Thus, all our calculations use this metrics while referenced studies may use a different one.
+The global HC, as depicted in Figure \ref{}, cannot be found at any given longitude but rather you have a lot of different regional HCs, which are strongly influenced by the shape and the distribution of continental land mass. HC trends might be different depending on the region of the HC that is considered. This study will only consider the global HC and, if not stated differently, its annual mean.
+\subsection{Historical and projected Hadley cell trends}
+The HC has been changing already since the beginning of the satellite era.
+Observational datasets using outgoing longwave radiation, precipitation, and sea level pressure as proxies for the HC position have shown a significant widening of the HC in the historical period (1979-2000s) \parencite{huObservationalEvidencePoleward2011}. Depending on the observed quantity the widening has a magnitude of \SIrange{1.2}{4.0}{\degree}. Similar trends have also been found in reanalysis data \parencite{huObservedPolewardExpansion2007}. 
+In phase 6 of the Coupled Model Intercomparison Project (CMIP6) "All-forcing" experiments also found that the Hadley cell widened in the period 1970-2014 of $\SI{0.65}{\degree} \pm \SI{0.02}{\degree}$ per decade. This is much smaller than the trends obtained from observational records. The influence of natural variability is highlighted in this context. The widening in CMIP6 models is found to be larger in the Southern hemisphere. The primary driver of the historical widening is greenhouse gases forcing. Changes in anthropogenic aerosol forcing and stratospheric ozone only contribute to Southern hemisphere HC changes \parencite{xiaComparisonTrendsHadley2020}.
 
+In terms of the HC strength, studies found opposing trends in climate models and reanalysis data in the historical period for the Northern hemisphere. While CMIP5 models show a robust weakening of the NH HC, the reanalysis data even suggests a strengthened. This discrepancy is not due to internal variability but rather stems from a misrepresentation of latent heating in the reanalysis \parencite{chemkeOppositeTropicalCirculation2019}. According to CMIP6 models, greenhouse gas forcing leads to a weakening in both hemispheres, with stratospheric ozone, and aerosol forcing contributing to a net modest strengthening in the southern hemisphere. This strengthening trend had not been observed in the previous CMIP5 models. The annual mean Northern hemisphere HC weakened by approximately $5\%$ in over 1970-2014  \parencite{xiaComparisonTrendsHadley2020}. 
 
+CMIP6 projections of the HC extent show that the widening trend of the HC increase with radiative forcing in both hemispheres. This increase is stronger in the annual mean Southern hemisphere HC while showing no seasonality. The strength of the SH HC is not projected to change with radiative forcing. In the NH, there is a projected net weakening of the annual-mean maximum of about $10\%$ over the period of 2016-2100 \parencite{xiaComparisonTrendsHadley2020}. Consistent with the historical simulation the largest contributor to the change is expected to be the increase in future \CO{} concentrations in the atmosphere. 
 
-Direct effect of CO2 forcing on the HC
-\parencite{bonyRobustDirectEffect2013}
-Quantifying the change of the HC extent and strength under climate change
-\parencite{luExpansionHadleyCell2007}
-\parencite{vallisResponseLargescaleStructure2015}
-What is the role of different feedback mechanisms in shaping the HC response to climate change 
+\subsection{Drivers of HC changes}
+Several mechanisms have been proposed to explain HC weakening. There are two mechanisms relating the weakening of the HC to the direct effect of \CO{} increase in the atmosphere. Direct means only considering \CO{} effect on radiative transfer without its influence surface temperature changes with their corresponding feedbacks. Around 81\% of the net radiative cooling of the atmosphere is balanced by latent heating which poses a constrain on the precipitation rate \parencite[p. 35]{GlobalPhysicalClimatology2016}. \textcite{bonyRobustDirectEffect2013} argue that by increasing the \CO{} in the atmosphere, the loss of infrared radiation to space is reduced. This warms and stabilizes the atmosphere weakening upward motions, i.e., the circulation. The second mechanism employs the the spatial structure of \CO{} forcing. In regions of ascending motion, such as the equator, the \CO{}  radiative forcing is reduced. This is due to the presence of deep-convective clouds and the high humidity, which both are effective longwave absorbers. Thus, \CO{} below cloud top or the moist atmosphere has a limited effect on OLR (I think this argument is wrong because \CO{} band vs. water vapor absorption region). In subsiding regions, such as the subtropics, the \CO{} radiative forcing is larger because this effect is missing. Given a larger forcing in the extra-tropics than at the equator, less energy transport and also a weaker circulation is required. About 15\% of the century scale weakening is attributed to the direct effect of \CO{} using fixed-SST simulations \parencite{merlisDirectWeakeningTropical2015}.
+
+Another mechanism compares the change in saturation vapor pressure according to the Clausius-Clapeyron (CC) equation to the changes in precipitation. Assuming that the global mean precipitation is given as 
+\begin{equation}
+    P = Mq
+\end{equation}
+where $M$ is the convective mass flux and $q$ is a typical boundary layer mixing ratio, which scales with the CC equation. In its linearized form, one obtains the following expression for the change in mass flux
+\begin{equation}
+    \frac{\delta M}{M} = \frac{\delta P}{P} -\frac{\delta q}{q}.
+\end{equation}
+Inserting typical global mean values for ${\delta P}/{P}=0.03\delta T$ (where does this value come from? simulations?) and with CC ${\delta q}/{q}=0.07\delta T$ gives a mass flux change of ${\delta M}/{M}=-0.04\delta T$, a weakening of global circulations
+\parencite{heldRobustResponsesHydrological2006}. This relationship holds better for global zonal circulations, e.g., the Walker circulation, than the HC \parencite{vecchiGlobalWarmingWeakening2007}.
+\textcite{seoMechanismFutureChanges2014} used the axisymmmetric scaling (see next section) to predict the HC strength changes via changes in the meridional temperature gradient, static stability, and tropopause height. They found the meridional temperature gradient to have the largest correlation.
+Using the quasi-geostrophic Kuo-Eliasson equation allows us to isolate effects that contribute to HC changes \parencite{vallisResponseLargescaleStructure2015}. According to this equation diabatic heating, eddy heat flux, eddy momentum flux, zonal friction and static stability changes capture the response of the change in maximum MSF. None of these factors alone can fully explain the changes but the most important contribution comes from an increase in static stability with diabatic heating changes even contributing to a strengthening of the HC on longer time scales \parencite{chemkeElucidatingMechanismsResponsible2021}.
+For a comprehensive evaluation and comparison of the different proposed HC weakening mechanisms, one should consult
+\parencite{chemkeElucidatingMechanismsResponsible2021}.
+
+Investigating the influence of different feedback mechanisms in shaping the HC response to climate change 
 \parencite{feldlCharacterizingHadleyCirculation2016}
-Evaluation of different drivers of HC changes
-\parencite{chemkeElucidatingMechanismsResponsible2021}
-
-
-Which drivers have been identified for the weakening of the HC
+Correlation study \parencite{dagostinoFactorsControllingHadley2017}
 \section{The angular momentum budget}
 Considering the angular momentum budget of the Earth, one addresses the fundamental question of why there is a meridional circulation in the atmosphere in the first place. An answer is provided by the axisymmetric theory of \textcite{heldNonlinearAxiallySymmetric1980}. It also provides a scaling for the HC strength and extent linking it directly to thermodynamical parameters. Because this theory ignores eddies, we are further investigating their effect on the HC in the following subsection. Since there is no unifying theory incorporating angular momentum conservation and angular momentum transport by baroclinic eddies, we introduce the energetic budget framework of the HC to explain why it changes. This is a more diagnostic framework which does not explain the existence of the HC from first-hand principles but rather takes the necessity transport energy poleward as granted. This necessity can be inferred from observational data of the TOA radiative imbalance showing an excess of incoming radiative fluxes relative to the outgoing radiation at the equator and vice versa at higher latitudes. This transport by the the atmosphere can be split up into a mean component, i.e., the HC in the tropics, and and eddy component.
+
+\subsection{Drivers of Hadley cell widening}
 
 \subsection{Axisymmetric theory}\label{sec:axisymmetric}
 The axisymmetric theory considers a flow in the $\varphi$--$z$ plane with no meridional circulation ($v=w=0$). This prevents the existence of large scale barotropic or baroclinic eddies. The questions why there is a meridional circulation in the first place is answered by the axisymmetric theory \parencite{heldNonlinearAxiallySymmetric1980}. This question is raised because one could imagine a world where Earth is just in radiative equilibrium everywhere. This means that every point on Earth emits just as much radiation as it receives from the sun. Thus, there would not be any meridional temperature or energy transport necessary.
@@ -126,7 +145,7 @@ Equation \eqref{eq:eddy_divergence} has two limits. For $Ro\to 1$, the left-hand
 \begin{align}
     \frac{\partial \overline{M}}{\partial \varphi} = 0
 \end{align}
-as described by the axisymmetric solution in Section \ref{sec:axisymmetric}. For $Ro\to 0$, the meridional wind $\bar{v}$ is instead balanced by the eddy momentum flux convergence. This regime can be understood as eddy-driven (see Figure \ref{fig:eddy_driven_HC}).
+as described by the axisymmetric solution in Section \ref{sec:axisymmetric}. For $Ro\to 0$, the meridional wind $\bar{v}$ is instead balanced by the eddy momentum flux convergence. This regime can be understood as eddy-driven (see Figure \ref{fig:eddy_driven_HC}). For the intermediate $Ro$, there does not yet exist a dynamical theory \parencite{schneiderGeneralCirculationAtmosphere2006}.
 
 \begin{wrapfigure}{r}{7cm}
     %% trim=left bottom right top,
@@ -194,7 +213,7 @@ Gross moist stability (GMS) is defined as the ratio of energy transport to mass 
 \begin{equation}
     H(\phi)=\frac{2\pi a\cos\phi}{g}\frac{1}{\psi_\mathrm{max}}\int^{p_s}_0[\Bar{v}][\Bar{h}]\mathrm{d}p.
 \end{equation}
-It is a measure for the stratification of the atmosphere. A large GMS indicates a strongly stratified atmosphere.
+It is a measure for the stratification of the atmosphere. A large GMS indicates a strongly stratified atmosphere. GMS is expected to increase with global warming, which is according to this framework contributing to a weakening of the HC \parencite{}.
 Trying to understand the changes in HC strength, we can linearize Equation \eqref{eq:F_HC} and obtain 
 \begin{equation}
         \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}=\frac{\delta F_\mathrm{HC}}{F_\mathrm{HC}}-\frac{\delta H}{H}.
@@ -227,6 +246,7 @@ The forcing is the direct effect of CO2 on the TOA radiative fluxes and the feed
     \caption{  }
     \label{fig:transport}
 \end{figure}
+Using the radiative kernel technique allows use the estimate the influence of the individual climate feedbacks on the HC changes. The contribution of a feedback is determined by its meridional structure not by it being positive or negative. A feedback that is stronger in the equator compared to the extra-topics or the poles strengthens the HC. This is the case for the water vapor feedback. The lapse rate, Planck and surface albedo feedback contribute to a weakening of the HC. The cloud feedback shows a large model dependence and can either contribute positively or negatively \parencite{feldlCharacterizingHadleyCirculation2016}.
 \section{Model setup}
 
 \subsection{ECHAM5}
