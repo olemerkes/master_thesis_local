@@ -2,14 +2,26 @@
 \label{chapter:methods}
 \section{Model setup}
 
-\subsection{ECHAM5}
+\subsection{ECHAM6}
 How will you be able to reproduce this study?
-aquaplanet
-slab-ocean
-seasonal cycle
-diurnal cycle
-sea ice
-fixed SST simulations
+- ECHAM 6 - CMIP 6 type atmospheric GCM
+- slab ocean ($d=50$ m)
+- resolution: 47 vertical pressure levels with (lat,lon)= (96,192) gridpoints
+- temporal resolution: 
+$(\sim200 km, 1.875°)$
+seasonal cycle: yes
+diurnal cycle: yes
+sea ice: fixed
+paramterizations: convection, cloud microphysics, radiation, turbulence, land surface, gravity wave drag
+q-flux correction: yes
+aerosols: prescribed
+continental land mass: yes
+orography: yes
+insolation configuration: obliquity, eccentricity, precession (?)
+How do the fixed SST simulations work?
+
+
+
 \begin{figure}[H]
     %% trim=left bottom right top,
     \centering
@@ -20,6 +32,10 @@ fixed SST simulations
  (TODO: We find it most plausible to calculate the strength of the HC from the maximum of the $\psi_\mathrm{max}$ and the extent from the latitude at which $\psi_\mathrm{max}$ becomes zero, averaged between $300$ and $\SI{700}{hPa}$. Thus, all our calculations use these metrics while referenced studies may use different ones.)
 \subsection{konrad}
 
+- slab ocean
+- GHG
+- 
+
 \begin{figure}[H]
     %% trim=left bottom right top,
     \centering
@@ -27,3 +43,29 @@ fixed SST simulations
     \caption{  }
     \label{fig:konrad}
 \end{figure}
+
+
+\section{Definition of the Hadley cell}
+The HC can be characterized by its strength and extent, both of which can be determined by calculating the meridional mass stream function (MSF)
+\begin{equation}\label{eq:msf}
+    \psi_\mathrm{max}=\frac{2\pi a\cos\phi}{g}\int^0_{p_\mathrm{s}}\bar{v}\mathrm{d}p'
+\end{equation}
+with the radius of the Earth $a$, the latitude $\phi$, the gravitational acceleration $g$, the surface pressure $p_\mathrm{s}$, and the mean meridional wind $\bar{v}$.
+The MSF is always parallel to the flow in the vertical $p$--$\phi$ plane (see Figure \ref{fig:HC_seasonal}). A positive value of $\psi_\mathrm{max}$ indicates a clockwise circulation and a negative value a counter-clockwise circulation. In the annual mean, the Northern hemisphere shows a clockwise and the Southern hemisphere counter-clockwise circulation. Since the MSF vertically integrates the mass flux, its values symbolize the net magnitude of mass transport above and below and to the right and the left of a certain grid point. At the HC maximum the integral covers exactly the upper or lower branch of the circulation. In the literature, one can find several different metrics for the HC strength. Some use the MSF at a fixed pressure level or spatially average, while others use the minimum of the vertical pressure tendencies $\omega$. HC trends have shown a large sensitivity to the metric used \parencite{pikovnikMetricsHadleyCirculation2022}.
+
+The global HC, as depicted in Figure \ref{fig:HC_seasonal}, cannot be found at any given longitude but rather there are different regional HCs, which are strongly influenced by the shape and the distribution of continental land mass. HC trends might be different depending on the region of the HC that is considered. This study will only consider the global HC and, if not stated differently, its annual mean.
+
+\section{From energy imbalance to transport}
+Integrating this equation in the steady state over a latitude band gives
+\begin{equation}
+        \label{eq:Fao}
+        F_{ao}(\phi)=\int^\phi_{-\pi/2}\int^{2\pi}_0R'_\mathrm{TOA}a^2\cos\phi\mathrm{d}\lambda\mathrm{d}\phi'
+\end{equation}
+which provides a measure for the energy transport at every latitude. We use the anomalous net radiative TOA flux $R'_\mathrm{TOA}$ here, subtracting the global mean value, to make sure that the energy transport is closed (zero transport at both poles) \parencite{zelinkaClimateFeedbacksTheir2012}. To separate between the energy transport by the atmosphere and the ocean, one can subtract the surface energy fluxes, which can be obtained from the sum of surface latent, sensible heat, and net radiative flux, from the TOA radiative fluxes.
+
+\section{Definitions}
+- tropopause height
+- HC strength
+- HC extent
+- meridional temperature gradient
+- vertical temperature gradient
