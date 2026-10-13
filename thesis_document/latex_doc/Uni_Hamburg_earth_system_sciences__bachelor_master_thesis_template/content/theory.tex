@@ -143,7 +143,7 @@ as described by the axisymmetric solution in Section \ref{sec:axisymmetric}. For
 In the eddy driven limit, the climatological divergence of eddy momentum flux, which is observed in the tropics, requires a positive mean meridional wind. This holds even if the zones of baroclinic instability lie well poleward of the HC edge because Rossby waves can propagate into the HC, producing a poleward momentum flux. At the HC edge there is $\bar{v}=0$ and thus no eddy momentum flux. The eddy momentum flux divergence also explains the equatorward meridional wind in the eddy-driven Ferrel cell in mid-latitudes. Over the seasonal cycle, the Rossby number varies between 0.2 and 0.8, approaching either of the two limits. During the equinoxes the Rossby number is small which indicates a strong eddy influence. During the solstices the Rossby number is closer to $1$ in the winter HC but still small in the summer HC.
 
 Assuming that the HC is entirely eddy driven ($Ro=0$), the HC strength can be predicted from the eddy momentum flux by inserting Equation \eqref{eq:eddy_divergence} into Equation \eqref{eq:msf}. Following \textcite{walkerEddyInfluencesHadley2006}, this gives the integrated eddy momentum flux divergence
-\begin{equation}
+\begin{equation}\label{eq:T_edd}
     \psi_\mathrm{max}=\frac{2\pi a\cos\phi}{fg}\int^0_{p_\mathrm{max}}\left(\frac{1}{a\cos^2\phi}\frac{\partial (\cos^2\phi\ \overline{u'v'})}{\partial\phi} + \frac{\partial\overline{u'\omega'}}{\partial p}\right)\mathrm{d}p'\equiv \mathcal{T} 
 \end{equation}
 with $p_\mathrm{max}$ being the pressure level at which the MSF becomes maximum and the Coriolis parameter $f$. The quantity $\mathcal{T}$ is a predictor for the HC strength given a certain eddy momentum flux divergence. The HC is thus only indirectly coupled to thermodynamic drivers, which set the zones of baroclinic instability. It has been shown to be skillfully predict the HC strength in eddy permitting models for various climates \parencite{walkerEddyInfluencesHadley2006}. 
@@ -219,15 +219,20 @@ Inserting this into the linearized Equation \eqref{eq:F_HC} gives
 \begin{align*}
     \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}&=\frac{\delta F_\mathrm{a}}{F_\mathrm{HC}}-\frac{\delta F_\mathrm{e}}{F_\mathrm{HC}}-\frac{\delta H}{H}.
 \end{align*}
+The transport by the atmosphere can be expressed as 
+\begin{equation}
+    F_\mathrm{a}=F_\mathrm{ao}-F_\mathrm{ohu}    
+\end{equation}
+with $F_\mathrm{ohu}$ being the transport due to ocean heat uptake.
 The HC changes are now a function of the total change in energy transport. The changes in $R_\mathrm{TOA}$ can be further split up into a change in radiative forcing $R_f$ and a change due to feedbacks $\sum_i\lambda_i\Delta T_s$, which gives 
 \begin{align}\label{eq:forc_fdb}
     \Delta R_\mathrm{TOA}&=\sum_i\lambda_i\Delta T_s+R_f.
 \end{align}
 The forcing is the temperature-independent effect of CO2 on the TOA radiative fluxes and the feedbacks are the changes in TOA radiative fluxes due to changes in surface temperature. This change in surface temperature has an effect on the surface albedo, water vapor, clouds, and lapse rate, and OLR. An effect that with increasing surface temperature increases or decreases the downward radiation is called a positive or negative feedback, respectively.
 
-Inserting Equation \eqref{eq:forc_fdb} into Equation \eqref{eq:Fao} gives us the final expression for the HC strength changes decomposed into the contributions of forcing $\delta F_\mathrm{forc}$, feedbacks $\delta F_\mathrm{fdb}$, eddies $\delta F_\mathrm{e}$, and GMS $\delta H$
+Inserting Equation \eqref{eq:forc_fdb} into Equation \eqref{eq:Fao} gives us the final expression for the HC strength changes decomposed into the contributions of forcing $\delta F_\mathrm{forc}$, feedbacks $\delta F_\mathrm{fdb}$, ocean heat uptake $F_\mathrm{ohu}$, eddies $\delta F_\mathrm{e}$, and GMS $\delta H$
 \begin{equation}
-        \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}=\frac{\delta F_\mathrm{forc}}{F_\mathrm{HC}}+\frac{\delta F_\mathrm{fdb}}{F_\mathrm{HC}}-\frac{\delta F_\mathrm{e}}{F_\mathrm{HC}}-\frac{\delta H}{H}.
+        \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}=\frac{\delta F_\mathrm{forc}}{F_\mathrm{HC}}+\frac{\delta F_\mathrm{fdb}}{F_\mathrm{HC}}-\frac{\delta F_\mathrm{ohu}}{F_\mathrm{HC}}-\frac{\delta F_\mathrm{e}}{F_\mathrm{HC}}-\frac{\delta H}{H}.
 \end{equation}
 
 GMS is expected to increase with global warming, which is according to this framework contributing to a weakening of the HC.

@@ -1,10 +1,23 @@
 \chapter{Results}
 \label{chapter:results}
+\section{Simulation results}
+\subsection{Linearity of decomposition}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio]{initial_plots/linear_T.png}
+    \caption{}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio]{initial_plots/difference_stream_function.png}
+\end{figure}
+
+\subsection{Temperature anomalies}
 
 
-\section{The atmospheric response}
-
-\begin{figure}[H]
+\begin{figure}[h]
     %% trim=left bottom right top,
     \centering
    \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{initial_plots/temperature.png}
@@ -12,20 +25,48 @@
     \label{fig:temperature_initial}
 \end{figure}
 
+\begin{figure}[h]
+    %% trim=left bottom right top,
+    \centering
+   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{rce_simulations/konrad_slab_Tcold_CO2.png}%TO CHANGE
+    \caption{  }
+    \label{fig:konrad}
+\end{figure}
 
-\begin{figure}[H]
+
+
+
+\subsection{The atmospheric response}
+
+
+
+
+
+
+\begin{figure}[h]
     %% trim=left bottom right top,
     \centering
    \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{initial_plots/streamfunc.png}
     \caption{  }
     \label{fig:msf_initial}
 \end{figure}
-\section{Predictions from axisymmetric scalings}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|l|l|}
+        \hline
+        \rowcolor{gray!50}
+         & Uniform & Tropo & Strato \\ \hline
+         $\Delta\psi_\mathrm{max, NH} $& $-1.9\%$ & $3.6\%$ & $-8.9\%$ \\ \hline
+ $\Delta\psi_\mathrm{max, SH} $ & $-2.5\%$ & $4.1\%$ & $-5.1\%$ \\ \hline
+ $\Delta\phi_\mathrm{H, NH}$ & \SI{1.6}{\deg} & \SI{0.7}{\deg} & \SI{0.7}{\deg} \\ \hline
+ $\Delta\phi_\mathrm{H, SH}$ & \SI{-1.6}{\deg} & \SI{-1.0}{\deg} & \SI{-0.6}{\deg}\\ \hline
+    \end{tabular}
+    \end{table} 
+
+\section{Physical drivers of HC strength response}
+\subsection{Predictions from axisymmetric scalings}
 \parencite{seoMechanismFutureChanges2014}
-\begin{align}
-    \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}&=\frac{5}{2}\frac{\delta H}{H}+\frac{5}{2}\frac{\delta\Delta_h}{\Delta_h}-\frac{\delta\Delta_v}{\Delta_v}\\
-    \frac{\delta\phi_\mathrm{H}}{\phi_\mathrm{H}}&=\frac{1}{2}\frac{\delta H}{H}+\frac{1}{2}\frac{\delta\Delta_h}{\Delta_h}
-\end{align}
 \begin{figure}[H]
     %% trim=left bottom right top,
     \centering
@@ -40,7 +81,7 @@
     \caption{  }
     \label{fig:scaling_HH}
 \end{figure}
-\section{Eddy driven Hadley cell predictions}
+\subsection{Eddy driven HC changes}
 
 \begin{figure}[H]
     %% trim=left bottom right top,
@@ -49,9 +90,9 @@
     \caption{  }
     \label{fig:eddy_flux_strength}
 \end{figure}
-\section{The energetic framework}
+\subsection{HC changes in the energetic framework}
 
-\subsection{GMS and energy transport of the Hadley cell}
+\subsubsection{GMS contribution}
 \begin{figure}[H]
     %% trim=left bottom right top,
     \centering
@@ -59,7 +100,7 @@
     \caption{  }
     \label{fig:GMS_change}
 \end{figure}
-\subsection{Eddy energy transport}
+\subsubsection{Eddy contribution}
 \begin{figure}[H]
     %% trim=left bottom right top,
     \centering
@@ -67,7 +108,9 @@
     \caption{  }
     \label{fig:eddy_change}
 \end{figure}
-\subsection{Forcing and feedback contributions}
+\subsubsection{OHU contribution}
+
+\subsubsection{Forcing and feedback contributions}
 \begin{figure}[H]
     %% trim=left bottom right top,
     \centering
@@ -75,8 +118,7 @@
     \caption{  }
     \label{fig:contributions_NH}
 \end{figure}
-
-\subsection{The forcing}
+\subsubsection{Southern hemisphere versus NH}
 
 Explain the forcing structure \parencite{merlisDirectWeakeningTropical2015}
 \begin{figure}[H]
