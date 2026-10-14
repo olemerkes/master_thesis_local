@@ -2,34 +2,43 @@
 \label{chapter:results}
 \section{Simulation results}
 \subsection{Linearity of decomposition}
+When separating the uniform quadrupling of \CO{} into a tropospheric and a stratospheric component in our simulations with ECHAM6, one might be wondering whether this decomposition even works. The decomposition is physically not possible to realize in a real atmosphere due to its well-mixed state. There could be non-linearities involved. In short: Is the response to uniform forcing \CO{} identical to the added up responses of the atmosphere to a forcing in the troposphere and stratosphere? Is the net circulation response decomposable into these two components?
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth,keepaspectratio]{initial_plots/linear_T.png}
+    \caption{The temperature anomalies with a uniform increase of \CO{} concentration, the added \tropo and \strato cases, and their non-linearities as the difference (from left to right). The black line indicates the tropopause height in the PI run.}
+    \label{fig:lin_T}
+\end{figure}
+
+To find out whether \CO{} in the vertical show a linear behavior, we compared the temporal and zonal mean temperature anomalies of the uniform case to the added up anomalies from \tropo and \strato. As one can see in Figure \ref{fig:lin_T} the temperature response is almost completely linear. The difference plots shows that the deviations have a mean value of \SI{0.2}{\K} and a maximum magnitude of \SI{1.8}{\K}. The largest discrepancies can be found in the Northern hemisphere stratosphere and right above the tropopause. Since we are most interested in the response of the atmospheric circulation, we also check its linearity. In Figure \ref{fig:lin_msf}, one can see that the MSF in \uniform very much resembles the sum of \tropo and \strato. Here, the mean difference is about $0.5\%$ with a maximum difference of $6.3\%$ of the maximum absolute value of the MSF in the PI run. (TODO: Do you prefer standard deviation?)
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth,keepaspectratio]{initial_plots/linear_T.png}
-    \caption{}
+    \includegraphics[width=1.0\textwidth,keepaspectratio]{initial_plots/difference_stream_function.png}
+    \caption{Testing the linearity of the circulation response. The shading indicates the anomalies of the MSF in \uniform, the added \tropo and \strato cases, and their non-linearities as the difference (from left to right). The black contours show the MSF in the PI run. Continuous lines are positive (clockwise) while dashed lines indicate negative (counterclockwise) values. The cross marks the location of the MSF maximum in the PI run.}
+    \label{fig:lin_msf}
 \end{figure}
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth,keepaspectratio]{initial_plots/difference_stream_function.png}
-\end{figure}
-
+Overall, the decomposition of the \CO{} increase works. The response is approximately linear in the temperature and MSF anomalies. Nonetheless, one should bare the small non-linear effects in mind in the further analysis of these results.
 \subsection{Temperature anomalies}
+Our model simulations for the temperature anomalies in \uniform display quite well the expected patterns described in Section \ref{sec:CO2_T_response}. The temperature throughout the troposphere is increased while the warming in the upper tropics oft is enhanced and amplified in the Arctic while the stratosphere is cooled (see Figure \ref{fig:lin_T} left panel). 
+We now expected that the \CO increase only in the troposphere is responsible for its warming while \CO increase only in the stratosphere is responsible for stratospheric cooling. This is also what we see in Figure \ref{fig:temperature_initial}. The warming in the troposphere also maintains the spatial structure from the \uniform case. In the response of the \tropo we notice an additional cooling in the stratosphere right above the tropopause, which will be further investigated. In \strato the tropospheric temperatures remains almost constant. Only right above the tropopause, there is an unexpected anomalous warming. Given these temperature responses, one would still expect the net weakening to originate from tropospheric \CO and the associated warming of the troposphere. However, the warming/cooling right above the tropopause might have an influence on the tropopause height and the vertical stability resulting in unexpected HC changes. 
 
+To better understand the cause of the anomalous warming in \strato and the anomalous cooling in \tropo right above the tropopause, we perform experiments with \textit{konrad} changing the vertical \CO concentration. Looking at Figure \ref{fig:konrad}, one can see by comparing \uniform to \tropo + \strato that there is again some non-linearity in the response right above the tropopause. Still, after considering the non-linearity there is an anomalous warming above the tropopause in the \strato and an anomalous cooling in the \tropo case. In the experiments with \textit{konrad} it also extends below the tropopause. We believe that the heating rate induced by the step wise increase in optical thickness associated with the step wise increase of \CO might be its cause. Thus, we can conclude that also the heating in \strato and cooling in \tropo above the tropopause in our experiments with ECHAM6 are a static thermodynamic response and not evoked by changes in the atmospheric circulation.
 
 \begin{figure}[h]
     %% trim=left bottom right top,
     \centering
-   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{initial_plots/temperature.png}
-    \caption{  }
+   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{initial_plots/T_tropo_strato.png}
+    \caption{The temperature anomalies for our experiments with a GCM where we only increase \CO in the troposphere (left hand side) or in the stratosphere and everything above (right hand side). To separate these two cases we use a PI climatology tropopause height (black line). }
     \label{fig:temperature_initial}
 \end{figure}
 
 \begin{figure}[h]
     %% trim=left bottom right top,
     \centering
-   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{rce_simulations/konrad_slab_Tcold_CO2.png}%TO CHANGE
-    \caption{  }
+   \includegraphics[width=0.7\textwidth,keepaspectratio,trim=0 0 0 0, clip]{rce_simulations/konrad_final.png}%TO CHANGE
+    \caption{\CO concentration and temperature anomalies for our experiments with the one-dimensional RCE model \textit{konrad}. The black, horizontal line indicates the tropopause height determined as the cold-point temperature from a PI control run. }
     \label{fig:konrad}
 \end{figure}
 
@@ -37,17 +46,15 @@
 
 
 \subsection{The atmospheric response}
-
-
-
-
+One of the main questions that this study tries to answer is how does the HC respond to \CO forcing in the troposphere versus \CO forcing in the stratosphere. What are their relative contributions to net weakening and widening that has been found in previous studies (see Section \ref{})? 
+What we find when analysing the HC extent according to our definitions from Section \ref{} is that the HC is weakening and widening in the \uniform case (see Figure \ref{fig:lin_msf}, left panel) in both hemispheres. This aligns with our expectations. Surprisingly, this weakening cannot be traced back to the increase in tropospheric \CO, due to which the HC is strengthening, but to stratospheric \CO. This implies that the cooling of the stratosphere is responsible for the weakening of the HC in \uniform and not the warming of the troposphere. For a summary of all HC changes see Table \ref{tab:HC_changes}. One should notice here that the HC strength response is not linear in neither hemisphere, while the changes in HC extent are to a good approximation. Considering the magnitude of the individual changes, which are all significantly larger than the HC response to the uniform forcing, we perceive them as robust physical responses instead of artifacts due to the non-linearities. The HC strength response is also quite different between the hemispheres.  
 
 
 \begin{figure}[h]
     %% trim=left bottom right top,
     \centering
-   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{initial_plots/streamfunc.png}
-    \caption{  }
+   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{initial_plots/msf_tropo_strato.png}
+    \caption{The circulation response in the \tropo and \strato experiment. The shading indicates the anomalies of the MSF in and black contours show the MSF in the PI run. Continuous lines are positive (clockwise) while dashed lines indicate negative (counterclockwise) values. The cross marks the location of the MSF maximum in the PI run. }
     \label{fig:msf_initial}
 \end{figure}
 
@@ -56,12 +63,14 @@
     \begin{tabular}{|l|l|l|l|}
         \hline
         \rowcolor{gray!50}
-         & Uniform & Tropo & Strato \\ \hline
+         & \uniform & \tropo & \strato \\ \hline
          $\Delta\psi_\mathrm{max, NH} $& $-1.9\%$ & $3.6\%$ & $-8.9\%$ \\ \hline
  $\Delta\psi_\mathrm{max, SH} $ & $-2.5\%$ & $4.1\%$ & $-5.1\%$ \\ \hline
  $\Delta\phi_\mathrm{H, NH}$ & \SI{1.6}{\deg} & \SI{0.7}{\deg} & \SI{0.7}{\deg} \\ \hline
  $\Delta\phi_\mathrm{H, SH}$ & \SI{-1.6}{\deg} & \SI{-1.0}{\deg} & \SI{-0.6}{\deg}\\ \hline
     \end{tabular}
+    \caption{The changes in HC extent and strength on our experiments for the Northern and Southern hemisphere. Negative values for the Southern hemisphere extent indicate a widening of the HC.}
+    \label{tab:HC_changes}
     \end{table} 
 
 \section{Physical drivers of HC strength response}

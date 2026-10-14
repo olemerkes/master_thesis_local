@@ -6,7 +6,7 @@
 % • Does the thesis provide a sufficiently comprehensive investigation of the topic?
 TODO: Describe general structure of the chapter
 
-\section{CO2 forcing in the atmosphere and its temperature response}
+\section{CO2 forcing in the atmosphere and its temperature response} \label{sec:CO2_T_response}
 \CO{} is relatively well mixed in the atmosphere. In our simulations with a general circulation model though, we can prescribe different vertical \CO{} profiles. Since \CO{} is a greenhouse gas, this changes the radiative balance and thus the temperature profile of the atmosphere. This section is describing the temperature response of the atmosphere to a uniform increase in \CO{} concentration and to provide an expectation for the temperature change in the different vertical \CO{} profiles. In particular we care about the tropopause height, and meridional and vertical temperature gradients, which are important to understand changes in the HC strength and extent as we will show in Section \ref{}.
 \subsection{Tropospheric warming and stratospheric cooling} 
 The temperature response to a uniform increase in \CO{} concentration is characterized by a warming in the troposphere and a cooling in the stratosphere. The vertical temperature profile of the atmosphere can be determined as a first approximation from the budget of incoming and outgoing radiation everywhere. This state is called radiative equilibrium (RE). Solving RE with a numerical transfer code for a non-grey atmosphere, which means including the vertical distribution of radiatively active gases, yields a lapse rate larger than observed in the atmosphere \parencite{manabeThermalEquilibriumAtmosphere1964}. The observed lapse rate on Earth is close to \SI{6.5}{\K\per\km}. It can be shown that the RE temperature profile is highly sensitive to vertical perturbations, so it is convectively unstable. To account for the upward motions and the condensational heating (moist and dry convection), the concept of radiative convective equilibrium (RCE) was introduced. Here, we adjust the lapse rate to the critical lapse rate (stability threshold), whenever it is exceeded in the integrations of the radiative transfer code.
@@ -185,7 +185,7 @@ The transport of MSE by the mean meridional circulation at a certain latitude $\
     F_\mathrm{HC}(\phi)=\frac{2\pi a\cos\phi}{g}\int^{p_s}_0[\Bar{v}_\mathrm{}][\Bar{h}]\mathrm{d}p.
 \end{equation}
 This expression compares the poleward energy transport by the upper branch of the HC to the equatorward energy transport by the lower branch.
-\begin{wrapfigure}{r}{7.5cm}
+\begin{wrapfigure}{R}{7.5cm}
 \includegraphics[width=7.5cm]{energetic_framework/GMS_F_HC.png}
 \caption{TODO: Only include PI values, increase axis labels}\label{fig:F_HC}
 \end{wrapfigure}
