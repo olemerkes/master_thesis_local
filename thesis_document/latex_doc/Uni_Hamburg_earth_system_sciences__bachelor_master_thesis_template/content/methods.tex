@@ -1,20 +1,12 @@
 \chapter{Methods}
 \label{chapter:methods}
 \section{Model setup}
-
+To investigate the HC response under different vertical \CO forcings, we employ an atmospheric circulation model to simulate the circulation response. To verify the resulting temperature profiles, we use the RCE model \textit{konrad}. To diagnose the physical drivers of HC changes we then the different HC framework discussed above. Here, we will describe the specific model setup and the evaluation metrics that we have used.  
 \subsection{The atmosphere model ECHAM6}
-How will you be able to reproduce this study?
-For our experiments, we use ECHAM 6 \parencite{stevensAtmosphericComponentMPIM2013}, a CMIP 6 type atmospheric General circulation model (GCM), coupled to a slab ocean with a depth of $d=\SI{50}{\m}$. It has a vertical resolution of 47 pressure levels on a $\SI{1.875}{\deg}\times\SI{1.875}{\deg}$ grid.
-We use this complex configuration to obtain a realistic circulation response. Slab ocean simulation are in equilibrium after shorter runtimes. The resolution should be sufficiently small to correctly resolve the cirulation on the atmosphere. We fix the sea ice to avoid problems due to TODO in the slab ocean. We prescribe a climatological q-flux that mimics the ocean energy transport of a coupled control run. 
+For our experiments, we use ECHAM 6 \parencite{stevensAtmosphericComponentMPIM2013}, a CMIP 6 type atmospheric General circulation model (GCM), coupled to a slab ocean with a depth of $d=\SI{50}{\m}$. It has a vertical resolution of 47 pressure levels on a $\SI{1.875}{\deg}\times\SI{1.875}{\deg}$ ($192\times96$) grid. It is the model version T63L47.
+We use this complex configuration to obtain a realistic circulation response. Slab ocean simulation reach equilibrium faster than with a dynamic ocean. We chose the model resolution to be sufficiently small to correctly resolve the circulation on the atmosphere and large enough to not slow down the simulations. We fix the sea ice to avoid problems due to TODO in the slab ocean. We prescribe a climatological q-flux that mimics the ocean energy transport of a coupled control run. To better isolate the effects of \CO in the simulations, one would run more idealized simulations, such as an aquaplanet setup. The experiments presented here can be seen as experiments of opportunity, which means that they show an interesting result, i.e., opposing HC strength responses, which we want to understand.
 
-We run four simulations: First, a pre-industrial control (PI) run. In our second, we quadruple the \CO{} concentration throughout the entire atmosphere (\uniform). Using the climatology tropopause height (see Section \ref{sec:def} for its definition), we only quadruple \CO{} in the troposphere (\tropo), and in all the layers above the tropopause (\strato) while the \CO{} concentration in the remaining domain stays at the PI level in our third and fourth experiment. The \CO{} concentrations of the four experiments can be seen in Figure \ref{fig:co2_conc_setup}. To calculate the forcing on the atmosphere, we perform identical simulations as above while fixing the sea surface temperature (SST) to pre-industrial levels. Thus, the land is still able to warm but this only accounts for a small amount of the net forcing \parencite{andrewsEffectiveRadiativeForcing2021}.
-
-TODO: What years do we choose? How to calculate our anomalies?
-\subsection{The radiative convective equilibrium model konrad}
-To understand the temperature response in our GCM simulations, we use the RCE model \textit{konrad} \parencite{Kluft_konrad}. It solves the RCE in one dimension and does not account for changes in the atmospheric circulation or horizontal inhomogeneities. As in our experiments with the GCM, we run four experiments with the one-dimensional vertical separation of \CO{} concentrations as in Figure \ref{fig:co2_conc_setup}. In these simulations, we use the level of the cold point temperature, which is the coldest point in the atmospheric column, as tropopause height. We also use a slab-ocean surface, which absorbs the TOA radiative imbalance of our PI run in \textit{konrad}, which allows the surface temperature to adjust.
-
-
-
+We run four simulations: First, a pre-industrial control (PI) run. In the second, we abruptly quadruple the \CO{} concentration throughout the entire atmosphere (\uniform). Using the (TODO: zonal mean?) climatology tropopause height (see Section \ref{sec:def} for its definition), we only abruptly quadruple \CO{} in the troposphere (\tropo) in the third, and in all the layers above the tropopause (\strato) while the \CO{} concentration in the remaining domain stays at the PI level in the fourth experiment. The \CO{} concentrations of the four experiments can be seen in Figure \ref{fig:co2_conc_setup}. To calculate the forcing on the atmosphere, we perform identical simulations as above while fixing the sea surface temperature (SST) to pre-industrial levels. Thus, the land is still able to warm but this only accounts for a small amount of the net forcing \parencite{andrewsEffectiveRadiativeForcing2021}.
 \begin{figure}[h]
     %% trim=left bottom right top,
     \centering
@@ -23,41 +15,56 @@ To understand the temperature response in our GCM simulations, we use the RCE mo
     \label{fig:co2_conc_setup}
 \end{figure}
 
+For all analyses we use yearly mean data. We discard the first ten years as spin-up. The data in PI run is then averaged over 30 years, \uniform over 40 years, and \tropo and \strato over 50 years. 
+\subsection{The radiative convective equilibrium model konrad}
+To understand the temperature response in the GCM simulations, we use the RCE model \textit{konrad} \parencite{Kluft_konrad}. It solves the RCE in one dimension and does not account for changes in the atmospheric circulation or horizontal inhomogeneities. As in the experiments with the GCM, we run four experiments with the one-dimensional vertical separation of \CO{} concentrations as in Figure \ref{fig:co2_conc_setup}. In these simulations, we use the level of the cold point temperature, which is the coldest point in the atmospheric column, as tropopause height. We also use a slab-ocean surface, which absorbs the TOA radiative imbalance of the PI run in \textit{konrad}, which allows the surface temperature to adjust.
 
 
 
 
-\section{Definitions} \label{sec:def}
-\subsection{Hadley cell strength and extents}
+
+
+
+
+
+\section{Diagnostics} \label{sec:def}
+\subsection{Hadley cell strength and extents}\label{sec:def_HC}
 The HC can be characterized by its strength and extent, both of which can be determined by calculating the meridional mass stream function (MSF)
 \begin{equation}\label{eq:msf}
-    \psi_\mathrm{max}=\frac{2\pi a\cos\phi}{g}\int^0_{p_\mathrm{s}}\bar{v}\mathrm{d}p'
+    \psi(\phi,p)=\frac{2\pi a\cos\phi}{g}\int_0^{p}\bar{v}\mathrm{d}p'
 \end{equation}
 with the radius of the Earth $a$, the latitude $\phi$, the gravitational acceleration $g$, the surface pressure $p_\mathrm{s}$, and the mean meridional wind $\bar{v}$.
-The MSF is always parallel to the flow in the vertical $p$--$\phi$ plane (see Figure \ref{fig:HC_seasonal}). A positive value of $\psi_\mathrm{max}$ indicates a clockwise circulation and a negative value a counter-clockwise circulation. In the annual mean, the Northern hemisphere shows a clockwise and the Southern hemisphere counter-clockwise circulation. Since the MSF vertically integrates the mass flux, its values symbolize the net magnitude of mass transport above and below and to the right and the left of a certain grid point. At the HC maximum the integral covers exactly the upper or lower branch of the circulation.  We will use the maximum and minimum of annual-mean stream function between $\SI{40}{\deg S}$ and $\SI{40}{\deg N}$, and between $\SIrange{200}{900}{hPa}$ for the northern and southern hemisphere HC, respectively. In the literature, one can find several different metrics for the HC strength. Some use the MSF at a fixed pressure level or spatially average, while others use the minimum of the vertical pressure tendencies $\omega$. HC trends have shown a large sensitivity to the metric used \parencite{pikovnikMetricsHadleyCirculation2022}.
-The HC extent, we compute by linear interpolation the subtropical zero-crossing latitude of $\psi$ averaged between the $\SIrange{300}{700}{hPa}$ hPa levels.
+The MSF is always parallel to the flow in the vertical $p$--$\phi$ plane (see Figure \ref{fig:HC_seasonal}). A positive value of $\psi_\mathrm{max}$ indicates a clockwise circulation and a negative value a counter-clockwise circulation. In the annual mean, the Northern hemisphere shows a clockwise and the Southern hemisphere counter-clockwise circulation. Since the MSF vertically integrates the mass flux, its values symbolize the net magnitude of mass transport above and below and to the right and the left of a certain grid point. At the HC maximum the integral covers exactly the upper or lower branch of the circulation. We will use the maximum and minimum of annual-mean stream function between $\SI{40}{\deg S}$ and $\SI{40}{\deg N}$, and between $\SIrange{200}{900}{hPa}$ for the northern and southern hemisphere HC, respectively. In the literature, one can find several different metrics for the HC strength. Some use the MSF at a fixed pressure level or spatially average, while others use the minimum of the vertical pressure tendencies $\omega$. HC trends have shown a large sensitivity to the metric used \parencite{pikovnikMetricsHadleyCirculation2022}.
+The HC extent $\phi_\mathrm{H}$, we compute by linear interpolation the subtropical zero-crossing latitude of $\psi$ averaged between the $\SIrange{300}{700}{hPa}$ levels.
+All anomalies for a quantity $A$, if not mentioned differently, are calculated as 
+\begin{equation}
+    \frac{\delta A}{A}=\frac{A-A_\mathrm{PI}}{A_\mathrm{PI}}. 
+\end{equation}
 
 % The global HC, as depicted in Figure \ref{fig:HC_seasonal}, cannot be found at any given longitude but rather there are different regional HCs, which are strongly influenced by the shape and the distribution of continental land mass. HC trends might be different depending on the region of the HC that is considered. This study will only consider the global HC and, if not stated differently, its annual mean.
-\subsection{The axisymmetric scaling parameters}
-To investigate the drivers of HC changes according to our axisymmetric theory from Section \ref{sec:axisymmetric}, we linearize Equation \eqref{eq:HH_ext} and Equation \eqref{eq:HH_strength} to  
-\begin{equation}
-    \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}=\frac{5}{2}\frac{\delta H}{H}+\frac{5}{2}\frac{\delta\Delta_h}{\Delta_h}-\frac{\delta\Delta_v}{\Delta_v}
-\end{equation}
-and
+\subsection{The axisymmetric scaling parameters}\label{sec:lin}
+To investigate the drivers of HC changes according to our axisymmetric theory from Section \ref{sec:axisymmetric}, we linearize Equation \eqref{eq:HH_ext} and Equation \eqref{eq:HH_strength} to
 \begin{equation}
     \frac{\delta\phi_\mathrm{H}}{\phi_\mathrm{H}}=\frac{1}{2}\frac{\delta H}{H}+\frac{1}{2}\frac{\delta\Delta_h}{\Delta_h},
 \end{equation}
-assuming that only the tropopause height $H$, the meridional temperature gradient $Delta_h$, and the vertical stability $\Delta_v$ change in our simulations. We define these parameters in our model simulation in the following: The tropopause height $H$ is at the lowest level at which the lapse rate decreases to $\SI{2}{\degreeCelsius\per\km}$ or less, provided also that the average lapse rate between this level and all higher levels within $\SI{2}{\km}$ does not exceed $\SI{2}{\degreeCelsius\per\km}$ \parencite{worldmeteorologicalorganizationInternationalMeteorologicalVocabulary1992}. The result was then averaged over $\SI{15}{\deg S}$ to $\SI{15}{\deg N}$.
+and  
+\begin{equation}
+    \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}=\frac{5}{2}\frac{\delta H}{H}+\frac{5}{2}\frac{\delta\Delta_h}{\Delta_h}-\frac{\delta\Delta_v}{\Delta_v}
+\end{equation}
 
-For the definition of the meridional temperature gradient $\Delta_h$ and vertical temperature gradient $\Delta_v$ we follow \textcite{dagostinoFactorsControllingHadley2017}. We use the meridional near-surface potential temperature contrast between the deep tropics (equatorward of $\SI{10}{\deg})$ and the extratropics ($\SIrange{40}{60}{\deg}$) averaged over $\SIrange{700}{800}{hPa}$ as $\Delta_h$. For $\Delta_v$, we use the potential temperature difference between $\SIrange{700}{800}{hPa}$ averaged between $\SIrange{20}{40}{\deg}$.
-The results have been tested also with different definitions which have not resulted in significant changes (improvements). 
+assuming that only the tropopause height $H$, the meridional temperature gradient $\Delta_h$, and the vertical stability $\Delta_v$ change in our simulations. We define these parameters in our model simulation in the following: The tropopause height $H$ is at the lowest level at which the lapse rate decreases to $\SI{2}{\degreeCelsius\per\km}$ or less, provided also that the average lapse rate between this level and all higher levels within $\SI{2}{\km}$ does not exceed $\SI{2}{\degreeCelsius\per\km}$ \parencite{worldmeteorologicalorganizationInternationalMeteorologicalVocabulary1992}. The result was then averaged over $\SI{15}{\deg S}$ to $\SI{15}{\deg N}$.
 
-\subsection{The integrated eddy momentum divergence}
-To obtain the integrated eddy momentum flux $\mathcal{T}$ from Equation \eqref{eq:T_edd}, we first have to calculate the covariances $\overline{u'v'}$, $\overline{u'\omega'}$.
-In general, it holds that
+For the definition of the meridional temperature gradient $\Delta_h$ and vertical temperature gradient $\Delta_v$ we follow \textcite{dagostinoFactorsControllingHadley2017}. We use the meridional near-surface potential temperature contrast between the deep tropics (equatorward of $\SI{10}{\deg})$ and the extratropics ($\SIrange{40}{60}{\deg}$) averaged over $\SIrange{700}{800}{hPa}$ as $\Delta_h$. For $\Delta_v$, we use the potential temperature difference between $\SI{700}{hPa}$ and $\SI{800}{hPa}$ averaged between $\SIrange{20}{40}{\deg}$.
+The results have been tested also with slightly different definitions, which did not change the results qualitatively. 
+
+\subsection{The integrated eddy momentum flux divergence}
+To obtain the integrated eddy momentum flux $\mathcal{T}$ from Equation \eqref{eq:T_edd}, we first have to calculate the covariances $\overline{u'v'}$, $\overline{u'\omega'}$ from 6 hourly output data. For this 6 hourly data, we only have an averaging period of 10 years after spin-up.
+To calculate these, it holds that
 \begin{equation*}
-    <a'b'>=<ab>-<a><b>
+    %<a'b'>=<ab>-<a><b>
+    \overline{a'b'}=\overline{ab}-\overline{a}\overline{b}
 \end{equation*}
-with $<\cdot>$ indicating monthly and zonally mean values. The monthly mean should be emphasized here, otherwise our eddies would simply consist of the seasonality. After doing this for every month, we average over all of them to get annual mean values. The $\mathcal{T}$ can now be calculated at every grid point. We compare it to the HC strength at the latitude and pressure level of the maximum MSF $\psi_\mathrm{max}$.
+with $<\cdot>$ indicating monthly and zonally mean values. The monthly mean should be emphasized here, otherwise our eddies would simply consist of the seasonality. After doing this for every month, we average over all months to get the annual mean data. The integrated eddy momentum flux divergence $\mathcal{T}$ from Equation \ref{eq:T_edd} can now be calculated at every grid point. We compare it to the HC strength at the latitude and pressure level of the maximum MSF $\psi_\mathrm{max}$.
 
 \subsection{Applying the energetic framework}
+We use Equation \ref{eq:energetic_contribution} to calculate the contributions to changes in energy transport due to the forcing, feedback, GMS, eddies, and OHU. The contribution is always evaluated at the latitude of the MSF maximum in the PI control run even if it has changed in the forced simulations. This guarantees that our decomposition is energetically closed but also leads to slightly different values of HC changes compared to the previous analyses. To calculate the forcing on the atmosphere, we consider the net energy input (NEI) in the fixed SST simulations. The NEI can be determined by evaluating the net TOA fluxes and subtracting the net surface fluxes. 

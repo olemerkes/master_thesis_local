@@ -2,7 +2,7 @@
 \label{chapter:results}
 \section{Simulation results}
 \subsection{Linearity of decomposition}
-When separating the uniform quadrupling of \CO{} into a tropospheric and a stratospheric component in our simulations with ECHAM6, one might be wondering whether this decomposition even works. The decomposition is physically not possible to realize in a real atmosphere due to its well-mixed state. There could be non-linearities involved. In short: Is the response to uniform forcing \CO{} identical to the added up responses of the atmosphere to a forcing in the troposphere and stratosphere? Is the net circulation response decomposable into these two components?
+When separating the uniform quadrupling of \CO{} into a tropospheric and a stratospheric component in the simulations with ECHAM6, one might be wondering whether this decomposition even works. The decomposition is physically not possible to realize in a real atmosphere due to its well-mixed state. There could be non-linearities involved. In short: Is the response to uniform forcing \CO{} identical to the added up responses of the atmosphere to a forcing in the troposphere and stratosphere? Is the net circulation response decomposable into these two components?
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth,keepaspectratio]{initial_plots/linear_T.png}
@@ -21,16 +21,16 @@ To find out whether \CO{} in the vertical show a linear behavior, we compared th
 
 Overall, the decomposition of the \CO{} increase works. The response is approximately linear in the temperature and MSF anomalies. Nonetheless, one should bare the small non-linear effects in mind in the further analysis of these results.
 \subsection{Temperature anomalies}
-Our model simulations for the temperature anomalies in \uniform display quite well the expected patterns described in Section \ref{sec:CO2_T_response}. The temperature throughout the troposphere is increased while the warming in the upper tropics oft is enhanced and amplified in the Arctic while the stratosphere is cooled (see Figure \ref{fig:lin_T} left panel). 
+The model simulations for the temperature anomalies in \uniform display quite well the expected patterns described in Section \ref{sec:CO2_T_response}. The temperature throughout the troposphere is increased while the warming in the upper tropics oft is enhanced and amplified in the Arctic while the stratosphere is cooled (see Figure \ref{fig:lin_T} left panel). 
 We now expected that the \CO increase only in the troposphere is responsible for its warming while \CO increase only in the stratosphere is responsible for stratospheric cooling. This is also what we see in Figure \ref{fig:temperature_initial}. The warming in the troposphere also maintains the spatial structure from the \uniform case. In the response of the \tropo we notice an additional cooling in the stratosphere right above the tropopause, which will be further investigated. In \strato the tropospheric temperatures remains almost constant. Only right above the tropopause, there is an unexpected anomalous warming. Given these temperature responses, one would still expect the net weakening to originate from tropospheric \CO and the associated warming of the troposphere. However, the warming/cooling right above the tropopause might have an influence on the tropopause height and the vertical stability resulting in unexpected HC changes. 
 
-To better understand the cause of the anomalous warming in \strato and the anomalous cooling in \tropo right above the tropopause, we perform experiments with \textit{konrad} changing the vertical \CO concentration. Looking at Figure \ref{fig:konrad}, one can see by comparing \uniform to \tropo + \strato that there is again some non-linearity in the response right above the tropopause. Still, after considering the non-linearity there is an anomalous warming above the tropopause in the \strato and an anomalous cooling in the \tropo case. In the experiments with \textit{konrad} it also extends below the tropopause. We believe that the heating rate induced by the step wise increase in optical thickness associated with the step wise increase of \CO might be its cause. Thus, we can conclude that also the heating in \strato and cooling in \tropo above the tropopause in our experiments with ECHAM6 are a static thermodynamic response and not evoked by changes in the atmospheric circulation.
+To better understand the cause of the anomalous warming in \strato and the anomalous cooling in \tropo right above the tropopause, we perform experiments with \textit{konrad} changing the vertical \CO concentration. Looking at Figure \ref{fig:konrad}, one can see by comparing \uniform to \tropo + \strato that there is again some non-linearity in the response right above the tropopause. Still, after considering the non-linearity there is an anomalous warming above the tropopause in the \strato and an anomalous cooling in the \tropo case. In the experiments with \textit{konrad} it also extends below the tropopause. We believe that the heating rate induced by the step wise increase in optical thickness associated with the step wise increase of \CO might be its cause. Thus, we can conclude that also the heating in \strato and cooling in \tropo above the tropopause in the experiments with ECHAM6 are a static thermodynamic response and not evoked by changes in the atmospheric circulation.
 
 \begin{figure}[h]
     %% trim=left bottom right top,
     \centering
    \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{initial_plots/T_tropo_strato.png}
-    \caption{The temperature anomalies for our experiments with a GCM where we only increase \CO in the troposphere (left hand side) or in the stratosphere and everything above (right hand side). To separate these two cases we use a PI climatology tropopause height (black line). }
+    \caption{The temperature anomalies for the experiments with a GCM where we only increase \CO in the troposphere (left hand side) or in the stratosphere and everything above (right hand side). To separate these two cases we use a PI climatology tropopause height (black line). }
     \label{fig:temperature_initial}
 \end{figure}
 
@@ -38,7 +38,7 @@ To better understand the cause of the anomalous warming in \strato and the anoma
     %% trim=left bottom right top,
     \centering
    \includegraphics[width=0.7\textwidth,keepaspectratio,trim=0 0 0 0, clip]{rce_simulations/konrad_final.png}%TO CHANGE
-    \caption{\CO concentration and temperature anomalies for our experiments with the one-dimensional RCE model \textit{konrad}. The black, horizontal line indicates the tropopause height determined as the cold-point temperature from a PI control run. }
+    \caption{\CO concentration and temperature anomalies for the experiments with the one-dimensional RCE model \textit{konrad}. The black, horizontal line indicates the tropopause height determined as the cold-point temperature from a PI control run. }
     \label{fig:konrad}
 \end{figure}
 
@@ -46,8 +46,8 @@ To better understand the cause of the anomalous warming in \strato and the anoma
 
 
 \subsection{The atmospheric response}
-One of the main questions that this study tries to answer is how does the HC respond to \CO forcing in the troposphere versus \CO forcing in the stratosphere. What are their relative contributions to net weakening and widening that has been found in previous studies (see Section \ref{})? 
-What we find when analysing the HC extent according to our definitions from Section \ref{} is that the HC is weakening and widening in the \uniform case (see Figure \ref{fig:lin_msf}, left panel) in both hemispheres. This aligns with our expectations. Surprisingly, this weakening cannot be traced back to the increase in tropospheric \CO, due to which the HC is strengthening, but to stratospheric \CO. This implies that the cooling of the stratosphere is responsible for the weakening of the HC in \uniform and not the warming of the troposphere. For a summary of all HC changes see Table \ref{tab:HC_changes}. One should notice here that the HC strength response is not linear in neither hemisphere, while the changes in HC extent are to a good approximation. Considering the magnitude of the individual changes, which are all significantly larger than the HC response to the uniform forcing, we perceive them as robust physical responses instead of artifacts due to the non-linearities. The HC strength response is also quite different between the hemispheres.  
+One of the main questions that this study tries to answer is how does the HC respond to \CO forcing in the troposphere versus \CO forcing in the stratosphere. What are their relative contributions to net weakening and widening that has been found in previous studies (see Section \ref{sec:HC_proj})? 
+What we find when analysing the HC extent according to the definitions from Section \ref{sec:def_HC} is that the HC is weakening and widening in the \uniform case (see Figure \ref{fig:lin_msf}, left panel) in both hemispheres. This aligns with the expected response. Surprisingly, this weakening cannot be traced back to the increase in tropospheric \CO, due to which the HC is strengthening, but to stratospheric \CO. This implies that the cooling of the stratosphere is responsible for the weakening of the HC in \uniform and not the warming of the troposphere. For a summary of all HC changes see Table \ref{tab:HC_changes}. One should notice here that the HC strength response is not linear in neither hemisphere, while the changes in HC extent are to a good approximation. The non-linearity in the Northern hemisphere accounts for 3.4\% and in the Southern hemisphere for 1.5\%. Considering the magnitude of the individual changes, which are all significantly larger than the HC response to the uniform forcing, we perceive them as robust physical responses instead of artifacts due to the non-linearities. The HC strength response is also quite different between the hemispheres. In the next section, we are trying to identify the underlying physical mechanisms that lead to a strengthening in \tropo and a weakening in \strato employing different frameworks.  
 
 
 \begin{figure}[h]
@@ -69,39 +69,44 @@ What we find when analysing the HC extent according to our definitions from Sect
  $\Delta\phi_\mathrm{H, NH}$ & \SI{1.6}{\deg} & \SI{0.7}{\deg} & \SI{0.7}{\deg} \\ \hline
  $\Delta\phi_\mathrm{H, SH}$ & \SI{-1.6}{\deg} & \SI{-1.0}{\deg} & \SI{-0.6}{\deg}\\ \hline
     \end{tabular}
-    \caption{The changes in HC extent and strength on our experiments for the Northern and Southern hemisphere. Negative values for the Southern hemisphere extent indicate a widening of the HC.}
+    \caption{The changes in HC extent and strength in the experiments for the Northern and Southern hemisphere. Negative values for the Southern hemisphere extent indicate a widening of the HC.}
     \label{tab:HC_changes}
     \end{table} 
 
 \section{Physical drivers of HC strength response}
 \subsection{Predictions from axisymmetric scalings}
-\parencite{seoMechanismFutureChanges2014}
+Trying to explain the opposing Hadley cell strength responses but also the HC widening in both cases we use the axisymmetric scalings from Section \ref{sec:axisymmetric}. This analysis is very much similar to the one from \textcite{seoMechanismFutureChanges2014}. Given the temperature response described above, a qualitative explanation of the HC changes inferred from the temperature field using the axisymmetric scalings is not possible (see also Section \ref{sec:axisymmetric}). The axisymmetric scalings predict that the HC strength and extent are a function of the tropopause height $H$, the meridional temperature gradient $\Delta_h$, and the vertical stability $\Delta_v$. This parameters are defined according to Section \ref{sec:def}. The individual predictive power of each of these parameters is displayed in Figure \ref{fig:parameters_HH}. For the HC extent anomalies, we find the best correlation ($R^2=0.89$) with the change in vertical stability, a parameter which according to Equation \ref{eq:HH_ext} is not supposed to influence the extent of the HC at all. We find a smaller correlation ($R^2=0.67$) between $\Delta_h$ and the HC extent with the tropopause height playing a negligible role ($R^2=0.24$). For the correlations with the HC strength we find an even larger disagreement. The largest correlation shows the tropopause height ($R^2=0.61$). The meridional and vertical temperature gradients show almost no skill at all.
 \begin{figure}[H]
     %% trim=left bottom right top,
     \centering
-   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{H&H/parameters_NH.png}
-    \caption{  }
+   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{H&H/parameters_NH_fit.png}
+    \caption{Changes in annual mean HC extent and strength against changes in tropopause height $H$, meridional temperature gradient $\Delta_h$, and vertical stability $\Delta_v$ (top down) for the four experiments. Linear regression shows their agreement.}
     \label{fig:parameters_HH}
 \end{figure}
+Since the individual parameters cannot significantly predict the HC changes, we now consider their combined contribution. Using the linearisations from Section \ref{sec:lin}, we can calculate what the change in HC would be by just considering the tropopause height, the meridional temperature gradient, and the vertical stability. In Figure \ref{fig:scaling_HH}, one can see the combined contributions according to the axisymmetric scalings. If the scalings hold exactly, all datapoints would lie on the one-to-one line. We see that the changes in the thermodynamical parameters significantly underpredict the simulated changes in HC extent while they overpredict the changes in HC strength. From this one can draw the conclusion that the axisymmetric scalings are not suitable to explain the changes in the HC that we see in the simulations.
 \begin{figure}[H]
     %% trim=left bottom right top,
     \centering
    \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{H&H/scatter_NH.png}
-    \caption{  }
+    \caption{HC changes against their prediction from the linearised axisymmetric scalings for the four experiments. A good agreement is given for datapoints on the one-to-one line.}
     \label{fig:scaling_HH}
 \end{figure}
+Doing the same analysis for the Southern hemisphere (not shown), we find different correlation but not an overall increase in predictive skill of the axisymmetric scalings. Also when investigating the winter HCs, which, according to the dynamical framework, are closer to angular momentum conservation, the results do not significantly improve. This has the following reasons
+too few data points to do an actual fit, but also in the paper they do not find a convincing relationship
 \subsection{Eddy driven HC changes}
 
-\begin{figure}[H]
+\begin{figure}[h]
     %% trim=left bottom right top,
     \centering
    \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{eddy_flux/eddy_flux_vs_strength.png}
     \caption{  }
     \label{fig:eddy_flux_strength}
 \end{figure}
-\subsection{HC changes in the energetic framework}
 
-\subsubsection{GMS contribution}
+\section{HC changes in the energetic framework}
+ 
+Southern hemisphere HC changes are slightly different because the location of the maximum has slightly moved. We stay at the same latitude so that the calculations stay energetically closed.
+\subsection{GMS contribution}
 \begin{figure}[H]
     %% trim=left bottom right top,
     \centering
@@ -117,9 +122,9 @@ What we find when analysing the HC extent according to our definitions from Sect
     \caption{  }
     \label{fig:eddy_change}
 \end{figure}
-\subsubsection{OHU contribution}
+\subsection{OHU contribution}
 
-\subsubsection{Forcing and feedback contributions}
+\subsection{Forcing and feedback contributions}
 \begin{figure}[H]
     %% trim=left bottom right top,
     \centering
@@ -127,7 +132,7 @@ What we find when analysing the HC extent according to our definitions from Sect
     \caption{  }
     \label{fig:contributions_NH}
 \end{figure}
-\subsubsection{Southern hemisphere versus NH}
+\subsection{Southern hemisphere versus NH}
 
 Explain the forcing structure \parencite{merlisDirectWeakeningTropical2015}
 \begin{figure}[H]
