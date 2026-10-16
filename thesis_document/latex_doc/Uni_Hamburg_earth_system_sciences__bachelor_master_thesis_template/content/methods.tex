@@ -57,8 +57,8 @@ assuming that only the tropopause height $H$, the meridional temperature gradien
 For the definition of the meridional temperature gradient $\Delta_h$ and vertical temperature gradient $\Delta_v$ we follow \textcite{dagostinoFactorsControllingHadley2017}. We use the meridional near-surface potential temperature contrast between the deep tropics (equatorward of $\SI{10}{\deg})$ and the extratropics ($\SIrange{40}{60}{\deg}$) averaged over $\SIrange{700}{800}{hPa}$ as $\Delta_h$. For $\Delta_v$, we use the potential temperature difference between $\SI{700}{hPa}$ and $\SI{800}{hPa}$ averaged between $\SIrange{20}{40}{\deg}$.
 The results have been tested also with slightly different definitions, which did not change the results qualitatively. 
 
-\subsection{The integrated eddy momentum flux divergence}
-To obtain the integrated eddy momentum flux $\mathcal{T}$ from Equation \eqref{eq:T_edd}, we first have to calculate the covariances $\overline{u'v'}$, $\overline{u'\omega'}$ from 6 hourly output data. For this 6 hourly data, we only have an averaging period of 10 years after spin-up.
+\subsection{The integrated eddy momentum flux divergence}\label{sec:meth_eddy}
+To obtain the integrated eddy momentum flux $\mathcal{T}$ from Equation \eqref{eq:T_edd}, we first have to calculate the covariances $\overline{u'v'}$, $\overline{u'\omega'}$ from 6 hourly output data. For this 6 hourly data, we only have an averaging period of 10 years after spin-up. Because we use this slightly different dataset also the changes in HC strength and extent are slightly different.
 To calculate these, it holds that
 \begin{equation*}
     %<a'b'>=<ab>-<a><b>
