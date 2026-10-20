@@ -150,7 +150,7 @@ with $p_\mathrm{max}$ being the pressure level at which the MSF becomes maximum 
 
 From the eddy framework, one can predict how the temperature response to \CO{} influences the HC. Therefore, it is crucial to look at how the zones of baroclinic instability change. This is set by the changes in meridional temperature gradient via the thermal wind relationship. The decrease in meridional temperature gradient at the surface opposes the effect of an increase in meridional temperature gradient aloft in both the uniform and the tropospheric \CO{} increase case. Which effect dominates the jet change, is still discussed in the literature \parencite{ossoAdvancingOurUnderstanding2024}.
 
-\section{The energy budget framework of the Hadley circulation}
+\section{The energy budget framework of the Hadley circulation}\label{sec:theo_energy}
 The energy budget analysis provides a diagnostic perspective on the HC. It cannot explain why the Earth is not in radiative (convective) equilibrium, but provides a framework for understanding its energy transport mechanisms. Thus, it circumvents the Rossby number regime dependency, providing a more universal approach. Important to notice is that this framework can only deliver a prognostic relationship between energy transport and HC strength. Changes in HC extent cannot be investigated.
 
 Using TOA radiative fluxes (see Figure \ref{fig:irradiance}), one can infer that the short-wave radiative flux at the equator is much larger than the emitted outgoing long wave radiation. The opposite is true for the poles. This implies a poleward energy transport by the atmosphere and the ocean. 
@@ -180,11 +180,15 @@ For this, we need to determine the energy within an air parcel in the atmosphere
     h=c_pT+gz+L_vq
 \end{equation}
 with $c_p$ being the specific heat capacity at constant pressure, $g$ the gravitational acceleration, $z$ the height, $L_v$ the latent heat of vaporization and $q$ the specific humidity.
-The transport of MSE by the mean meridional circulation at a certain latitude $\phi$ is given by vertical integration of the meridional wind $\bar{v}$ multiplied by the MSE $h$ over the entire atmospheric column
-\begin{equation}
-    F_\mathrm{HC}(\phi)=\frac{2\pi a\cos\phi}{g}\int^{p_s}_0[\Bar{v}_\mathrm{}][\Bar{h}]\mathrm{d}p.
+The transport of MSE by the mean meridional circulation at a certain latitude $\phi$ is given by vertical integration of the adjusted meridional wind $\bar{v}_\mathrm{adj}$ multiplied by the MSE $h$ over the entire atmospheric column
+\begin{equation}\label{eq:F_HC}
+    F_\mathrm{HC}(\phi)=\frac{2\pi a\cos\phi}{g}\int^{p_s}_0[\Bar{v}_\mathrm{adj}][\Bar{h}]\mathrm{d}p.
 \end{equation}
-This expression compares the poleward energy transport by the upper branch of the HC to the equatorward energy transport by the lower branch.
+This expression compares the poleward energy transport by the upper branch of the HC to the equatorward energy transport by the lower branch. The adjusted meridional wind is defined as 
+\begin{equation}
+    [\bar{v}_\mathrm{adj}] = [\bar{v}_{+}]+[\bar{v}_{-}]\frac{\{[\bar{v}_{+}]\}}{\{[\bar{v}_{-}]\}},
+\end{equation}
+where $[\bar{v}_{+}]$ denotes northward zonal mean wind (i.e., equal to $[\bar{v}]$ if $[\bar{v}]>0$ and zero elsewhere), and $[\bar{v}_{-}]$ defined conversely with $\{\cdot\}=\int\frac{\cdot}{g}\mathrm{d}p$ indicating a vertical mass weighted integral over the depth of the column. Thus, the meridional mass flow is strictly in mass balance with $\{[\bar{v}_\mathrm{adj}]\}=0$. It provides a correction for imbalances produced by the interpolation from sigma to pressure vertical levels.
 \begin{wrapfigure}{R}{7.5cm}
 \includegraphics[width=7.5cm]{energetic_framework/GMS_F_HC.png}
 \caption{TODO: Only include PI values, increase axis labels}\label{fig:F_HC}
@@ -198,8 +202,8 @@ Expressing the HC strength $\psi_\mathrm{max}$ in terms of the energy transport 
 
 
 Gross moist stability (GMS) is defined as the ratio of energy transport to mass transport by the HC which can be understood as the energy transport efficiency. It is inferred to
-\begin{equation}
-    H(\phi)=\frac{2\pi a\cos\phi}{g}\frac{1}{\psi_\mathrm{max}}\int^{p_s}_0[\Bar{v}][\Bar{h}]\mathrm{d}p.
+\begin{equation}\label{eq:GMS}
+    H(\phi)=\frac{2\pi a\cos\phi}{g}\frac{1}{\psi_\mathrm{max}}\int^{p_s}_0[\Bar{v}_\mathrm{adj}][\Bar{h}]\mathrm{d}p.
 \end{equation}
 It is a measure for the stratification of the atmosphere. A large GMS indicates a strongly stratified atmosphere.
 To understand the changes in HC strength, we linearize Equation \eqref{eq:F_HC} and obtain 
@@ -243,7 +247,7 @@ GMS is expected to increase with global warming, which is according to this fram
     \caption{Northward energy transport }
     \label{fig:transport}
 \end{figure}
-Again, using the known changes of these parameters under uniform \CO{} forcing, we are trying to qualitatively predict their contribution to the HC changes in our respective forcing cases. A uniform increase of \CO{} increases the GMS, which contributes to a weakening of the HC. An increase in eddy heat transport also contributes to a decreases in HC strength, because more of the necessary transport carried out by the eddies. TODO: In our particular setup (see Section \ref{}), there are no changes in the HC due to a change in ocean heat uptake (OHU). In CMIP models, studies find a decrease in OHU at the equator relative to the extra-tropics, which is responsible for a strengthening of the HC \parencite{feldlCharacterizingHadleyCirculation2016}. Due to the meridional forcing structure, which is set by the surface temperature \parencite{jeevanjeeAnalyticalModelSpatially2021} and therefore enhanced in the tropics relative to the extra-tropics, one finds a positive forcing contribution. Using the radiative kernel technique allows us to estimate the influence of the individual climate feedbacks on the HC changes. The contribution of a feedback is determined by its meridional structure not by it being positive or negative, because it is always evaluated against its meridional mean. A feedback that is larger or smaller than its mean value in the tropics compared to the extra-topics or the poles strengthens or weakens the HC, respectively. For a uniform increase in \CO{} concentration this is the case for the water vapor feedback. The lapse rate, Planck and surface albedo feedback contribute to a weakening of the HC. The cloud feedback shows a large model dependence and can either contribute positively or negatively \parencite{feldlCharacterizingHadleyCirculation2016}.
+Again, using the known changes of these parameters under uniform \CO{} forcing, we are trying to qualitatively predict their contribution to the HC changes in our respective forcing cases. A uniform increase of \CO{} increases the GMS, which contributes to a weakening of the HC. An increase in eddy heat transport also contributes to a decreases in HC strength, because more of the necessary transport carried out by the eddies. TODO: In our particular setup (see Section \ref{sec:setup}), there are no changes in the HC due to a change in ocean heat uptake (OHU). In CMIP models, studies find a decrease in OHU at the equator relative to the extra-tropics, which is responsible for a strengthening of the HC \parencite{feldlCharacterizingHadleyCirculation2016}. Due to the meridional forcing structure, which is set by the surface temperature \parencite{jeevanjeeAnalyticalModelSpatially2021} and therefore enhanced in the tropics relative to the extra-tropics, one finds a positive forcing contribution. Using the radiative kernel technique allows us to estimate the influence of the individual climate feedbacks on the HC changes. The contribution of a feedback is determined by its meridional structure not by it being positive or negative, because it is always evaluated against its meridional mean. A feedback that is larger or smaller than its mean value in the tropics compared to the extra-topics or the poles strengthens or weakens the HC, respectively. For a uniform increase in \CO{} concentration this is the case for the water vapor feedback. The lapse rate, Planck and surface albedo feedback contribute to a weakening of the HC. The cloud feedback shows a large model dependence and can either contribute positively or negatively \parencite{feldlCharacterizingHadleyCirculation2016}.
 
 Transferring this to the tropospheric \CO{} case almost all aspects seem identical here. There only might be some uncertainty again regarding the eddy component. This means the HC response should be similar as for a uniform increase of \CO{},i.e., a weakening of the HC. For an increase in stratospheric \CO{}, one would expect no parameter to change significantly, and thus also the HC to stay rather constant. The biggest uncertainty is in the eddy and the forcing component. GMS and the feedback component should be zero because they both only relate to temperature changes in the troposphere, which we do not expect.
 

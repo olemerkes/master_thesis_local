@@ -108,57 +108,90 @@ TODO indirect thermal drivers
 \end{figure}
 
 \section{HC changes in the energetic framework}
- 
+We will exemplify this analysis on the annual mean Southern hemisphere HC changes step-by-step and only show the full result of the Northern hemisphere in the last part to highlight the differences. We will use the Southern hemisphere because it has a lower OHU contribution which is an artifact from the model setup (fixed sea ice).
+
+
 Southern hemisphere HC changes are slightly different because the location of the maximum has slightly moved. We stay at the same latitude so that the calculations stay energetically closed.
 \subsection{GMS contribution}
-\begin{figure}[H]
+The strength of the HC, which is the maximum mass stream flux, is in relation to the energy transport by the HC and its efficiency. The efficiency of energy transport is described by GMS (see Section \ref{sec:theo_energy}). Increasing the required energy transport by the atmosphere while the GMS remains constant increases the HC strength. If the energy transport by the HC remains constant but GMS increases, the HC strength weakens. In this section, we calculate the contribution of changes in HC energy transport $F_\mathrm{HC}$ and GMS $H$ according to Equation \eqref{eq:F_HC} and \eqref{eq:GMS} using the linearised energy budget equation. Figure \ref{fig:GMS_change} shows that in \uniform and \tropo the increase in required energy transport is contribution to a strengthening of the HC while the increase in GMS is contributing to a weakening of the HC. For \uniform the GMS increase contribution prevails leading to a small net weakening of the HC while in \tropo the changes in $F_\mathrm{HC}$ are large leading to the net strengthening of the HC. In \strato we see the opposite response. The energy transport and the GMS are both decreasing. Since the decrease in GMS is smaller than the decrease in energy transport the HC weakens. To find out what drives the changes in we plot the vertical profile of changes in MSE flux weighted by the HC strength at the location of the MSF minimum (see Figure \ref{fig:GMS_vertical}). Vertically integrating these profiles and dividing by the GMS of the PI control yields the changes in GMS. The dominant change in MSE flux occurs at the tropopause. The heating in \strato and cooling in \tropo in the stratosphere does not affect the changes in GMS. Integrating to the tropopause only does not qualitatively change the result. We further decompose the changes in energy transport, to investigate its drivers in the next sections.
+
+
+\begin{figure}[h]
     %% trim=left bottom right top,
     \centering
    \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{energetic_framework/southern_hemisphere/GMS_contribution.png}
-    \caption{  }
+    \caption{Contributions of changes in energy transport by the HC and GMS to changes in Southern hemisphere annual mean HC strength in \uniform, \tropo, and \strato. The contributions to the right if the dashed vertical line are supposed to add up to the changes in $\psi_\mathrm{max}$. The HC changes that cannot be explained by changes of either of these parameters are listed as residual. The sum of \tropo and \strato for each contributor is indicated as horizontal line in the \uniform bar. }
     \label{fig:GMS_change}
 \end{figure}
+\begin{figure}[h]
+    %% trim=left bottom right top,
+    \centering
+   \includegraphics[width=0.9\textwidth,keepaspectratio,trim=0 0 0 0, clip]{energetic_framework/mse_flux_vs_pressure.png}
+    \caption{Vertical profiles of changes in the meridional MSE flux per unit mass flux for \uniform, \tropo, and \strato at the location of the Southern hemisphere MSF minimum and the Northern hemisphere MSF maximum. The horizontal black line indicates the tropopause height at this latitude.}
+    \label{fig:GMS_vertical}
+\end{figure}
 \subsection{Eddy contribution}
-\begin{figure}[H]
+The energy transport of the HC can change either by changes in total atmospheric energy transport or by changes in energy eddy transport. The eddy term consists of the stationary and transient eddies, because the eddy component is calculated as the residual of the energy transport of the atmosphere minus the transport by the Hadley cell.  The more energy transport by the eddies, the less has to be performed by the mean circulation given the same amount of total energy transport by the atmosphere. Figure \ref{fig:eddy_change} shows that the energy transport by the eddy energy fluxes increases contributing to a weakening of the HC in all experiments. The increase is largest in \uniform (17.5\%), slightly smaller (13.8\%) in \tropo and very small (2.6\%) in \strato. Connecting the increase in eddy energy transport to changes in meridional temperature structure proves difficult. For \uniform and \tropo, Figure \ref{fig:jet_change} clearly shows an increase in the meridional temperature gradient and the subtropical jet strength, which also increases its baroclinicity ,i.e., the generation of eddies. For \strato, there is a decrease of the mean zonal wind right at the tropopause while it is increasing in the surrounding areas.
+\begin{figure}[h]
     %% trim=left bottom right top,
     \centering
    \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{energetic_framework/southern_hemisphere/eddy_contribution.png}
-    \caption{  }
+    \caption{Contributions of changes in energy transport by the atmosphere $F_a$, eddies, and GMS to changes in Southern hemisphere annual mean HC strength in \uniform, \tropo, and \strato. The contributions to the right if the dashed vertical line are supposed to add up to the changes in $\psi_\mathrm{max}$. The HC changes that cannot be explained by changes of either of these parameters are listed as residual. The sum of \tropo and \strato for each contributor is indicated as horizontal line in the \uniform bar. }
     \label{fig:eddy_change}
 \end{figure}
+
+\begin{figure}[h]
+    %% trim=left bottom right top,
+    \centering
+   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{eddy_flux/temperature_jet_stream.png}
+    \caption{The zonal mean temperature anomalies (shading) and the contours of zonal mean zonal wind anomalies at \SI{1}{\m\per\s} distance. The thick black line indicates the zonal mean climatology tropopause height from the PI run.}
+    \label{fig:jet_change}
+\end{figure}
 \subsection{OHU contribution}
-\begin{figure}[H]
+In our experiments we are using an slab-ocean configuration with a prescribed energy flux at the surface. Thus, one does not expect any changes on ocean heat transport. When investigating the surface fluxes (net LW, net SW, latent heat, sensible heat, see Figure \ref{fig:ohu_seaice}), we find that this is not true for the simulated time period. The culprit is the sea ice. The anomalies in surface heat fluxes have an identical spatial structure. Since the sea ice stays fixed in our simulations the SSTs below can only warm through conduction. With the air temperature above the sea ice remain much larger than the SSTs below the sea ice there is a constant flux of energy out of the atmosphere into the ocean. This affects the global atmospheric circulation because the removal of energy in higher latitudes requires additional poleward energy transport by the atmosphere. Running the simulations for a longer period until the temperatures above and below sea ice are in equilibrium should remove this effect. Calculating difference between the energy transport by the atmosphere and the total energy transport from TOA radiative fluxes, we obtain the OHU contribution. Additional poleward transport requires a strengthening of the HC, which is why the OHU contributes positively in \uniform and \tropo in Figure \ref{fig:ohu}. In \strato, this effect is negligible because the troposphere is not warming. There is no temperature contrast between the surface air temperature above and the SST below the sea ice. This effect is much stronger in the Northern hemisphere because there is more sea ice, and more warming of the air close to the surface in the Arctic than in the Antarctic.
+\begin{figure}[h]
     %% trim=left bottom right top,
     \centering
    \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{energetic_framework/southern_hemisphere/ohu_contribution.png}
-    \caption{  }
-    \label{fig:ohu_change}
+    \caption{Contributions of changes in energy transport by the atmosphere and ocean $F_{ao}$, eddies, OHU, and GMS to changes in Southern hemisphere annual mean HC strength in \uniform, \tropo, and \strato. The contributions to the right if the dashed vertical line are supposed to add up to the changes in $\psi_\mathrm{max}$. The HC changes that cannot be explained by changes of either of these parameters are listed as residual. The sum of \tropo and \strato for each contributor is indicated as horizontal line in the \uniform bar.  }
+    \label{fig:ohu}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[h]
     %% trim=left bottom right top,
     \centering
    \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{energetic_framework/surf_flux_map_profile.png}
-    \caption{  }
-    \label{fig:ohu_amp}
+    \caption{Annual mean surface flux anomalies for \uniform, \tropo, and \strato. The map on the right hand side displays the spatial distribution of OHU while the profile plots show the zonal mean for each experiment.}
+    \label{fig:ohu_seaice}
 \end{figure}
 
 
 \subsection{Forcing and feedback contributions}
-\begin{figure}[H]
+The changes in total energy transport $F_\mathrm{ao}$ are calculated from the TOA radiative imbalance $R_\mathrm{TOA}$. This can be split up into radiative flux changes due to changes in surface temperature (feedback component) and due to the direct effect of \CO (forcing). As forcing we will consider the net energy input (NEI) into atmosphere in the fixed SST simulations. It can be calculated as the difference between fluxes TOA and at the surface. The meridional structure of the forcing and the feedbacks can also contribute to HC changes. Is the forcing larger in the tropics compared to the extratropics requires additional poleward energy transport. This is the case in \uniform and \strato in the Southern hemisphere (see Figure \ref{fig:forcing}). The spatial structure of the forcing is primarily driven by the distribution of land masses. Since the land cannot take up heat but the oceans can the areas over the ocean take up more heat than enters the atmospheric column ($R_\mathrm{surf}>R_\mathrm{TOA}$) while the energy that areas over land receive is also partly taken up by the ocean ($R_\mathrm{surf}<R_\mathrm{TOA}$). In \uniform and \tropo the continental land masses of Southern Africa, Oceania, and South America are responsible for the net surplus of energy relative to the Southern hemisphere mid-latitudes. In \strato this effect is particularly large in the Antarctic, which is why the forcing contributes to a weakening of the HC here. The full decomposition can be seen in Figure \ref{fig:contributions_SH}. Changes in due to feedback only contribute to circulation changes in \uniform and \tropo. They contribute to a strengthening of the HC, which has its cause in the structure of the water vapor, and possibly cloud feedbacks. In \strato there are almost no changes in surface temperature which is reflected in its low contribution. A further decomposition in the individual feedbacks requires the radiative kernel technique \parencite{sodenQuantifyingClimateFeedbacks2008}.
+
+\begin{figure}[h]
     %% trim=left bottom right top,
     \centering
    \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{energetic_framework/southern_hemisphere/final_NEI_SH.png}
-    \caption{  }
+    \caption{Contributions of changes in energy transport due to forcing, feedbacks, eddies,OHU, and GMS to changes in Southern hemisphere annual mean HC strength in \uniform, \tropo, and \strato. The contributions to the right if the dashed vertical line are supposed to add up to the changes in $\psi_\mathrm{max}$. The HC changes that cannot be explained by changes of either of these parameters are listed as residual. The sum of \tropo and \strato for each contributor is indicated as horizontal line in the \uniform bar. }
     \label{fig:contributions_NH}
 \end{figure}
-\subsection{Southern hemisphere versus NH}
 
-Explain the forcing structure \parencite{merlisDirectWeakeningTropical2015}
-\begin{figure}[H]
+\begin{figure}[h]
     %% trim=left bottom right top,
     \centering
    \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{energetic_framework/fixed_SST_surf_TOA_profile_map.png}
-    \caption{  }
+    \caption{Annual mean surface flux anomalies for \uniform, \tropo, and \strato with fixed SSTs. The map on the right hand side displays the spatial distribution of OHU while the profile plots show the zonal mean for each experiment.}
     \label{fig:forcing}
+\end{figure}
+
+\subsection{Quantifying HC change contributions for the Northern hemisphere}
+When comparing previously discussed drivers of the HC changes in the Southern hemisphere to the Northern hemisphere, one can notice that the contributions are quite different. While the forcing contributed positively to the HC strength in \uniform and \tropo in the Southern hemisphere, it contributes to a weakening in the Northern hemisphere. Figure \ref{fig:forcing} shows that the large increase in the forcing in mid-latitudes is caused by the large Eurasian and North American land mass. The contributions of the feedbacks stays positive except for the \strato case, where it causes a small weakening. For the contribution of GMS, \tropo is much less positive while \strato is much more positive. Here, we can also see the largest non-linearity of the sum of \tropo and \strato which might als cause the large net linearity in the HC changes. For the eddies, we notice that the increase in \tropo exceeds the one in \uniform, which was not the case in the Southern hemisphere. The contribution of \strato is even positive, which can be explained by the stronger weakening of the zonal mean zonal winds in the Northern hemisphere, which can be seen in Figure \ref{fig:jet_change}. The increased OHU has a much larger HC strengthening contribution in the Northern hemisphere. As one can see in Figure \ref{fig:ohu_seaice}, can this be explained by the the larger sea ice fraction and the larger warming in the Arctic. While the net response in HC strength is qualitatively similar in the Northern and Southern hemisphere, the underlying physical mechanism of the response differ significantly.
+
+\begin{figure}[h]
+    %% trim=left bottom right top,
+    \centering
+   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{energetic_framework/final/contributions_NEI.png}
+    \caption{Contributions of changes in energy transport due to forcing, feedbacks, eddies,OHU, and GMS to changes in Northern hemisphere annual mean HC strength in \uniform, \tropo, and \strato. The contributions to the right if the dashed vertical line are supposed to add up to the changes in $\psi_\mathrm{max}$. The HC changes that cannot be explained by changes of either of these parameters are listed as residual. The sum of \tropo and \strato for each contributor is indicated as horizontal line in the \uniform bar.  }
+    \label{fig:contributions_SH}
 \end{figure}
