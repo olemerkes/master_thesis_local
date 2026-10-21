@@ -186,7 +186,7 @@ The transport of MSE by the mean meridional circulation at a certain latitude $\
 \end{equation}
 This expression compares the poleward energy transport by the upper branch of the HC to the equatorward energy transport by the lower branch. The adjusted meridional wind is defined as 
 \begin{equation}
-    [\bar{v}_\mathrm{adj}] = [\bar{v}_{+}]+[\bar{v}_{-}]\frac{\{[\bar{v}_{+}]\}}{\{[\bar{v}_{-}]\}},
+    [\bar{v}_\mathrm{adj}] = [\bar{v}_{+}]-[\bar{v}_{-}]\frac{\{[\bar{v}_{+}]\}}{\{[\bar{v}_{-}]\}},
 \end{equation}
 where $[\bar{v}_{+}]$ denotes northward zonal mean wind (i.e., equal to $[\bar{v}]$ if $[\bar{v}]>0$ and zero elsewhere), and $[\bar{v}_{-}]$ defined conversely with $\{\cdot\}=\int\frac{\cdot}{g}\mathrm{d}p$ indicating a vertical mass weighted integral over the depth of the column. Thus, the meridional mass flow is strictly in mass balance with $\{[\bar{v}_\mathrm{adj}]\}=0$. It provides a correction for imbalances produced by the interpolation from sigma to pressure vertical levels.
 \begin{wrapfigure}{R}{7.5cm}
@@ -195,7 +195,7 @@ where $[\bar{v}_{+}]$ denotes northward zonal mean wind (i.e., equal to $[\bar{v
 \end{wrapfigure}
 Expressing the HC strength $\psi_\mathrm{max}$ in terms of the energy transport $F_\mathrm{HC}$ and the gross moist stability $H$ gives
 \begin{equation}
-    \label{eq:F_HC}
+    \label{eq:F_psi_H}
     F_\mathrm{HC}=\psi_\mathrm{max}H
 \end{equation}
 
@@ -203,12 +203,12 @@ Expressing the HC strength $\psi_\mathrm{max}$ in terms of the energy transport 
 
 Gross moist stability (GMS) is defined as the ratio of energy transport to mass transport by the HC which can be understood as the energy transport efficiency. It is inferred to
 \begin{equation}\label{eq:GMS}
-    H(\phi)=\frac{2\pi a\cos\phi}{g}\frac{1}{\psi_\mathrm{max}}\int^{p_s}_0[\Bar{v}_\mathrm{adj}][\Bar{h}]\mathrm{d}p.
+    \mathcal{H} (\phi)=\frac{2\pi a\cos\phi}{g}\frac{1}{\psi_\mathrm{max}}\int^{p_s}_0[\Bar{v}_\mathrm{adj}][\Bar{h}]\mathrm{d}p.
 \end{equation}
 It is a measure for the stratification of the atmosphere. A large GMS indicates a strongly stratified atmosphere.
-To understand the changes in HC strength, we linearize Equation \eqref{eq:F_HC} and obtain 
+To understand the changes in HC strength, we linearize Equation \eqref{eq:F_psi_H} and obtain 
 \begin{equation}
-        \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}=\frac{\delta F_\mathrm{HC}}{F_\mathrm{HC}}-\frac{\delta H}{H}.
+        \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}=\frac{\delta F_\mathrm{HC}}{F_\mathrm{HC}}-\frac{\delta \mathcal{H} }{\mathcal{H} }.
 \end{equation}
 This yields the contribution of GMS and HC transport changes.
 Knowing the total energy transport in the atmosphere $F_\mathrm{a}$ from Equation \eqref{eq:Fao}, it can be further split up into a mean $F_\mathrm{HC}$ and an eddy energy flux component $F_\mathrm{e}$ (see Figure \ref{fig:transport}), which gives
@@ -221,7 +221,7 @@ The eddy component can be calculated as the difference between $F_\mathrm{a}$ an
 \end{equation}
 Inserting this into the linearized Equation \eqref{eq:F_HC} gives
 \begin{align*}
-    \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}&=\frac{\delta F_\mathrm{a}}{F_\mathrm{HC}}-\frac{\delta F_\mathrm{e}}{F_\mathrm{HC}}-\frac{\delta H}{H}.
+    \frac{\delta\psi_\mathrm{max}}{\psi_\mathrm{max}}&=\frac{\delta F_\mathrm{a}}{F_\mathrm{HC}}-\frac{\delta F_\mathrm{e}}{F_\mathrm{HC}}-\frac{\delta \mathcal{H} }{\mathcal{H} }.
 \end{align*}
 The transport by the atmosphere can be expressed as 
 \begin{equation}
