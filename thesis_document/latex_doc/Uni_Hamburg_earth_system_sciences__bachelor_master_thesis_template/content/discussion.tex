@@ -3,14 +3,70 @@
 
 
 \section{Summary of the main findings}
-\section{Why do tropospheric and stratospheric CO$_2$ have opposing effects?}
+The first part of the analysis is answering the question, how does the atmosphere respond to an increase in tropospheric \CO compared to an increase in stratospheric \CO.
+We found the most striking differences in the HC response. In our experiments the annual mean HC is strengthening with a quadrupling of \CO only in the troposphere, while it is weakening with a quadrupling of \CO in the stratosphere. This holds in both hemispheres. For a uniform 4x\CO experiment we find a weakening of the HC. This suggests that the \CO increase in the stratosphere is responsible for the net weakening of the HC. In all experiments the HC is widening.
+
+The temperature response agrees broadly with our expectations. Tropospheric \CO increase causes tropospheric warming, whereas the stratospheric \CO increase causes stratospheric cooling. Additionally, we find a modest warming and cooling right above the tropopause in \strato and \tropo, respectively. Simulations with a RCE model suggest, that this is caused by the step-like increase in \CO concentration at the tropopause and the thereby induced heating rate.
+
+This raises concerns about the linearity of the circulation and temperature response. We find that the annual mean temperature and circulation response is approximately linear. However, we find a non-linearity in the HC strength (MSF maximum) of 3.4\% in the northern hemisphere and 1.5\% in the southern hemisphere.
+
+
+The second part of the analysis discusses the underlying physical mechanisms of the opposing HC strength responses.
+We find that the scaling laws for the HC strength and extent obtained from the axisymmetric theory cannot explain the HC changes in our simulations. Neither the scaling factors, the tropopause height $H$, the meridional temperature gradient $\Delta_h$, and the vertical temperature gradient $\Delta_v$, individually nor combined manage to have a good correlation with the simulated HC changes. The validity of the axisymmetric theory is confined to a very idealized setup, which is not given in our simulations. In particular, it neglects the importance of eddies in controlling the HC strength.
+
+However, also assuming an eddy-driven HC cannot explain the simulated changes. Anyway, the changes in integrated momentum flux show good agreement with the changes in HC strength. A weakening in HC strength coincides with a weakening in integrated eddy momentum flux (high correlation). Still, the angular momentum eddies fail to fully explain the magnitude of the HC strength changes.
+
+Finally, the energy budget decomposition can provide a quantitative explanation for the opposing HC strength changes. HC changes are split up in contributions from the meridional structure of the radiative forcing, climate feedbacks, and ocean heat uptake as well as changes in gross moist stability and eddy energy fluxes.
+
+Although, the HC strength response is qualitatively similar, we find large quantitative large differences between the hemispheres.
+In the southern hemisphere, we find the main driver for the strengthening of the HC in \tropo to be the meridional structure of the feedback. The meridional structure of the forcing on the atmosphere, is responsible for the weakening in \strato in the southern hemisphere. In contrast, for the northern hemispheric strengthening of the HC in \tropo the OHU in the Arctic is most important. The increase in GMS is the strongest driver of the HC weakening in \strato. However, none of these drivers alone can explain the HC behavior. Rather, changes in HC strength are the result of a combination of forcing, feedback, GMS, eddy, and OHU contributions.
+
   % synthesis table: scalings / eddy momentum / energy budget / konrad
   % reconcile eddy views; nonadditivity; hemispheric asymmetry
-  Comparing this with the changes in angular momentum transport by the eddies from Section \ref{subsec:eddy_driven}, we see a strengthening in the eddy energy flux while the eddy momentum flux weakens in \uniform and \strato. This is not contradictory because they are different quantities. 
-\section{Robustness and limitations}
+%   Comparing this with the changes in angular momentum transport by the eddies from Section \ref{subsec:eddy_driven}, we see a strengthening in the eddy energy flux while the eddy momentum flux weakens in \uniform and \strato. This is not contradictory because they are different quantities. 
+\section{Limitations}
+
+In particular, the large differences between the drivers of HC changes in the northern and southern hemisphere question generalisability of the analysis. The simulation results may specifically depend on the underlying model setup. Fixing the sea ice fraction has very large implications on the northern hemisphere energy budget. 
+
+Furthermore, the artificial separation of \CO concentrations causes non-linear responses in the temperature and wind fields. One also has to consider the non-stationary of tropopause height. Throughout the seasonal cycle the tropopause height changes, which in our case has the consequence that the \CO concentration is also increased at locations where we were not initially intended. In top of that, the tropopause height climatology also changes in the forced experiments. For example, in \tropo the tropopause height increases relative to the PI control climatology. This has the consequence, that not the entire troposphere is actually exposed to a quadrupling of \CO.
+
+%setup: ohu, complexity
+In our analysis of the drivers of the HC strength response, we have to acknowledge the weaknesses of axisymmetric theory. In the derivation of the HC scalings, it is assumed that our domain is axisymmetric in the zonal direction (no eddies), there is no hydrological cycle, no land masses, no cloud parameterisation, etc. - in short, it is entirely missing the complexity of our model setup. In addition, when we analyse the correlation between the HC changes and the scaling parameter, we only use the four datapoints of their annual mean values, which is a pretty poor data basis. 
+The same limitations are also true for the analysis of angular momentum eddies as driver of HC strength changes.
+
+A limitation of the energetic framework is that we can only use it for diagnostics without explaining why there is a Hadley circulation in the first place. It also fails to provide us with a mechanistic understanding of the processes in the atmosphere but rather stays descriptive in its explanations. Our decomposition tells us which terms balance the change in MSF but not which processes, e.g., change in cloud fraction or the position of the storm tracks, cause it. There is no direct causal relationship. Changes in the temperature structure affect the GMS which affects the atmospheric circulation but also the circulation affects the temperature structure and thus the GMS back. Eventually, it lacks an explanation for the HC extent drivers.   
+
+%model dependency
+
   % ordered by impact: OHU/sea ice, sampling, setup, CO2 step, metrics, framework
 \section{Comparison with previous studies}
+
+First things first, there is, to our knowledge, no previous study that investigates the impact vertical separation of \CO increase. Previous studies have only performed a separation of \CO concentration in the horizontal \parencite{kimWeakHadleyCell2022}.
+
+In this study we manage to reproduce the weakening of the HC under uniform \CO forcing that has been found in model intercomparison studies (see Section \ref{sec:HC_proj}). Also the structure of temperature anomalies is consistent with the literature.
+
+Using the axisymmetring scalings from Section \ref{sec:axisymmetric}, \textcite{seoMechanismFutureChanges2014} finds that the HC strength is significantly correlated with the meridional gradient in potential temperature ($R=0.57$). For the vertical temperature gradient and the tropopause height they find almost no correlation. \textcite{dagostinoFactorsControllingHadley2017} find a consistent relation between the HC strength and the subtropical static stability, and the tropopause height. Using our simulations, we can find neither of these correlations to show a sufficient correlation.
+
+\textcite{fanWeakeningTropicalCirculation2024} find the change in tropopause height to have the  largest contribution to changes in HC strength. In our simulations we even find opposing responses. The tropopause height in \uniform is increasing and and HC strength decreasing. In \strato however, the HC strength is also decreasing with the tropopause height is decreasing.
+ 
+\textcite{walkerEddyInfluencesHadley2006} find that the HC strength is approximately equal to the integrated eddy momentum flux in an idealized GCM. One would not expect that this can be easily reproduced in a more realistic GCM. However, we do not find an equality between the integrated eddy momentum flux and the HC strength but a robust linear dependency. 
+
+%influence of the stratosphere cannot be ignored
+
+Comparing the energy budget decomposition in ECHAM6 in the configuration described in Section \ref{subsec:meth_ECHAM} with the MPI-ESM-LR run in \parencite{feldlCharacterizingHadleyCirculation2016}, we find a qualitative agreement\footnote{Contributions are averaged over both hemispheres and over latitude belts ($\SIrange{15}{25}{\deg}$).}. All signs agree with the southern hemisphere energy budget decomposition in \uniform while the exact values differ largely. 
+
 \section{Relevance beyond the experiment}
+
+sensitivity of HC to tropospheric warming and stratospheric cooling
+
+importance of land distribution
+
+
+
+
 \section{Outlook}
+
+aquaplanet setup: hemispherical symmetric; no sea ice, simpler setup, fixing tropopause height latitudinally, further investigate circulation response, longer run times, radiative kernels, seasonal analysis, intermediate layers (upper troposphere), HC extent
+
 \section{Conclusions}
   % RQ1 ... RQ n, key messages, main caveat
