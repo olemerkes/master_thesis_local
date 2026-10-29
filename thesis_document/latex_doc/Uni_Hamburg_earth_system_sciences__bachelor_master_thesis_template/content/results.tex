@@ -1,8 +1,9 @@
 \chapter{Results}
 \label{chapter:results}
+This chapter presents the results of our simulations. The first part covers the temperature and atmospheric circulation response in our experiments, while the second part identifies the mechanism behind the HC responses.
 \section{The temperature and circulation response}
-\subsection{Linearity of decomposition}
-When separating the uniform quadrupling of \CO{} into a tropospheric and a stratospheric component in the simulations with ECHAM6, one might be concerned that this decomposition even works. Since the decomposition is physically not possible to realize in the atmosphere due to its well-mixed state, the decomposition could produce non-linear effects. In short: Is the response to uniform forcing \CO{} identical to the added up responses of the atmosphere to a forcing in the troposphere and stratosphere? Is the net circulation response of the atmosphere to \tropo and \strato decomposable into these two components?
+\subsection{Linearity of the decomposition}
+% When separating the uniform quadrupling of \CO{} into a tropospheric and a stratospheric component in the simulations with ECHAM6, one might be concerned that this decomposition even works. Since the decomposition is physically not possible to realize in the atmosphere due to its well-mixed state, the decomposition could produce non-linear effects. In short: Is the response to uniform forcing \CO{} identical to the added up responses of the atmosphere to a forcing in the troposphere and stratosphere? Is the net circulation response of the atmosphere to \tropo and \strato decomposable into these two components?
 \begin{figure}[ht]
     \centering
     \includegraphics[width=1.0\textwidth,keepaspectratio]{initial_plots/linear_T.png}
@@ -10,8 +11,9 @@ When separating the uniform quadrupling of \CO{} into a tropospheric and a strat
     \label{fig:lin_T}
 \end{figure}
 
-To find out whether \CO{} in the vertical shows a linear behavior, we compare the temporal and zonal mean temperature anomalies of the \uniform case to the added up anomalies from \tropo and \strato. As one can see in Figure \ref{fig:lin_T} the temperature response is almost completely linear. The absolute difference between the sum of the anomalies of \tropo and \strato minus the anomalies of \uniform have a mean value of \SI{0.2}{\K} and a maximum magnitude of \SI{1.8}{\K}. The largest discrepancies can be found in the northern hemisphere stratosphere and right above the tropopause in the tropics. Since we are most interested in the response of the atmospheric circulation, we also check its linearity. In Figure \ref{fig:lin_msf}, one can see that the MSF in \uniform very much resembles the sum of \tropo and \strato. Here, the mean absolute difference is about $0.5\%$ with a maximum difference of $6.3\%$ of the maximum absolute value of the MSF in the PI run. (TODO: Do you prefer standard deviation?)
+To verify that the vertical separation of two different \CO{} concentrations does not show any non-linear behavior, we compare the temporal and zonal mean temperature anomalies of the \uniform case to the added up anomalies from \tropo and \strato. As one can see in Figure \ref{fig:lin_T}, the non-linear effects in the temperature response are really small. The absolute difference between the sum of the anomalies of \tropo and \strato minus the anomalies of \uniform have a mean value of \SI{0.2}{\K} and a maximum magnitude of \SI{1.8}{\K}. The largest discrepancies can be found in the northern hemisphere stratosphere and right above the tropopause in the tropics.
 
+We find a similar behavior for the circulation response. In Figure \ref{fig:lin_msf}, one can see that the MSF in \uniform very much resembles the sum of \tropo and \strato. Here, the mean absolute difference is about $0.5\%$ with a maximum difference of $6.3\%$ of the maximum absolute value of the MSF in the PI run.
 \begin{figure}[ht]
     \centering
     \includegraphics[width=1.0\textwidth,keepaspectratio]{initial_plots/difference_stream_function.png}
@@ -19,12 +21,13 @@ To find out whether \CO{} in the vertical shows a linear behavior, we compare th
     \label{fig:lin_msf}
 \end{figure}
 
-Overall, the decomposition of the \CO{} increase works. The response is approximately linear in the temperature and MSF anomalies. Nonetheless, one should bear the small non-linear effects in mind in the further analysis of these results.
-\subsection{The temperature anomalies}\label{subsec:temperature_anomalies}
-The model simulations for the temperature anomalies in \uniform display quite well the expected patterns established in Section \ref{sec:CO2_T_response}. The temperature throughout the entire troposphere is increased while the warming in the upper tropics is enhanced and amplified in the Arctic. The stratosphere is cooled (see Figure \ref{fig:lin_T} left panel). 
-We now expected that the \CO increase in \tropo is responsible for its warming while \CO increase only in the stratosphere is responsible for stratospheric cooling. This is what we see in Figure \ref{fig:temperature_initial}. The warming in the troposphere maintains the spatial structure from the \uniform case. In the response of the \tropo case, we notice an additional cooling in the stratosphere right above the tropopause, which will be further investigated. In \strato the tropospheric temperature remains almost constant. Only right above the tropopause, there is an unexpected anomalous warming. Given these temperature responses, one would still expect the net weakening to originate from tropospheric \CO because the associated warming of the troposphere change the temperature gradients and the tropopause height. However, the warming/cooling right above the tropopause might have an influence on the tropopause height and the vertical stability which have been discussed to result in HC changes. 
+Overall, the decomposition of the \CO{} increase works. The response is approximately linear in the temperature and MSF anomalies. Nonetheless, one should bear the small non-linear effects in mind in the further analysis of these experiments.
+\subsection{Tropospheric warming and stratospheric cooling can be decomposed}\label{subsec:temperature_anomalies}
+Figure \ref{fig:lin_T}shows that the temperature anomalies in \uniform display quite well the expected patterns established in Section \ref{sec:CO2_T_response}. The temperature throughout the entire troposphere is increased while the warming in the upper tropics is enhanced and amplified in the Arctic. The stratosphere is cooled.
 
-To better understand the cause of the anomalous warming in \strato and the anomalous cooling in \tropo right above the tropopause, we perform experiments with \textit{konrad} changing the vertical \CO concentration. In Figure \ref{fig:konrad}, one can see by comparing \uniform to \tropo + \strato that there is also in \textit{konrad} some non-linearity in the response right above the tropopause. However, even when considering the non-linearity there is an anomalous warming above the tropopause in the \strato and an anomalous cooling in the \tropo case. In the experiments with \textit{konrad} the warming and cooling at the tropopause also extends below the tropopause. We believe that the heating rate induced by the stepwise increase in optical thickness associated with the step wise increase of \CO might be its cause. We have tested this hypothesis by linearly increasing \CO on some levels below and above the tropopause, which weakens the anomalous heating pattern. From the experiments with \textit{konrad}, we can conclude that the heating in \strato and cooling in \tropo above the tropopause in the experiments with ECHAM6 are a static thermodynamic response and not evoked by changes in the atmospheric circulation.
+We now expected that the \CO increase in \tropo is responsible for the warming of the troposphere, whereas the \CO increase only in the stratosphere is responsible for stratospheric cooling. This is what we see in Figure \ref{fig:temperature_initial}. The warming in the troposphere in \tropo maintains the spatial structure from the \uniform case. Additionally, in \tropo one can notice an additional cooling in the stratosphere right above the tropopause. Besides the cooling of the stratosphere,in \strato the tropospheric temperature remains almost constant. Only right above the tropopause, there is an unexpected anomalous warming.  This warming/cooling right above the tropopause might have an influence on the tropopause height and the vertical stability, which have been discussed to result in HC changes. 
+
+To better understand the cause of the anomalous warming in \strato and the anomalous cooling in \tropo right above the tropopause, we perform experiments with \textit{konrad} changing the vertical \CO concentration. In Figure \ref{fig:konrad}, one can see by comparing \uniform to \tropo + \strato that there is also in \textit{konrad} some non-linearity in the response right above the tropopause. However, even when considering the non-linearity there is an anomalous warming above the tropopause in the \strato and an anomalous cooling in the \tropo case. In the experiments with \textit{konrad} the warming and cooling at the tropopause also extends below the tropopause. The anomalous heating rates arising at and around the level of discontinuous \CO concentrations are induced by the stepwise increase in optical thickness associated with the step wise increase of \CO might be its cause. We have tested this hypothesis by linearly increasing \CO on some levels below and above the tropopause, which weakens the anomalous heating pattern. From the experiments with \textit{konrad}, we can conclude that the heating in \strato and cooling in \tropo above the tropopause in the experiments with ECHAM6 are a static thermodynamic response and not evoked by changes in the atmospheric circulation.
 
 \begin{figure}[ht]
     %% trim=left bottom right top,
@@ -45,8 +48,11 @@ To better understand the cause of the anomalous warming in \strato and the anoma
 
 
 
-\subsection{The atmospheric response}
-In this chapter, the circulation response in our experiments is described. What we find when analysing the HC extent according to the definitions established in Section \ref{sec:def_HC} is that the HC is weakening and widening in the \uniform case (see Figure \ref{fig:lin_msf}, left panel) in both hemispheres. This comes as a surprise because one would expect an increase in tropospheric \CO to be the dominant driver here. Although, also the cooling of the stratosphere is expected to change meridional temperature gradients. Figure \ref{fig:msf_initial} shows that the annual mean HC is strengthening with \tropo and weakening with \strato. This suggests that the weakening cannot be traced back to the increase in tropospheric \CO, but to an increase in stratospheric \CO. A further implication might be that the cooling of the stratosphere is responsible for the net weakening of the HC in \uniform and not the warming of the troposphere. For a summary of all HC changes see Table \ref{tab:HC_changes}. One should notice here that the HC strength response is not linear in either hemisphere, while the changes in HC extent are to a good approximation. The non-linearity in the northern hemisphere accounts for 3.4\% and in the southern hemisphere for 1.5\%. Considering the magnitude of the individual changes, which are all significantly larger than the HC response to the uniform forcing and the non-linearities, we perceive them as robust physical responses instead of artifacts due to the non-linearities. The HC strength response in \strato is quite different between the hemispheres with the northern hemisphere weakening almost twice as much as the southern. In the next section, we identify the underlying physical mechanisms that lead to a strengthening in \tropo and a weakening in \strato employing different HC frameworks.  
+\subsection{Opposing Hadley circulation responses}
+
+Given the temperature responses in \tropo and \strato, one would still expect the net weakening to originate from tropospheric \CO because the associated warming of the troposphere change the temperature gradients and the tropopause height. What we find when analysing the HC extent according to the definitions established in Section \ref{sec:def_HC} is that the HC is weakening and widening in the \uniform case (see Figure \ref{fig:lin_msf}, left panel) in both hemispheres. This comes as a surprise because one would expect an increase in tropospheric \CO to be the dominant driver here. Although, also the cooling of the stratosphere is expected to change meridional temperature gradients. Figure \ref{fig:msf_initial} shows that the annual mean HC is strengthening with \tropo and weakening with \strato. This suggests that the weakening cannot be traced back to the increase in tropospheric \CO, but to an increase in stratospheric \CO. A further implication might be that the cooling of the stratosphere is responsible for the net weakening of the HC in \uniform and not the warming of the troposphere. For a summary of all HC changes see Table \ref{tab:HC_changes}.
+
+One should notice here that the HC strength response is not linear in either hemisphere, while the changes in HC extent are to a good approximation. The non-linearity in the northern hemisphere accounts for 3.4\% and in the southern hemisphere for 1.5\%. Considering the magnitude of the individual changes, which are all significantly larger than the HC response to the uniform forcing and the non-linearities, we perceive them as robust physical responses instead of artifacts due to the non-linearities. The HC strength response in \strato is quite different between the hemispheres with the northern hemisphere weakening almost twice as much as the southern. In the next section, we identify the underlying physical mechanisms that lead to a strengthening in \tropo and a weakening in \strato employing different HC frameworks.  
 
 
 \begin{figure}[]
@@ -78,7 +84,7 @@ Trying to explain the opposing Hadley cell strength responses but also the HC wi
 \begin{figure}[]
     %% trim=left bottom right top,
     \centering
-   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{H&H/parameters_NH_fit.png}
+   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{H&H/parameters_SH_fit.png}
     \caption{Changes in annual mean HC extent and strength against changes in tropopause height $H$, meridional temperature gradient $\delta_h$, and vertical stability $\delta_v$ (top down) for the four experiments. Linear regression shows their agreement.}
     \label{fig:parameters_HH}
 \end{figure}
@@ -86,7 +92,7 @@ Since the individual parameters cannot significantly predict the HC changes, we 
 \begin{figure}[H]
     %% trim=left bottom right top,
     \centering
-   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{H&H/scatter_NH.png}
+   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{H&H/scatter_SH.png}
     \caption{HC changes against their prediction from the linearised axisymmetric scalings for the four experiments. A good agreement is given for datapoints on the one-to-one line.}
     \label{fig:scaling_HH}
 \end{figure}
@@ -121,13 +127,13 @@ In \uniform and \tropo the increase in required energy transport is contributing
 To find out what drives the changes in GMS, we plot the vertical profile of changes in MSE flux weighted by the HC strength at the location of the MSF minimum (see Figure \ref{fig:GMS_vertical}). Vertically integrating these profiles and dividing by the GMS of the PI control yields the changes in GMS. The dominant change in MSE flux occurs at the tropopause, leading to the large net increase in \uniform and \tropo. This vertical distribution also indicates that the heating in \strato and cooling in \tropo in the stratosphere, which were discussed in Section \ref{subsec:temperature_anomalies}, do not affect the changes in GMS. The changes of MSE in the stratosphere seem to leave the GMS unaffected. Thus, integrating the MSE flux, which could be proposed as a solution to circumvent this problem, to the tropopause only does not qualitatively change the result. We further decompose the changes in energy transport, to investigate its drivers in the next sections.
 
 
-\begin{figure}[h]
-    %% trim=left bottom right top,
-    \centering
-   \includegraphics[width=0.9\textwidth,keepaspectratio,trim=0 0 0 0, clip]{energetic_framework/southern_hemisphere/GMS_contribution.png}
-    \caption{Contributions of changes in energy transport by the HC and GMS to changes in southern hemisphere annual mean HC strength in \uniform, \tropo, and \strato for the southern hemisphere. }
-    \label{fig:GMS_change}
-\end{figure}
+% \begin{figure}[h]
+%     %% trim=left bottom right top,
+%     \centering
+%    \includegraphics[width=0.9\textwidth,keepaspectratio,trim=0 0 0 0, clip]{energetic_framework/southern_hemisphere/GMS_contribution.png}
+%     \caption{Contributions of changes in energy transport by the HC and GMS to changes in southern hemisphere annual mean HC strength in \uniform, \tropo, and \strato for the southern hemisphere. }
+%     \label{fig:GMS_change}
+% \end{figure}
 \begin{figure}[h]
     %% trim=left bottom right top,
     \centering
@@ -139,13 +145,13 @@ To find out what drives the changes in GMS, we plot the vertical profile of chan
 The energy transport of the HC can change either by changes in total atmospheric energy transport or by changes in energy eddy transport ($F_\mathrm{HC}=F_\mathrm{a}-F_\mathrm{e}$). The eddy term consists of the stationary and transient eddies, because the eddy component is calculated as the residual of the energy transport of the atmosphere minus the transport by the Hadley cell. The more energy transport by the eddies, the less has to be performed by the mean circulation given the same amount of total energy transport by the atmosphere.
 
 Figure \ref{fig:eddy_change} shows that the energy transport by the eddy energy fluxes increases contributing to a weakening of the HC in all experiments. The increase is largest in \uniform (17.5\%), slightly smaller (13.8\%) in \tropo and very small (2.6\%) in \strato. Connecting the increase in eddy energy transport to changes in meridional temperature structure proves difficult. For \uniform and \tropo, the changes in zonal mean zonal wind in Figure \ref{fig:jet_change} clearly show an increase in the subtropical jet strength that coincides with a rise in meridional temperature gradient. This increases the baroclinicity ,i.e., the generation of eddies. For \strato, there is a decrease of the mean zonal wind right at the tropopause, but it is increasing in the surrounding areas. The changes of energy transport in the atmosphere show a large contribution to HC strengthening of about 30\% in \uniform and \tropo, while they contribute to a modest weakening of the HC in \strato. They will be further decomposed in the next section.
-\begin{figure}[h]
-    %% trim=left bottom right top,
-    \centering
-   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{energetic_framework/southern_hemisphere/eddy_contribution.png}
-    \caption{Decomposition of changes in Hadley cell energy transport $F_\mathrm{HC}$ in total energy transport by the atmosphere $F_\mathrm{a}$ and the energy transport by the eddies $F_\mathrm{e}$ for \uniform, \tropo, and \strato for the southern hemisphere. }
-    \label{fig:eddy_change}
-\end{figure}
+% \begin{figure}[h]
+%     %% trim=left bottom right top,
+%     \centering
+%    \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{energetic_framework/southern_hemisphere/eddy_contribution.png}
+%     \caption{Decomposition of changes in Hadley cell energy transport $F_\mathrm{HC}$ in total energy transport by the atmosphere $F_\mathrm{a}$ and the energy transport by the eddies $F_\mathrm{e}$ for \uniform, \tropo, and \strato for the southern hemisphere. }
+%     \label{fig:eddy_change}
+% \end{figure}
 
 \begin{figure}[h]
     %% trim=left bottom right top,
@@ -160,13 +166,13 @@ In our experiments, we are using an slab-ocean configuration with a prescribed e
 The culprit is the sea ice. Looking at Figure \ref{fig:ohu_seaice},one can see that the anomalies in surface heat fluxes have an identical spatial structure as the sea ice extent. Since the sea ice stays fixed in our simulations the SSTs below can only warm through conduction. With the air temperature above the sea ice remain much larger than the SSTs below the sea ice. There is a constant flux of energy out of the atmosphere into the ocean. This affects the global atmospheric circulation, because the removal of energy in higher latitudes requires additional poleward energy transport by the atmosphere. Running the simulations for a longer period until the temperatures above and below sea ice are in equilibrium should remove this effect. 
 
 Calculating the difference between the energy transport by the atmosphere and the total energy transport from TOA radiative fluxes, we obtain the OHU contribution. Additional poleward transport as given due to the anomalous surface fluxes, requires a strengthening of the HC, which is why the OHU contributes positively in \uniform and \tropo in Figure \ref{fig:ohu}. Because the troposphere is not warming, this effect is negligible in \strato. Thus, there is no temperature contrast between the surface air temperature above and the SST below the sea ice. The OHU effect is much stronger in the northern hemisphere because there is more sea ice, and more warming of the air close to the surface in the Arctic than in the Antarctic. The contribution of this effect, is of similar magnitude as the strengthening of the HC in \tropo. Thus, it might be a large contributor but cannot solely explain the not weakening of the HC in \tropo. The OHU at the poles also dampens the weakening response in \uniform, which would show a stronger weakening otherwise.
-\begin{figure}[h]
-    %% trim=left bottom right top,
-    \centering
-   \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{energetic_framework/southern_hemisphere/ohu_contribution.png}
-    \caption{Decomposition of changes in total energy transport by the atmosphere $F_\mathrm{a}$ to changes in the combined energy transport by atmosphere and ocean $F_\mathrm{ao}$, and the transport only from the ocean (OHU) for \uniform, \tropo, and \strato for the southern hemisphere.  }
-    \label{fig:ohu}
-\end{figure}
+% \begin{figure}[h]
+%     %% trim=left bottom right top,
+%     \centering
+%    \includegraphics[width=1.0\textwidth,keepaspectratio,trim=0 0 0 0, clip]{energetic_framework/southern_hemisphere/ohu_contribution.png}
+%     \caption{Decomposition of changes in total energy transport by the atmosphere $F_\mathrm{a}$ to changes in the combined energy transport by atmosphere and ocean $F_\mathrm{ao}$, and the transport only from the ocean (OHU) for \uniform, \tropo, and \strato for the southern hemisphere.  }
+%     \label{fig:ohu}
+% \end{figure}
 
 \begin{figure}[h]
     %% trim=left bottom right top,
