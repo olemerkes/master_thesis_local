@@ -1,8 +1,8 @@
 \chapter{Results}
 \label{chapter:results}
 This chapter presents the results of our simulations. The first part covers the temperature and atmospheric circulation response, while the second part identifies the mechanism behind the HC responses in our experiments.
-\section{The temperature and circulation response}
-\subsection{Linearity of the decomposition}
+\section{The temperature and Hadley cell responses}
+\subsection{The decomposition is nearly limear}
 % When separating the uniform quadrupling of \CO{} into a tropospheric and a stratospheric component in the simulations with ECHAM6, one might be concerned that this decomposition even works. Since the decomposition is physically not possible to realize in the atmosphere due to its well-mixed state, the decomposition could produce non-linear effects. In short: Is the response to uniform forcing \CO{} identical to the added up responses of the atmosphere to a forcing in the troposphere and stratosphere? Is the net circulation response of the atmosphere to \tropo and \strato decomposable into these two components?
 \begin{figure}[ht]
     \centering
@@ -22,7 +22,7 @@ We find a similar behavior for the circulation response. In Figure \ref{fig:lin_
 \end{figure}
 
 Overall, the decomposition of the \CO{} increase works. The response is approximately linear in the temperature and MSF anomalies. Nonetheless, one should bear the small non-linear effects in mind in the further analysis of these experiments.
-\subsection{Tropospheric warming and stratospheric cooling can be decomposed}\label{subsec:temperature_anomalies}
+\subsection{Separating tropospheric warming from stratospheric cooling}\label{subsec:temperature_anomalies}
 
 The temperature anomalies in \uniform display (see Figure \ref{fig:lin_T}) quite well the expected spatial patterns established in Section \ref{sec:CO2_T_response}. The temperature throughout the entire troposphere is increased, while the warming in the upper tropics is enhanced and amplified in the Arctic. The stratosphere is cooled.
 
@@ -88,7 +88,7 @@ While the changes in HC extent combine linearly to the uniform forcing response,
     \end{table} 
 
 \section{Physical drivers of HC strength response}
-\subsection{Predictions from axisymmetric scalings}
+\subsection{Axisymmetric scalings do not explain the HC changes}
 Trying to explain the opposing Hadley cell strength responses but also the HC widening in both cases, we use the axisymmetric scalings from Section \ref{sec:axisymmetric}. The following analysis is very much similar to the one from \textcite{seoMechanismFutureChanges2014}. The axisymmetric scalings predict that the HC strength and extent are a function of the tropopause height $H$, the meridional temperature gradient $\Delta_h$, and the vertical stability $\Delta_v$. Given the temperature response described above, it is not possible to infer a qualitative explanation of the HC changes from the qualitative changes in the scaling parameters (see also Section \ref{sec:axisymmetric}). 
 
 The individual predictive power of each of these parameters is displayed in Figure \ref{fig:parameters_HH}. For the HC extent anomalies, we find the best correlation with the change in vertical stability ($R^2=0.60$), a parameter which according to Equation \ref{eq:HH_ext} is not supposed to influence the extent of the HC at all. We find even smaller correlations of $\delta_h$, and the the tropopause height $H$ with the HC extent.
@@ -113,7 +113,7 @@ Since the individual parameters cannot sufficiently predict the HC changes, we n
     \label{fig:scaling_HH}
 \end{figure}
 Doing the same analysis for the northern hemisphere (not shown), we find different slopes and correlations but not an overall increase in predictive skill of the axisymmetric scalings. Also when investigating the winter HCs, which, according to the dynamical framework, are closer to angular momentum conservation, the results do not change qualitatively. Finally, we suspect in particular the influence of the eddies to fundamentally influence the strength of the HC, which are neglected in the axisymmetric framework. Thus, we investigate the changes in eddy momentum flux in the next section.
-\subsection{Eddy driven HC changes}\label{subsec:eddy_driven}
+\subsection{Eddy-driven Hadley cell changes}\label{subsec:eddy_driven}
 As was reported in Section \ref{sec:theo_eddy}, it was shown that eddies substantially influence the mean meridional circulation. This has been shown in particular for the HC in its equinox, which is similar to the annual mean HC, and summer regime. The flow in our simulations has a maximum Rossby number of about 0.3, which favors this perspective over the axisymmetric one. Since the eddy fluxes are closely related to the baroclinicity in a flow, which itself is driven by meridional temperature gradients, we expect them to change, given the very different temperature response in \tropo and \strato. An increase in the meridional temperature gradient strengthens the zonal wind and thus the generation of eddies. In particular, in \tropo the meridional temperature gradient at the height of the subtropical jet stream increases while in \strato it decreases (see Figure \ref{fig:temperature_initial}). Using Equation \eqref{eq:T_edd} and calculating the eddy momentum fluxes as described in Section \ref{sec:meth_eddy}, we can estimate to what extent the HC in the simulations is driven by eddy momentum fluxes and their relative contribution to HC changes. 
 
 Plotting the maximum MSF (HC strength) against the integrated eddy momentum flux $\mathcal{T}$ as in Figure \ref{fig:eddy_flux_strength} reveals that the annual mean northern hemisphere HC is generally more eddy-driven than its southern hemisphere counterpart. If the HC was entirely eddy-driven, all datapoints would lie on the one-to-one line. This can be seen for the Ferrel cell (not shown). Changes in eddy momentum flux are similar in both hemispheres. Relative to the PI simulation $\mathcal{T}$ is increasing in \tropo, slightly weakening in \uniform and largely weakening in \strato. The relative changes in $\mathcal{T}$ overpredict the changes in HC strength in the northern hemisphere \tropo and \strato as well as in the southern hemisphere \uniform and \strato cases. This indicates that more factors that drive the HC and influence their relative changes should be considered in the analysis. Again, one can notice the non-linearity of the response, with the sum of the changes in $\mathcal{T}$ in \tropo and \strato exceeding the \uniform case. While the integrated eddy momentum fluxes and the HC strength are well correlated, the slope and the offset of the linear regression is inconsistent with the predictions from Equation \eqref{eq:T_edd}, indicating that the advection of zonal mean angular momentum from the axisymmetric scaling cannot be neglected to get an exact result. This agrees with the Rossby number $Ro\neq0$ and highlights the necessity for a unifying approach.
@@ -126,11 +126,11 @@ Plotting the maximum MSF (HC strength) against the integrated eddy momentum flux
     \label{fig:eddy_flux_strength}
 \end{figure}
 
-\section{Energetic perspective on the HC strength response}
+\section{An energy budget explanation for Hadley cell strength changes} \label{sec:result_energetic}
 The analysis using the angular momentum budget presented in the previous sections is not able to explain, why tropospheric \CO strengthens and stratospheric \CO weakens the HC. The simulated annual mean HC is neither in the mean angular momentum conserving limit, nor in the eddy-driven limit. No dynamical framework exists for intermediate regimes.. However, the energy budget framework provides a diagnostic perspective on HC strength changes. In the following, we will decompose the HC strength changes into contributions from changes in GMS, energy eddy fluxes, OHU, radiative forcing, and climate feedbacks. We demonstrate the decomposition for the southern hemisphere, where the artificial ocean heat uptake caused by the fixed sea ice is smaller (see Section \ref{subsec:ohu}), and discuss the northern hemisphere afterwards. Southern hemisphere HC changes are slightly changed ($\sim0.5\%$ in \tropo) in the following analysis compared to previous sections, because the latitude of the maximum has slightly moved, which prevents a useful comparison of the different \CO forcing cases.
 
 
-\subsection{Gross moist stability contribution}
+\subsection{Gross moist stability contribution to Hadley cell strength changes}
 The strength of the HC, which is defined by the maximum mass stream flux, is directly related to the energy transport by the HC and its efficiency ($\psi_\mathrm{max}=F_\mathrm{HC}/\mathcal{H}$). The efficiency of energy transport is described by GMS (see Section \ref{sec:theo_energy}). Increasing the required energy transport by the atmosphere, while the GMS remains constant, also increases the HC strength. If the energy transport by the HC remains constant, but the efficiency of energy transport by the HC $\mathcal{H}$ increases, the HC strength weakens. In this section, we calculate the contribution of changes in HC energy transport $F_\mathrm{HC}$ and GMS $\mathcal{H} $ according to Equation \eqref{eq:F_HC} and \eqref{eq:GMS} using the linearized energy budget equation.
 
 \begin{figure}[h]
@@ -163,7 +163,7 @@ The vertical profile of changes in MSE flux divided by the HC strength at the lo
     \caption{Vertical profiles of changes in the meridional MSE flux per unit mass flux for \uniform, \tropo, and \strato at the location of the southern hemisphere MSF minimum and the northern hemisphere MSF maximum. The horizontal black line indicates the tropopause height at this latitude. Vertically integrating these profiles and dividing by the according vertical integral of the PI control yields the GMS contribution to the HC strength change.}
     \label{fig:GMS_vertical}
 \end{figure}
-\subsection{Eddy energy flux contribution}
+\subsection{Eddy energy transport weakens the Hadley cell}
 % The energy transport of the HC can change either by changes in total atmospheric energy transport or by changes in energy eddy transport ($F_\mathrm{HC}=F_\mathrm{a}-F_\mathrm{e}$). The eddy term consists of the stationary and transient eddies, because the eddy component is calculated as the residual of the energy transport of the atmosphere minus the transport by the HC. The more energy transport by the eddies, the less has to be performed by the mean circulation given the same amount of total energy transport by the atmosphere.
 
 Figure \ref{fig:contributions_SH} shows that the energy transport by the eddy energy flux increases, thereby contributing to a weakening of the HC in all experiments. The eddy-transport-induced weakening of the circulation is largest in \uniform (17.5\%), slightly smaller (13.8\%) in \tropo and very small (2.6\%) in \strato. Therefore, the energy flux eddies have the strongest weakening contribution to the net weakening of the HC in \uniform.
@@ -186,7 +186,7 @@ Connecting the increase in eddy energy transport to changes in meridional temper
     \caption{The zonal mean temperature anomalies (shading) and the contours of zonal mean zonal wind anomalies at \SI{1}{\m\per\s} distance. The thick black line indicates the zonal mean climatology tropopause height from the PI run.}
     \label{fig:jet_change}
 \end{figure}
-\subsection{Ocean heat uptake contribution} \label{subsec:ohu}
+\subsection{Sea-ice-driven heat uptake shapes HC strength} \label{subsec:ohu}
 In our experiments, we are using an slab-ocean configuration with a prescribed energy flux at the surface. Thus, one does not expect any changes on ocean heat transport. When investigating the surface fluxes (see Figure \ref{fig:ohu_seaice}), we find that this is not true for the simulated time period.
 
 The culprit is the sea ice. Looking at Figure \ref{fig:ohu_seaice}, one can see that the anomalies in surface heat fluxes have an identical spatial structure as the sea ice extent. Since the sea ice stays fixed in our simulations the SSTs below can only warm through conduction. The air temperature above the sea ice becomes due to the \CO increase much larger than the SSTs below the sea ice. Thus, there is a constant flux of energy out of the atmosphere into the ocean. This affects the global atmospheric circulation, because the removal of energy in higher latitudes by the ocean requires additional poleward energy transport by the atmosphere. Running the simulations for a longer period until the temperatures above and below sea ice are in equilibrium should remove this effect. 
@@ -209,7 +209,7 @@ Additional poleward transport as provided by the anomalous surface fluxes, requi
 \end{figure}
 
 
-\subsection{Radiative forcing and feedback contributions}
+\subsection{Radiative forcing and feedback set the required energy transport}
 % The changes in total energy transport $F_\mathrm{ao}$ are calculated from the TOA radiative imbalance $R_\mathrm{TOA}$. The radiative imbalance can be split up into radiative flux changes due to changes in surface temperature (feedback component) and due to the direct effect of \CO (forcing). As forcing we will consider the net energy input (NEI) into atmosphere in the fixed SST simulations. It can be calculated as the difference between fluxes TOA and at the surface. Other studies only use the TOA radiative imbalance here. The meridional structure of the forcing and the feedbacks can also contribute to HC changes. A larger forcing in the tropics compared to the extratropics requires additional poleward energy transport.
 The forcing and the feedback contributions determine, how much energy has to be transported poleward in the first place. The contribution is set by their meridional structure with an energy excess in the tropics relative to higher latitudes increasing the strength of the HC, while a deficiency weakens it.
 
@@ -232,7 +232,7 @@ The response of the contributions is approximately linear. Despite the discussed
     \label{fig:forcing}
 \end{figure}
 
-\subsection{Quantifying HC change contributions for the northern hemisphere}
+\subsection{Northern Hemisphere: similar response, different drivers}
 Major differences can be found when comparing the previously discussed contributions to the HC changes in the southern hemisphere to the northern hemisphere (see Figure \ref{fig:contributions_NH}). The forcing contributed positively to the HC strength in \uniform and \tropo in the southern hemisphere, whereas it contributes to a weakening in the northern hemisphere. Figure \ref{fig:forcing} shows that the large increase of net energy input into in mid-latitudes is produced by the large Eurasian and North American land masses. The contributions of the feedbacks are, as in the southern hemisphere, positive. Only in the \strato case, it causes a small weakening. For the contribution of GMS, \tropo is much less positive while \strato is much more positive. Here, we can also see the largest non-linearity of the sum of \tropo and \strato, which might also cause the large net linearity in the HC changes. For the energy eddy flux, we notice that the increase in \tropo exceeds the one in \uniform, which was not the case in the southern hemisphere. In contrast, the eddy contribution of \strato is positive, which can be explained by the stronger weakening of the zonal mean zonal winds in the northern hemisphere (see Figure \ref{fig:jet_change}). The increased OHU has a much larger HC strengthening contribution in the northern hemisphere. As one can see in Figure \ref{fig:ohu_seaice}, this can be explained by the the larger sea ice fraction and the larger warming in the Arctic, which strengthens the temperature difference between the air and the sea. The OHU induced strengthening of the HC in \tropo even outweighs the net strengthening of the HC. This means, that without the OHU in our simulations, we would not find a strengthening but a weakening of the HC in the northern hemisphere. However, the OHU component is even larger in \uniform, which shows a weakening of the HC strength. In summary, the net response in HC strength is qualitatively similar in the northern and southern hemisphere, although the underlying physical mechanism of the response differ significantly.
 
 % In the northern hemisphere, \uniform and \tropo contribute very differently quantitatively, while still changing in the same direction for all mechanisms. Feedbacks and the OHU  
